@@ -70,7 +70,7 @@
                 "showDetailsButton":true,
                 "type":"disposition",
                 "numberOfVisits":1,
-                "displayOrder":3
+                "displayOrder":7
             },
             "treatments":{  
                 "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
@@ -94,6 +94,39 @@
                     "numberOfVisits":10,
                     "showOtherActive":true,
                     "showDetailsButton":true
+                }
+            },
+            "radiology":{  
+                "translationKey":"DASHBOARD_TITLE_RADIOLOGY_KEY",
+                "type":"radiology",
+                "showDetailsButton":true,
+                "displayOrder":5
+            },
+            "programs":{  
+                "translationKey":"DASHBOARD_TITLE_PROGRAMS_KEY",
+                "type":"programs",
+                "displayOrder":6
+            },
+            "radiologyOrders":{  
+                "orderType":"Radiology Order",
+                "type":"ordersControl",
+                "translationKey":"DASHBOARD_TITLE_RADIOLOGY_ORDERS_KEY",
+                "displayOrder":17,
+                "dashboardConfig":{  
+                    "conceptNames":[  
+                        "Summary"
+                    ],
+                    "numberOfVisits":4
+                }
+            },
+            "pacs":{  
+                "orderType":"Radiology Order",
+                "type":"pacsOrders",
+                "translationKey":"DASHBOARD_TITLE_PACS_KEY",
+                "displayOrder":8,
+                "dashboardConfig":{  
+                    "pacsImageUrl":"/oviyam2/viewer.html?patientID={{patientID}}&accessionNumber={{orderNumber}}",
+                    "numberOfVisits":4
                 }
             },
             "labOrdersDisplayControl":{  
@@ -181,7 +214,7 @@
             "visits":{  
                 "translationKey":"DASHBOARD_TITLE_VISITS_KEY",
                 "type":"visits",
-                "displayOrder":17,
+                "displayOrder":3,
                 "dashboardConfig":{  
                     "title":null,
                     "maximumNoOfVisits":8,
