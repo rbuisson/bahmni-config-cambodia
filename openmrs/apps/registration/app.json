@@ -95,18 +95,19 @@
                 "landHolding" : {"pattern" : "[0-9]{0,3}", "errorMessage" : "Should be between 1 to 999 acres"},
                 "familyName" : {"pattern" : "[a-zA-Z]{0,}", "errorMessage" : "Should contain characters"},
                 "givenName" : {"pattern" : "[a-zA-Z]{0,}", "errorMessage" : "Should contain characters"},
-                "middleName" : {"pattern" : "[a-zA-Z]{0,}", "errorMessage" : "Should contain characters"}
+                "middleName" : {"pattern" : "[a-zA-Z]{0,}", "errorMessage" : "Should contain characters"},
+                "email" : {"pattern" : "[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" ,  "errorMessage" : "Should be an email address"}
             },
             "patientSearch": {
-                "address": {
-                    "label": "Rural Ward",
-                    "placeholder": "Enter ward",
-                    "field": "address2"
-                },
                 "customAttributes": {
-                    "label": "रुग्णाचे नाव",
-                    "placeholder": "रुग्णाचे नाव",
+                    "label": "REGISTRATION_LOCAL_NAME",
+                    "placeholder": "",
                     "fields": ["givenNameLocal", "middleNameLocal", "familyNameLocal"]
+                },
+                "address": {
+                    "label": "Location.Village",
+                    "placeholder": "",
+                    "field": "city_village"
                 }
             }
         }
