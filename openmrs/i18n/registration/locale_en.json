@@ -37,5 +37,10 @@
   "PERSONATTRIBUTE_EMAIL":"Email",
   "PERSONATTRIBUTE_OTHER":"Other",
   "PERSONATTRIBUTE_NATIONALITY":"Nationality",
-  "REGISTRATION_LOCAL_NAME":"Name in local language"
+  "REGISTRATION_LOCAL_NAME":"Name in local language",
+  "Location.village":"Village",
+  "Location.commune":"Commune",
+  "Location.district":"District",
+  "Location.province":"Province",
+  "Location.country":"Country"
 }
