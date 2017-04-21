@@ -44,18 +44,17 @@
                 "showAddressFieldsTopDown": false,
                 "strictAutocompleteFromLevel": "stateProvince"
             },
+
             "relationshipTypeMap": {
                 "Doctor":"provider",
                 "Parent":"patient"
             },
 
-            "autoCompleteFields":["familyName", "caste"],
-            "defaultIdentifierPrefix": "GAN",
+            "autoCompleteFields":["familyName"],
             "defaultVisitType": "OPD",
             "searchByIdForwardUrl": "/patient/{{patientUuid}}",
             "showMiddleName": true,
             "showBirthTime": true,
-            "showCasteSameAsLastNameCheckbox": false,
             "printOptions": [
                 {
                     "translationKey": "REGISTRATION_PRINT_REG_CARD_LOCAL_KEY",
