@@ -34,104 +34,200 @@
                 { "locale" : "pt", "css": "offline-language-portuguese-brazil"}
             ]
         },
-    	"diagnosisStatus": "Inactive",
-            "program": {
-                "patientInformation": {
-                    "ageLimit": 100
-                }
-            },
-            "patientContext": {
-        		"programAttributes": [
-            		"Id_Number",
-            		"Doctor",
-            		"Stage"
-        		],
-        		"personAttributes": [
-            		"class",
-            		"caste"
-        		],
-        		"additionalPatientIdentifiers": [
-           			"National ID"
-       		],
-        		"preferredIdentifier": "Id_Number"
-    	},
-        "obsIgnoreList": [
-            "REGISTRATION FEES",
-            "COMMENTS",
-            "Patient file"
-        ],
-        "otherInvestigationsMap": {
-            "Radiology": "Radiology Order",
-            "Endoscopy": "Endoscopy Order"
-        },
-        "allowConsultationWhenNoOpenVisit": false,
-        "defaultVisitType": "OPD",
-        "visitTypeForRetrospectiveEntries": "Special OPD",
-        "maxConceptSetLevels": 3,
-        "allowOnlyCodedDiagnosis": false,
-        "conceptSetUI": {
-            "Chief Complaint Data": {
-                "autocomplete":true,
-                "codedConceptName":"Chief Complaint",
-                "nonCodedConceptName":"Non-Coded Chief Complaint",
-                "durationRequired": false,
-                "allowAddMore": true
-            },
-            "Tuberculosis, Adverse Effects" :{
-                "multiSelect" : true,
-                "autocomplete" : true
-            },
-            "Posture": {
-                "buttonSelect": true
-            },
-            "P/A Presenting Part": {
-                "multiSelect": true
-            },
-            "FHS": {
-                "buttonSelect": true
-            },
-            "P/S (Per Speculum) - Cervix": {
-                "grid": true
-            },
-            "Anaemia, Stopped Since When": {
-                "conciseText": true
-            },
-            "Examination Notes": {
-                "conciseText": true
-            },
-            "Set1": {
-                "allowAddMore": true
-            },
-            "Set2": {
-                "allowAddMore": true
-            },
-            "Coded3": {
-                "multiSelect": true
-            },
-            "Image": {
-                "allowAddMore": true
-            },
-            "Gynaecology, Gravida": {
-                "stepper": true
-            },
-            "Accepted Family Planning methods": {
-                "multiSelect": true
-            },
-            "defaults": {
-                "Number of living children": 1,
-                "Accepted Family Planning methods": [
-                    "Condoms",
-                    "Pills"
-                ],
-                "Pain management given": true,
-                "Safe Abortion, Remarks": "Remarks",
-                "Malaria, Death Date": "2015-12-01"
+        "diagnosisStatus": "Inactive",
+        "program": {
+            "patientInformation": {
+                "ageLimit": 100
             }
         },
-        "visitPage": {
-            "observationDisplay": {
-                "conceptNames": []
-            }
+        "patientContext": {
+          "programAttributes": [
+              "Id_Number",
+              "Doctor",
+              "Stage"
+          ],
+          "personAttributes": [
+              "class",
+              "caste"
+          ],
+          "additionalPatientIdentifiers": [
+              "National ID"
+          ],
+          "preferredIdentifier": "Id_Number"
+      },
+      "obsIgnoreList": [
+        "REGISTRATION FEES",
+        "COMMENTS",
+        "Patient file"
+    ],
+      "otherInvestigationsMap": {
+        "Radiology": "Radiology Order",
+        "Endoscopy": "Endoscopy Order"
+    },
+    "allowConsultationWhenNoOpenVisit": false,
+    "defaultVisitType": "OPD",
+    "visitTypeForRetrospectiveEntries": "Special OPD",
+    "maxConceptSetLevels": 3,
+    "allowOnlyCodedDiagnosis": false,
+    "conceptSetUI": {
+        "Chief Complaint Data": {
+            "autocomplete":true,
+            "codedConceptName":"Chief Complaint",
+            "nonCodedConceptName":"Non-Coded Chief Complaint",
+            "durationRequired": false,
+            "allowAddMore": true
+        },
+        "Tuberculosis, Adverse Effects" :{
+            "multiSelect" : true,
+            "autocomplete" : true
+        },
+        "Posture": {
+            "buttonSelect": true
+        },
+        "P/A Presenting Part": {
+            "multiSelect": true
+        },
+        "FHS": {
+            "buttonSelect": true
+        },
+        "P/S (Per Speculum) - Cervix": {
+            "grid": true
+        },
+        "Anaemia, Stopped Since When": {
+            "conciseText": true
+        },
+        "Examination Notes": {
+            "conciseText": true
+        },
+        "Set1": {
+            "allowAddMore": true
+        },
+        "Set2": {
+            "allowAddMore": true
+        },
+        "Coded3": {
+            "multiSelect": true
+        },
+        "Image": {
+            "allowAddMore": true
+        },
+        "Gynaecology, Gravida": {
+            "stepper": true
+        },
+        "Accepted Family Planning methods": {
+            "multiSelect": true
+        },
+        "Chied Complaint": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Past Medical History": {
+            "multiSelect": true
+        },
+        "CAMBODIA_General Symptoms": {
+            "multiSelect": true
+        },
+        "CAMBODIA_HEENT Symptoms": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Cardiovascular Symptoms": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Respiratory Symptoms": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Gastrointestinal Symptoms": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Genitourinary Symptoms": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Neurologic Symptoms": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Musculoskeletal Symptoms": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Endocrine Symptoms": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Skin Symptoms": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Skin Exam": {
+            "required": true
+        },
+        "CAMBODIA_Skin Exam Abnormalities": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Head Exam": {
+            "required": true
+        },
+        "CAMBODIA_Neck Exam": {
+            "required": true
+        },
+        "CAMBODIA_Neck Exam Abnormalities": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Ears Exam": {
+            "required": true
+        },
+        "CAMBODIA_Ears Abnormalities": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Eyes Exam": {
+            "required": true
+        },
+        "CAMBODIA_Eyes Exam Abnormalities": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Chest and Lungs Exam": {
+            "required": true
+        },
+        "CAMBODIA_Chest and Lungs Exam Abnormalities": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Cardiovascular Exam": {
+            "required": true
+        },
+        "CAMBODIA_Cardiovascular Exam Abnormalities": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Abdomen Exam": {
+            "required": true
+        },
+        "CAMBODIA_Abdomen Exam Abnormalities": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Genitourinary Exam": {
+            "required": true
+        },
+        "CAMBODIA_Genitourinary Exam Abnormalities": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Flank and Back Exam": {
+            "required": true
+        },
+        "CAMBODIA_Musculoskeletal and Neurological Exam": {
+            "required": true
+        },
+        "CAMBODIA_Musculoskeletal and Neurological Exam Abnormalities": {
+            "multiSelect": true
+        },
+        "defaults": {
+            "Number of living children": 1,
+            "Accepted Family Planning methods": [
+                "Condoms",
+                "Pills"
+            ],
+            "Pain management given": true,
+            "Safe Abortion, Remarks": "Remarks",
+            "Malaria, Death Date": "2015-12-01"
+        }
+    },
+    "visitPage": {
+        "observationDisplay": {
+            "conceptNames": []
         }
     }
+}
 }
