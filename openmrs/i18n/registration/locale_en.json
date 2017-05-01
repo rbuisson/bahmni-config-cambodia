@@ -42,5 +42,6 @@
   "Location.commune":"Commune",
   "Location.district":"District",
   "Location.province":"Province",
-  "Location.country":"Country"
+  "Location.country":"Country",
+  "VITAL_SIGNS": "Vitals Signs"
 }

@@ -43,18 +43,7 @@
             "searchByIdForwardUrl": "/patient/{{patientUuid}}",
             "showMiddleName": true,
             "showBirthTime": false,
-            "conceptSetUI": {
-                "REGISTRATION FEES": {
-                    "required": true,
-                    "label": "Fee"
-                },
-                "FHS": {
-                    "buttonSelect": true
-                },
-                "defaults":{
-                    "FHS": "Present"
-                }
-            },
+            
             "fieldValidation" : {
                 "familyName" : {"pattern" : "[a-zA-Z]{0,}", "errorMessage" : "Accepts only roman characters"},
                 "givenName" : {"pattern" : "[a-zA-Z]{0,}", "errorMessage" : "Accepts only roman characters"},
@@ -72,6 +61,7 @@
                     "placeholder": "",
                     "field": "city_village"
                 }
-            }
+            },
+            "afterVisitSaveForwardUrl" : "../clinical/#/default/patient/{{patientUuid}}/dashboard"
         }
 }

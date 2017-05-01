@@ -31,6 +31,20 @@
         "order": 1,
         "requiredPrivilege": "View Patients"
     },
+    "vitals":{
+        "id": "bahmni.registration.conceptSetGroup.vitalSigns",
+        "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
+        "type": "config",
+        "extensionParams": {
+            "conceptName": "CAMBODIA_Vital Signs Set",
+            "translationKey": "VITAL_SIGNS",
+            "conceptNames": ["CAMBODIA_Pulse", "CAMBODIA_Blood Pressure Set", "CAMBODIA_Temperature", "CAMBODIA_Respiratory Rate", "CAMBODIA_Oxygen Saturation", "CAMBODIA_Capillary Refill Time"],
+            "required": false,
+            "showLatest": true
+        },
+        "order": 1,
+        "requiredPrivilege": "Edit Visits"
+    },
     "nutritionalValues":{
         "id": "bahmni.registration.conceptSetGroup.nutritionalLevels",
         "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
@@ -42,7 +56,7 @@
             "required":true,
             "showLatest": true
         },
-        "order": 1,
+        "order": 2,
         "requiredPrivilege": "Edit Visits"
     },
     "feeInformation":{
@@ -52,9 +66,9 @@
         "extensionParams": {
             "conceptName": "Fee Information",
             "translationKey": "FEE_INFORMATION_LOCALE_KEY",
-            "required":true
+            "required":false
         },
-        "order": 2,
+        "order": 3,
         "requiredPrivilege": "Edit Visits"
     }
 }
