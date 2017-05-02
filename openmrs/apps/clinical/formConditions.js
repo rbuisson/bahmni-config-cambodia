@@ -39,7 +39,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             sections.show.push("CAMBODIA_Past Medical History Details")
         }
 
-        if (fieldValue && fieldValue.includes('CAMBODIA_Cancer')) {
+        if (fieldValue && fieldValue.indexOf('CAMBODIA_Cancer') > -1) {
             sections.show.push("CAMBODIA_Past Cancer details")
         } else {
             sections.hide.push("CAMBODIA_Past Cancer details");
@@ -195,13 +195,13 @@ Bahmni.ConceptSet.FormConditions.rules = {
             "hide": []
         }
 
-        if (fieldValue && fieldValue.includes('CAMBODIA_Pulses')) {
+        if (fieldValue && fieldValue.indexOf('CAMBODIA_Pulses') > -1) {
             sections.show.push("CAMBODIA_Pulses significance")
         } else {
             sections.hide.push("CAMBODIA_Pulses significance")
         }
 
-        if (fieldValue && fieldValue.includes('CAMBODIA_Edema')) {
+        if (fieldValue && fieldValue.indexOf('CAMBODIA_Edema') > -1) {
             sections.show.push("CAMBODIA_Edema number")
         } else {
             sections.hide.push("CAMBODIA_Edema number");
@@ -277,7 +277,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             "disable": []
         }
 
-        if (fieldValue && fieldValue.includes('CAMBODIA_Abnormal')) {
+        if (fieldValue && fieldValue.indexOf('CAMBODIA_Abnormal') > -1) {
             sections.enable.push("CAMBODIA_Muscle Strength Set")
             sections.enable.push("CAMBODIA_Deep Tendon Reflex Set")
             sections.enable.push("CAMBODIA_Musculoskeletal and Neurological Exam Details")
