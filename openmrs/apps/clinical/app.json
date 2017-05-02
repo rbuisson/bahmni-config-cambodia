@@ -123,34 +123,37 @@
         "CAMBODIA_Past Medical History": {
             "multiSelect": true
         },
-        "CAMBODIA_General Symptoms": {
+        "CAMBODIA_General Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_HEENT Symptoms": {
+        "CAMBODIA_HEENT Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Cardiovascular Symptoms": {
+        "CAMBODIA_Cardiovascular Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Respiratory Symptoms": {
+        "CAMBODIA_Respiratory Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Gastrointestinal Symptoms": {
+        "CAMBODIA_Gastrointestinal Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Genitourinary Symptoms": {
+        "CAMBODIA_Genitourinary Female Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Neurologic Symptoms": {
+        "CAMBODIA_Genitourinary Male Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Musculoskeletal Symptoms": {
+        "CAMBODIA_Neurologic Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Endocrine Symptoms": {
+        "CAMBODIA_Musculoskeletal Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Skin Symptoms": {
+        "CAMBODIA_Endocrine Findings": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Skin Findings": {
             "multiSelect": true
         },
         "CAMBODIA_Skin Exam": {
@@ -201,7 +204,10 @@
         "CAMBODIA_Genitourinary Exam": {
             "required": true
         },
-        "CAMBODIA_Genitourinary Exam Abnormalities": {
+        "CAMBODIA_Genitourinary Female Exam Abnormalities": {
+            "multiSelect": true
+        },
+        "CAMBODIA_Genitourinary Male Exam Abnormalities": {
             "multiSelect": true
         },
         "CAMBODIA_Flank and Back Exam": {
