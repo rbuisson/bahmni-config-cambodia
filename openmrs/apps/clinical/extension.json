@@ -175,7 +175,7 @@
     "type": "config",
     "extensionParams": {
       "default": true,
-      "conceptName": "CAMBODIA_Adult Physical Exam Set",
+      "conceptName": "CAMBODIA_Physical Exam Set",
       "showIf": [
         "if (context.patient.age > 15) return true;"
       ]
