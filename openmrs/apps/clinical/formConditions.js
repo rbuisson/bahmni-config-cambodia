@@ -47,6 +47,21 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         return sections
     },
+    'CAMBODIA_Immunizations Set': function (formName, formFieldValues, patient) {
+        var patientGender = patient['gender'];
+        var sections = {
+            "show": [],
+            "hide": []
+        }
+
+        if (patientGender == 'M') {
+            sections.hide.push("CAMBODIA_Immunizations Set")
+        } else {
+            sections.show.push("CAMBODIA_Immunizations Set")            
+        }
+
+        return sections
+    },
     'CAMBODIA_Immunizations complete' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['CAMBODIA_Immunizations complete'];
         if (fieldValue === false) {
@@ -196,15 +211,15 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
 
         if (fieldValue && fieldValue.indexOf('CAMBODIA_Pulses') > -1) {
-            sections.show.push("CAMBODIA_Pulses significance")
+            sections.show.push("CAMBODIA_Pulses Intensity")
         } else {
-            sections.hide.push("CAMBODIA_Pulses significance")
+            sections.hide.push("CAMBODIA_Pulses Intensity")
         }
 
         if (fieldValue && fieldValue.indexOf('CAMBODIA_Edema') > -1) {
-            sections.show.push("CAMBODIA_Edema number")
+            sections.show.push("CAMBODIA_Edema Severity")
         } else {
-            sections.hide.push("CAMBODIA_Edema number");
+            sections.hide.push("CAMBODIA_Edema Severity");
         }
 
         return sections
