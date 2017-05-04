@@ -36,9 +36,9 @@
         "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
         "type": "config",
         "extensionParams": {
-            "conceptName": "CAMBODIA_Vital Signs Set",
+            "conceptName": "CAMBODIA_Vital Signs Basic Set",
             "translationKey": "VITAL_SIGNS",
-            "conceptNames": ["CAMBODIA_Pulse", "CAMBODIA_Blood Pressure Set", "CAMBODIA_Temperature", "CAMBODIA_Respiratory Rate", "CAMBODIA_Oxygen Saturation", "CAMBODIA_Capillary Refill Time"],
+            "conceptNames": ["CAMBODIA_Vital Signs Basic Set"],
             "required": false,
             "showLatest": true
         },
