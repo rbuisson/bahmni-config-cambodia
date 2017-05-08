@@ -28,6 +28,7 @@
                     ]
                 },
                 "defaults":  {
+                     "nationality": "Cambodia_Khmer"
                 }
             },
             "addressHierarchy": {
