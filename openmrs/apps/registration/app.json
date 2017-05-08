@@ -52,11 +52,6 @@
             "email" : {"pattern" : "[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" ,  "errorMessage" : "Should be an email address​​​"}
         },
         "patientSearch": {
-            "customAttributes": {
-                "label": "REGISTRATION_LOCAL_NAME",
-                "placeholder": "",
-                "fields": ["givenNameLocal", "middleNameLocal", "familyNameLocal"]
-            },
             "address": {
                 "label": "Location.Village",
                 "placeholder": "",
