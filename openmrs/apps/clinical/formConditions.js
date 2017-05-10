@@ -49,12 +49,13 @@ Bahmni.ConceptSet.FormConditions.rules = {
     },
     'CAMBODIA_Immunizations Set': function (formName, formFieldValues, patient) {
         var patientGender = patient['gender'];
+        var patientAge = patient['age'];
         var sections = {
             "show": [],
             "hide": []
         }
 
-        if (patientGender == 'M') {
+        if (patientGender == 'M' && patientAge > 18 ) {
             sections.hide.push("CAMBODIA_Immunizations Set")
         } else {
             sections.show.push("CAMBODIA_Immunizations Set")            
@@ -62,14 +63,25 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         return sections
     },
-    'CAMBODIA_Immunizations complete' : function (formName, formFieldValues) {
+    'CAMBODIA_Immunizations complete' : function (formName, formFieldValues, patient) {
         var fieldValue = formFieldValues['CAMBODIA_Immunizations complete'];
-        if (fieldValue === false) {
+        var patientAge = patient['age'];
+
+        if (fieldValue == false && patientAge > 18) {
             return {
                 show: ["CAMBODIA_List incomplete immunizations"]
             }
+        } else if (fieldValue == false && !(patientAge > 18) ) {
+            return {
+                enable: ["CAMBODIA_Immunizations"] 
+            }
+        } else if (patientAge > 18) {
+            return {
+                hide: ["CAMBODIA_Immunizations", "CAMBODIA_List incomplete immunizations"]
+            }
         } else {
             return {
+                disable: ["CAMBODIA_Immunizations"],
                 hide: ["CAMBODIA_List incomplete immunizations"]
             }
         }
@@ -258,17 +270,6 @@ Bahmni.ConceptSet.FormConditions.rules = {
             "disable": []
         }
 
-        // if (patientGender == 'M') {
-        //     sections.show.push("CAMBODIA_Genitourinary Male Exam Abnormalities")
-        //     sections.hide.push("CAMBODIA_Genitourinary Female Exam Abnormalities")
-        // } else if (patientGender == 'F') {
-        //     sections.hide.push("CAMBODIA_Genitourinary Male Exam Abnormalities")
-        //     sections.show.push("CAMBODIA_Genitourinary Female Exam Abnormalities")
-        // } else {
-        //     sections.show.push("CAMBODIA_Genitourinary Male Exam Abnormalities")
-        //     sections.show.push("CAMBODIA_Genitourinary Female Exam Abnormalities")            
-        // }
-
         if (fieldValue == "CAMBODIA_Abnormal") {
             sections.enable.push("CAMBODIA_Genitourinary Exam Details")
             sections.enable.push("CAMBODIA_Genitourinary Male Exam Abnormalities")
@@ -279,10 +280,10 @@ Bahmni.ConceptSet.FormConditions.rules = {
             sections.disable.push("CAMBODIA_Genitourinary Male Exam Abnormalities")
             sections.disable.push("CAMBODIA_Genitourinary Female Exam Abnormalities")
             if (patientGender == 'M') sections.hide.push("CAMBODIA_Genitourinary Female Exam Abnormalities")
-            
+
         }
-        
-        return sections
+
+    return sections
     },
     'CAMBODIA_Musculoskeletal and Neurological Exam' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['CAMBODIA_Musculoskeletal and Neurological Exam'];
@@ -304,5 +305,4 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         return sections
     }
-
 };

@@ -123,6 +123,9 @@
         "CAMBODIA_Past Medical History": {
             "multiSelect": true
         },
+        "CAMBODIA_Immunizations": {
+            "multiSelect": true
+        },
         "CAMBODIA_General Findings": {
             "multiSelect": true
         },
