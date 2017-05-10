@@ -164,7 +164,7 @@
     "type": "config",
     "extensionParams": {
       "default": true,
-      "conceptName": "CAMBODIA_Review of systems Set"
+      "conceptName": "CAMBODIA_Review of Systems Set"
     },
     "order": 30,
     "requiredPrivilege": "app:clinical"
