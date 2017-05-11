@@ -28,7 +28,7 @@
                 ]
             },
             "defaults":  {
-                "nationality": "Cambodia_Khmer"
+                "metadata.personAttributeType.nationality.name": "Cambodia_Khmer"
             }
         },
         "addressHierarchy": {
