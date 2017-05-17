@@ -47,45 +47,6 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         return sections
     },
-    'CAMBODIA_Immunizations Set': function (formName, formFieldValues, patient) {
-        var patientGender = patient['gender'];
-        var patientAge = patient['age'];
-        var sections = {
-            "show": [],
-            "hide": []
-        }
-
-        if (patientGender == 'M' && patientAge > 18 ) {
-            sections.hide.push("CAMBODIA_Immunizations Set")
-        } else {
-            sections.show.push("CAMBODIA_Immunizations Set")            
-        }
-
-        return sections
-    },
-    'CAMBODIA_Immunizations complete' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['CAMBODIA_Immunizations complete'];
-        var patientAge = patient['age'];
-
-        if (fieldValue == false && patientAge > 18) {
-            return {
-                show: ["CAMBODIA_List incomplete immunizations"]
-            }
-        } else if (fieldValue == false && !(patientAge > 18) ) {
-            return {
-                enable: ["CAMBODIA_Immunizations"] 
-            }
-        } else if (patientAge > 18) {
-            return {
-                hide: ["CAMBODIA_Immunizations", "CAMBODIA_List incomplete immunizations"]
-            }
-        } else {
-            return {
-                disable: ["CAMBODIA_Immunizations"],
-                hide: ["CAMBODIA_List incomplete immunizations"]
-            }
-        }
-    },
     'CAMBODIA_Medications' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['CAMBODIA_Medications'];
         if (fieldValue) {
