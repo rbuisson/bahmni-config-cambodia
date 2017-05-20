@@ -162,6 +162,18 @@
         "CAMBODIA_Musculoskeletal and Neurological Exam Abnormalities": {
             "multiSelect": true
         },
+        "Cambodia_Missing Teeth": {
+            "multiSelect": true,
+            "autocomplete": true
+        },
+        "Cambodia_Teeth Filled": {
+            "multiSelect": true,
+            "autocomplete": true
+        },
+        "Cambodia_Teeth Extracted": {
+            "multiSelect": true,
+            "autocomplete": true
+        },
         "defaults": {
         }
     },

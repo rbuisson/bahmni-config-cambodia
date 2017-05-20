@@ -38,23 +38,13 @@
                     "visitAttribute"
                 ]
             },
-            "vitals":{  
-                "translationKey":"DASHBOARD_TITLE_VITALS_KEY",
-                "type":"vitals",
-                "isObservation":true,
-                "displayOrder":3,
-                "dashboardConfig":{  
-                    "showDetailsButton":true,
-                    "conceptNames":[  
-                        "CAMBODIA_Vital Signs Basic Set",
-                        "CAMBODIA_Vital Signs Extended Set"
-                    ],
-                    "numberOfVisits":2
-                },
-                "expandedViewConfig":{  
-                    "conceptNames":[  
-                        "CAMBODIA_Vital Signs Basic Set",
-                        "CAMBODIA_Vital Signs Extended Set"
+	          "tuberculosis": {
+                "title": "Tuberculosis Follow Up",
+                "type": "tuberculosis",
+                "isObservation": true,
+                "dashboardConfig": {
+                    "conceptNames": [
+                        "Tuberculosis Followup Template"
                     ],
                     "numberOfVisits":2,
                     "showDetailsButton":true,
@@ -197,6 +187,56 @@
                     "maximumNoOfVisits":8,
                     "groupByVisits":true
                 }
+            },
+            "diabetes":{  
+                "title":"Diabetes",
+                "templateName":"Diabetes Templates",
+                "type":"diseaseTemplate",
+                "displayOrder":18,
+                "dashboardConfig":{  
+                    "showOnly":[  
+
+                    ]
+                },
+                "expandedViewConfig":{  
+                    "showDetailsButton":true,
+                    "pivotTable":{  
+                        "numberOfVisits":"15",
+                        "groupBy":"encounters",
+                        "obsConcepts":[  
+                            "Weight",
+                            "Height",
+                            "Systolic",
+                            "Diastolic",
+                            "Diabetes, Foot Exam",
+                            "Diabetes, Eye Exam"
+                        ],
+                        "drugConcepts":[  
+                            "Ipratropium Pressurised",
+                            "Garbhpal Rasa"
+                        ],
+                        "labConcepts":[  
+                            "RBS",
+                            "FBS",
+                            "PP2BS",
+                            "Hb1AC",
+                            "Creatinine",
+                            "Albumin",
+                            "Polymorph"
+                        ]
+                    }
+                }
+            },
+            "admissionDetails":{  
+                "translationKey":"DASHBOARD_TITLE_ADMISSION_DETAILS_KEY",
+                "type":"admissionDetails",
+                "displayOrder":19,
+                "showDetailsButton":true
+            },
+            "conditions": {
+                "translationKey":"CONDITION_LIST_DISPLAY_CONTROL_TITLE",
+                "type": "conditionsList",
+                "displayOrder": 20
             }
         }
     },
