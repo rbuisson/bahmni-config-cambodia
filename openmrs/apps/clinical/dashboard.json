@@ -53,8 +53,8 @@
                         "groupBy":"encounters",
                         "obsConcepts":[  
                             "Weight",
-                            "CAMBODIA_Vital Signs Basic Set",
-                            "CAMBODIA_Vital Signs Extended Set"
+                            "Cambodia_Vital Signs Basic Set",
+                            "Cambodia_Vital Signs Extended Set"
                         ],
                         "drugConcepts":[  
 
@@ -329,8 +329,8 @@
                 "title":"BP",
                 "config":{  
                     "yAxisConcepts":[  
-                        "CAMBODIA_Systolic Blood Pressure",
-                        "CAMBODIA Diastolic Blood Pressure"
+                        "Cambodia_Systolic Blood Pressure",
+                        "Cambodia Diastolic Blood Pressure"
                     ],
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
@@ -355,7 +355,7 @@
                 "title":"Pulse",
                 "config":{  
                     "yAxisConcepts":[  
-                        "CAMBODIA_Pulse"
+                        "Cambodia_Pulse"
                     ],
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10

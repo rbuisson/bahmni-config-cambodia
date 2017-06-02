@@ -63,103 +63,103 @@
         "Chied Complaint": {
             "multiSelect": true
         },
-        "CAMBODIA_Past Medical History": {
+        "Cambodia_Past Medical History": {
             "multiSelect": true
         },
-        "CAMBODIA_General Findings": {
+        "Cambodia_General Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_HEENT Findings": {
+        "Cambodia_HEENT Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Cardiovascular Findings": {
+        "Cambodia_Cardiovascular Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Respiratory Findings": {
+        "Cambodia_Respiratory Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Gastrointestinal Findings": {
+        "Cambodia_Gastrointestinal Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Genitourinary Female Findings": {
+        "Cambodia_Genitourinary Female Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Genitourinary Male Findings": {
+        "Cambodia_Genitourinary Male Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Neurologic Findings": {
+        "Cambodia_Neurologic Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Musculoskeletal Findings": {
+        "Cambodia_Musculoskeletal Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Endocrine Findings": {
+        "Cambodia_Endocrine Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Skin Findings": {
+        "Cambodia_Skin Findings": {
             "multiSelect": true
         },
-        "CAMBODIA_Skin Exam": {
+        "Cambodia_Skin Exam": {
             "required": true
         },
-        "CAMBODIA_Skin Exam Abnormalities": {
+        "Cambodia_Skin Exam Abnormalities": {
             "multiSelect": true
         },
-        "CAMBODIA_Head Exam": {
+        "Cambodia_Head Exam": {
             "required": true
         },
-        "CAMBODIA_Neck Exam": {
+        "Cambodia_Neck Exam": {
             "required": true
         },
-        "CAMBODIA_Neck Exam Abnormalities": {
+        "Cambodia_Neck Exam Abnormalities": {
             "multiSelect": true
         },
-        "CAMBODIA_Ears Exam": {
+        "Cambodia_Ears Exam": {
             "required": true
         },
-        "CAMBODIA_Ears Abnormalities": {
+        "Cambodia_Ears Abnormalities": {
             "multiSelect": true
         },
-        "CAMBODIA_Eyes Exam": {
+        "Cambodia_Eyes Exam": {
             "required": true
         },
-        "CAMBODIA_Eyes Exam Abnormalities": {
+        "Cambodia_Eyes Exam Abnormalities": {
             "multiSelect": true
         },
-        "CAMBODIA_Chest and Lungs Exam": {
+        "Cambodia_Chest and Lungs Exam": {
             "required": true
         },
-        "CAMBODIA_Chest and Lungs Exam Abnormalities": {
+        "Cambodia_Chest and Lungs Exam Abnormalities": {
             "multiSelect": true
         },
-        "CAMBODIA_Cardiovascular Exam": {
+        "Cambodia_Cardiovascular Exam": {
             "required": true
         },
-        "CAMBODIA_Cardiovascular Exam Abnormalities": {
+        "Cambodia_Cardiovascular Exam Abnormalities": {
             "multiSelect": true
         },
-        "CAMBODIA_Abdomen Exam": {
+        "Cambodia_Abdomen Exam": {
             "required": true
         },
-        "CAMBODIA_Abdomen Exam Abnormalities": {
+        "Cambodia_Abdomen Exam Abnormalities": {
             "multiSelect": true
         },
-        "CAMBODIA_Genitourinary Exam": {
+        "Cambodia_Genitourinary Exam": {
             "required": true
         },
-        "CAMBODIA_Genitourinary Female Exam Abnormalities": {
+        "Cambodia_Genitourinary Female Exam Abnormalities": {
             "multiSelect": true
         },
-        "CAMBODIA_Genitourinary Male Exam Abnormalities": {
+        "Cambodia_Genitourinary Male Exam Abnormalities": {
             "multiSelect": true
         },
-        "CAMBODIA_Flank and Back Exam": {
+        "Cambodia_Flank and Back Exam": {
             "required": true
         },
-        "CAMBODIA_Musculoskeletal and Neurological Exam": {
+        "Cambodia_Musculoskeletal and Neurological Exam": {
             "required": true
         },
-        "CAMBODIA_Musculoskeletal and Neurological Exam Abnormalities": {
+        "Cambodia_Musculoskeletal and Neurological Exam Abnormalities": {
             "multiSelect": true
         },
         "Cambodia_Missing Teeth": {

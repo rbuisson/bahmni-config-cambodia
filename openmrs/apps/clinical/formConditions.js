@@ -25,8 +25,8 @@ Bahmni.ConceptSet.FormConditions.rules = {
             }
         }
     },
-    'CAMBODIA_Past Medical History' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['CAMBODIA_Past Medical History'];
+    'Cambodia_Past Medical History' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Past Medical History'];
 
         var sections = {
             "show": [],
@@ -34,44 +34,44 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
 
         if (!fieldValue || fieldValue.length == 0) {
-            sections.hide.push("CAMBODIA_Past Medical History Details")
+            sections.hide.push("Cambodia_Past Medical History Details")
         } else {
-            sections.show.push("CAMBODIA_Past Medical History Details")
+            sections.show.push("Cambodia_Past Medical History Details")
         }
 
-        if (fieldValue && fieldValue.indexOf('CAMBODIA_Cancer') > -1) {
-            sections.show.push("CAMBODIA_Past Cancer details")
+        if (fieldValue && fieldValue.indexOf('Cambodia_Cancer') > -1) {
+            sections.show.push("Cambodia_Past Cancer Details")
         } else {
-            sections.hide.push("CAMBODIA_Past Cancer details");
+            sections.hide.push("Cambodia_Past Cancer Details");
         }
 
         return sections
     },
-    'CAMBODIA_Medications' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['CAMBODIA_Medications'];
+    'Cambodia_Medications' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Medications'];
         if (fieldValue) {
             return {
-                show: ["CAMBODIA_List medications"]
+                show: ["Cambodia_List Medications"]
             }
         } else {
             return {
-                hide: ["CAMBODIA_List medications"]
+                hide: ["Cambodia_List Medications"]
             }
         }
     },
-    'CAMBODIA_Allergies' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['CAMBODIA_Allergies'];
+    'Cambodia_Allergies' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Allergies'];
         if (fieldValue) {
             return {
-                show: ["CAMBODIA_List allergies"]
+                show: ["Cambodia_List Allergies"]
             }
         } else {
             return {
-                hide: ["CAMBODIA_List allergies"]
+                hide: ["Cambodia_List Allergies"]
             }
         }
     },
-    'CAMBODIA_Genitourinary Findings Set' : function (formName, formFieldValues, patient) {
+    'Cambodia_Genitourinary Findings Set' : function (formName, formFieldValues, patient) {
         var patientGender = patient['gender'];
         var sections = {
             "show": [],
@@ -79,150 +79,150 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
 
         if (patientGender == 'M') {
-            sections.show.push("CAMBODIA_Genitourinary Male Findings")
-            sections.hide.push("CAMBODIA_Genitourinary Female Findings")
+            sections.show.push("Cambodia_Genitourinary Male Findings")
+            sections.hide.push("Cambodia_Genitourinary Female Findings")
         } else if (patientGender == 'F') {
-            sections.hide.push("CAMBODIA_Genitourinary Male Findings")
-            sections.show.push("CAMBODIA_Genitourinary Female Findings")
+            sections.hide.push("Cambodia_Genitourinary Male Findings")
+            sections.show.push("Cambodia_Genitourinary Female Findings")
         } else {
-            sections.show.push("CAMBODIA_Genitourinary Male Findings")
-            sections.show.push("CAMBODIA_Genitourinary Female Findings")            
+            sections.show.push("Cambodia_Genitourinary Male Findings")
+            sections.show.push("Cambodia_Genitourinary Female Findings")            
         }
 
         return sections
     },
-    'CAMBODIA_Skin Exam' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['CAMBODIA_Skin Exam'];
-        if (fieldValue == "CAMBODIA_Abnormal") {
+    'Cambodia_Skin Exam' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Skin Exam'];
+        if (fieldValue == "Cambodia_Abnormal") {
             return {
-                enable: ["CAMBODIA_Skin Exam Abnormalities", "CAMBODIA_Skin Exam Details"]
+                enable: ["Cambodia_Skin Exam Abnormalities", "Cambodia_Skin Exam Details"]
             }
         } else {
             return {
-                disable: ["CAMBODIA_Skin Exam Abnormalities", "CAMBODIA_Skin Exam Details"]
+                disable: ["Cambodia_Skin Exam Abnormalities", "Cambodia_Skin Exam Details"]
             }
         }
     },
-    'CAMBODIA_Head Exam' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['CAMBODIA_Head Exam'];
-        if (fieldValue == "CAMBODIA_Abnormal") {
+    'Cambodia_Head Exam' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Head Exam'];
+        if (fieldValue == "Cambodia_Abnormal") {
             return {
-                enable: ["CAMBODIA_Head Exam Details"]
+                enable: ["Cambodia_Head Exam Details"]
             }
         } else {
             return {
-                disable: ["CAMBODIA_Head Exam Details"]
+                disable: ["Cambodia_Head Exam Details"]
             }
         }
     },
-    'CAMBODIA_Neck Exam' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['CAMBODIA_Neck Exam'];
-        if (fieldValue == "CAMBODIA_Abnormal") {
+    'Cambodia_Neck Exam' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Neck Exam'];
+        if (fieldValue == "Cambodia_Abnormal") {
             return {
-                enable: ["CAMBODIA_Neck Exam Details", "CAMBODIA_Neck Exam Abnormalities"]
+                enable: ["Cambodia_Neck Exam Details", "Cambodia_Neck Exam Abnormalities"]
             }
         } else {
             return {
-                disable: ["CAMBODIA_Neck Exam Details", "CAMBODIA_Neck Exam Abnormalities"]
+                disable: ["Cambodia_Neck Exam Details", "Cambodia_Neck Exam Abnormalities"]
             }
         }
     },
-    'CAMBODIA_Ears Exam' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['CAMBODIA_Ears Exam'];
-        if (fieldValue == "CAMBODIA_Abnormal") {
+    'Cambodia_Ears Exam' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Ears Exam'];
+        if (fieldValue == "Cambodia_Abnormal") {
             return {
-                enable: ["CAMBODIA_Ears Exam Details"]
+                enable: ["Cambodia_Ears Exam Details"]
             }
         } else {
             return {
-                disable: ["CAMBODIA_Ears Exam Details"]
+                disable: ["Cambodia_Ears Exam Details"]
             }
         }
     },
-    'CAMBODIA_Eyes Exam' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['CAMBODIA_Eyes Exam'];
-        if (fieldValue == "CAMBODIA_Abnormal") {
+    'Cambodia_Eyes Exam' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Eyes Exam'];
+        if (fieldValue == "Cambodia_Abnormal") {
             return {
-                enable: ["CAMBODIA_Eyes Exam Details", "CAMBODIA_Eyes Exam Abnormalities"]
+                enable: ["Cambodia_Eyes Exam Details", "Cambodia_Eyes Exam Abnormalities"]
             }
         } else {
             return {
-                disable: ["CAMBODIA_Eyes Exam Details", "CAMBODIA_Eyes Exam Abnormalities"]
+                disable: ["Cambodia_Eyes Exam Details", "Cambodia_Eyes Exam Abnormalities"]
             }
         }
     },
-    'CAMBODIA_Chest and Lungs Exam' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['CAMBODIA_Chest and Lungs Exam'];
-        if (fieldValue == "CAMBODIA_Abnormal") {
+    'Cambodia_Chest and Lungs Exam' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Chest and Lungs Exam'];
+        if (fieldValue == "Cambodia_Abnormal") {
             return {
-                enable: ["CAMBODIA_Chest and Lungs Exam Details", "CAMBODIA_Chest and Lungs Exam Abnormalities"]
+                enable: ["Cambodia_Chest and Lungs Exam Details", "Cambodia_Chest and Lungs Exam Abnormalities"]
             }
         } else {
             return {
-                disable: ["CAMBODIA_Chest and Lungs Exam Details", "CAMBODIA_Chest and Lungs Exam Abnormalities"]
+                disable: ["Cambodia_Chest and Lungs Exam Details", "Cambodia_Chest and Lungs Exam Abnormalities"]
             }
         }
     },
-    'CAMBODIA_Cardiovascular Exam' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['CAMBODIA_Cardiovascular Exam'];
-        if (fieldValue == "CAMBODIA_Abnormal") {
+    'Cambodia_Cardiovascular Exam' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Cardiovascular Exam'];
+        if (fieldValue == "Cambodia_Abnormal") {
             return {
-                enable: ["CAMBODIA_Cardiovascular Exam Details and Other", "CAMBODIA_Cardiovascular Exam Abnormalities"]
+                enable: ["Cambodia_Cardiovascular Exam Details and Other", "Cambodia_Cardiovascular Exam Abnormalities"]
             }
         } else {
             return {
-                disable: ["CAMBODIA_Cardiovascular Exam Details and Other", "CAMBODIA_Cardiovascular Exam Abnormalities"]
+                disable: ["Cambodia_Cardiovascular Exam Details and Other", "Cambodia_Cardiovascular Exam Abnormalities"]
             }
         }
     },
-    'CAMBODIA_Cardiovascular Exam Abnormalities' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['CAMBODIA_Cardiovascular Exam Abnormalities'];
+    'Cambodia_Cardiovascular Exam Abnormalities' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Cardiovascular Exam Abnormalities'];
 
         var sections = {
             "show": [],
             "hide": []
         }
 
-        if (fieldValue && fieldValue.indexOf('CAMBODIA_Pulses') > -1) {
-            sections.show.push("CAMBODIA_Pulses Intensity")
+        if (fieldValue && fieldValue.indexOf('Cambodia_Pulses') > -1) {
+            sections.show.push("Cambodia_Pulses Intensity")
         } else {
-            sections.hide.push("CAMBODIA_Pulses Intensity")
+            sections.hide.push("Cambodia_Pulses Intensity")
         }
 
-        if (fieldValue && fieldValue.indexOf('CAMBODIA_Edema') > -1) {
-            sections.show.push("CAMBODIA_Edema Severity")
+        if (fieldValue && fieldValue.indexOf('Cambodia_Edema') > -1) {
+            sections.show.push("Cambodia_Edema Severity")
         } else {
-            sections.hide.push("CAMBODIA_Edema Severity");
+            sections.hide.push("Cambodia_Edema Severity");
         }
 
         return sections
     },
-    'CAMBODIA_Abdomen Exam' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['CAMBODIA_Abdomen Exam'];
-        if (fieldValue == "CAMBODIA_Abnormal") {
+    'Cambodia_Abdomen Exam' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Abdomen Exam'];
+        if (fieldValue == "Cambodia_Abnormal") {
             return {
-                enable: ["CAMBODIA_Abdomen Exam Details", "CAMBODIA_Abdomen Exam Abnormalities"]
+                enable: ["Cambodia_Abdomen Exam Details", "Cambodia_Abdomen Exam Abnormalities"]
             }
         } else {
             return {
-                disable: ["CAMBODIA_Abdomen Exam Details", "CAMBODIA_Abdomen Exam Abnormalities"]
+                disable: ["Cambodia_Abdomen Exam Details", "Cambodia_Abdomen Exam Abnormalities"]
             }
         }
     },
-    'CAMBODIA_Flank and Back Exam' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['CAMBODIA_Flank and Back Exam'];
-        if (fieldValue == "CAMBODIA_Abnormal") {
+    'Cambodia_Flank and Back Exam' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Flank and Back Exam'];
+        if (fieldValue == "Cambodia_Abnormal") {
             return {
-                enable: ["CAMBODIA_Flank and Back Exam Details"]
+                enable: ["Cambodia_Flank and Back Exam Details"]
             }
         } else {
             return {
-                disable: ["CAMBODIA_Flank and Back Exam Details"]
+                disable: ["Cambodia_Flank and Back Exam Details"]
             }
         }
     },
-    'CAMBODIA_Genitourinary Exam' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['CAMBODIA_Genitourinary Exam'];
+    'Cambodia_Genitourinary Exam' : function (formName, formFieldValues, patient) {
+        var fieldValue = formFieldValues['Cambodia_Genitourinary Exam'];
         var patientGender = patient['gender'];
         var sections = {
             "show": [],
@@ -231,37 +231,37 @@ Bahmni.ConceptSet.FormConditions.rules = {
             "disable": []
         }
 
-        if (fieldValue == "CAMBODIA_Abnormal") {
-            sections.enable.push("CAMBODIA_Genitourinary Exam Details")
-            sections.enable.push("CAMBODIA_Genitourinary Male Exam Abnormalities")
-            sections.enable.push("CAMBODIA_Genitourinary Female Exam Abnormalities")
-            if (patientGender == 'M') sections.hide.push("CAMBODIA_Genitourinary Female Exam Abnormalities")
+        if (fieldValue == "Cambodia_Abnormal") {
+            sections.enable.push("Cambodia_Genitourinary Exam Details")
+            sections.enable.push("Cambodia_Genitourinary Male Exam Abnormalities")
+            sections.enable.push("Cambodia_Genitourinary Female Exam Abnormalities")
+            if (patientGender == 'M') sections.hide.push("Cambodia_Genitourinary Female Exam Abnormalities")
         } else {
-            sections.disable.push("CAMBODIA_Genitourinary Exam Details")
-            sections.disable.push("CAMBODIA_Genitourinary Male Exam Abnormalities")
-            sections.disable.push("CAMBODIA_Genitourinary Female Exam Abnormalities")
-            if (patientGender == 'M') sections.hide.push("CAMBODIA_Genitourinary Female Exam Abnormalities")
+            sections.disable.push("Cambodia_Genitourinary Exam Details")
+            sections.disable.push("Cambodia_Genitourinary Male Exam Abnormalities")
+            sections.disable.push("Cambodia_Genitourinary Female Exam Abnormalities")
+            if (patientGender == 'M') sections.hide.push("Cambodia_Genitourinary Female Exam Abnormalities")
 
         }
 
     return sections
     },
-    'CAMBODIA_Musculoskeletal and Neurological Exam' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['CAMBODIA_Musculoskeletal and Neurological Exam'];
+    'Cambodia_Musculoskeletal and Neurological Exam' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Musculoskeletal and Neurological Exam'];
 
         var sections = {
             "enable": [],
             "disable": []
         }
 
-        if (fieldValue && fieldValue.indexOf('CAMBODIA_Abnormal') > -1) {
-            sections.enable.push("CAMBODIA_Muscle Strength Set")
-            sections.enable.push("CAMBODIA_Deep Tendon Reflex Set")
-            sections.enable.push("CAMBODIA_Musculoskeletal and Neurological Exam Details")
+        if (fieldValue && fieldValue.indexOf('Cambodia_Abnormal') > -1) {
+            sections.enable.push("Cambodia_Muscle Strength Set")
+            sections.enable.push("Cambodia_Deep Tendon Reflex Set")
+            sections.enable.push("Cambodia_Musculoskeletal and Neurological Exam Details")
         } else {
-            sections.disable.push("CAMBODIA_Muscle Strength Set")
-            sections.disable.push("CAMBODIA_Deep Tendon Reflex Set")
-            sections.disable.push("CAMBODIA_Musculoskeletal and Neurological Exam Details")
+            sections.disable.push("Cambodia_Muscle Strength Set")
+            sections.disable.push("Cambodia_Deep Tendon Reflex Set")
+            sections.disable.push("Cambodia_Musculoskeletal and Neurological Exam Details")
         }
 
         return sections

@@ -147,13 +147,24 @@
     "order": 3,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalConceptSetGroupObservationsChiefComplaintAndPastHistory": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.chiefComplaintAndPastHistory",
+  "bahmniClinicalConceptSetGroupObservationsChiefComplaint": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.chiefComplaint",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
     "type": "config",
     "extensionParams": {
       "default": true,
-      "conceptName": "CAMBODIA_Chief Complaint and Past History Set"
+      "conceptName": "Cambodia_Chief Complaint Set"
+    },
+    "order": 10,
+    "requiredPrivilege": "app:clinical"
+  },
+  "bahmniClinicalConceptSetGroupObservationsPastHistory": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.pastHistory",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "Cambodia_Past Medical History Set"
     },
     "order": 10,
     "requiredPrivilege": "app:clinical"
@@ -164,7 +175,7 @@
     "type": "config",
     "extensionParams": {
       "default": true,
-      "conceptName": "CAMBODIA_Review of Systems Set"
+      "conceptName": "Cambodia_Review of Systems Set"
     },
     "order": 30,
     "requiredPrivilege": "app:clinical"
@@ -175,7 +186,7 @@
     "type": "config",
     "extensionParams": {
       "default": true,
-      "conceptName": "CAMBODIA_Physical Exam Set"
+      "conceptName": "Cambodia_Physical Exam Set"
     },
     "order": 10,
     "requiredPrivilege": "app:clinical"

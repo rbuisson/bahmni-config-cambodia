@@ -36,9 +36,9 @@
         "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
         "type": "config",
         "extensionParams": {
-            "conceptName": "CAMBODIA_Vital Signs Basic Set",
+            "conceptName": "Cambodia_Vital Signs Basic Set",
             "translationKey": "VITAL_SIGNS",
-            "conceptNames": ["CAMBODIA_Vital Signs Basic Set"],
+            "conceptNames": ["Cambodia_Vital Signs Basic Set"],
             "required": false,
             "showLatest": true
         },
