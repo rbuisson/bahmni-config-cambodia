@@ -191,6 +191,17 @@
     "order": 10,
     "requiredPrivilege": "app:clinical"
   },
+  "bahmniClinicalConceptSetGroupObservationsAllergiesSet": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.allergiesSet",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "Cambodia_Allergies Set"
+    },
+    "order": 10,
+    "requiredPrivilege": "app:clinical"
+  },  
   "bahmniClinicalBillingTreatment": {
     "id": "bahmni.clinical.billing.treatment",
     "extensionPointId": "org.bahmni.clinical.consultation.board",

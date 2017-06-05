@@ -19,6 +19,44 @@
                     "countryDistrict"
                 ]
             },
+            "allergies":{  
+                "type":"historyAndExamination",
+                "isObservation":true,
+                "displayType":"Half-Page",
+                "dashboardConfig":{  
+                    "showGroupDateTime":false,
+                    "conceptNames":[
+                        "Cambodia_Allergies"
+                    ]
+                },
+                "displayOrder":6,
+                "title":"Allergies"
+            },
+            "immunizations":{  
+                "type":"historyAndExamination",
+                "isObservation":true,
+                "displayType":"Half-Page",
+                "dashboardConfig":{  
+                    "showGroupDateTime":false,
+                    "conceptNames":[
+                        "Cambodia_BCG",
+                        "Cambodia_HepB at birth Set",
+                        "Cambodia_Polio Set",
+                        "Cambodia_DTP-Hep-Hip Set",
+                        "Cambodia_PCV Set",
+                        "Cambodia_MR***",
+                        "Cambodia_MR1",
+                        "Cambodia_JE",
+                        "Cambodia_Tetanus1",
+                        "Cambodia_Tetanus2",
+                        "Cambodia_Tetanus3",
+                        "Cambodia_Tetanus4",
+                        "Cambodia_Tetanus5"
+                    ]
+                },
+                "displayOrder":6,
+                "title":"Immunizations"
+            },
             "diagnosis":{  
                 "translationKey":"DASHBOARD_TITLE_DIAGNOSIS_KEY",
                 "type":"diagnosis",
@@ -38,7 +76,7 @@
                     "visitAttribute"
                 ]
             },
-	          "tuberculosis": {
+            "tuberculosis": {
                 "title": "Tuberculosis Follow Up",
                 "type": "tuberculosis",
                 "isObservation": true,
@@ -425,7 +463,8 @@
                 "displayType":"Full-Page",
                 "dashboardConfig":{  
                     "showGroupDateTime":false,
-                    "conceptNames":[  
+                    "conceptNames":[
+                        "Cambodia_Pulse",
                         "Chief Complaint Data",
                         "Examination Notes",
                         "Smoking History",

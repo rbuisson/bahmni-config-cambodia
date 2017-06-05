@@ -59,15 +59,50 @@ Bahmni.ConceptSet.FormConditions.rules = {
             }
         }
     },
-    'Cambodia_Allergies' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['Cambodia_Allergies'];
+    'Cambodia_Has Allergies' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Has Allergies'];
         if (fieldValue) {
             return {
-                show: ["Cambodia_List Allergies"]
+                show: ["Cambodia_Allergies"]
             }
         } else {
             return {
-                hide: ["Cambodia_List Allergies"]
+                hide: ["Cambodia_Allergies"]
+            }
+        }
+    },
+    'Cambodia_Child Immunizations Set' : function (formName, formFieldValues, patient) {
+        var patientAge = patient['age'];
+        var patientGender = patient['gender'];
+    },
+    'Cambodia_Child Immunizations Set' : function (formName, formFieldValues, patient) {
+        var patientAge = patient['age'];
+        var patientGender = patient['gender'];
+        var sections = {
+            "show": [],
+            "hide": [],
+            "disable": [],
+            "enable": []
+        }
+
+        if (patientAge < 1) {
+            return {
+                show: ["Cambodia_Newborn Immunizations Set"],
+                hide: ["Cambodia_Child Immunizations Set", "Cambodia_Pregnant Women Immunizations Set"]
+            }
+        } else if (patientAge >= 1 && patientAge < 16) {
+            return {
+                show: ["Cambodia_Child Immunizations Set"],
+                hide: ["Cambodia_Newborn Immunizations Set", "Cambodia_Pregnant Women Immunizations Set"]
+            }
+        } else if (patientAge >= 16 && patientGender == 'F') {
+            return {
+                show: ["Cambodia_Pregnant Women Immunizations Set"],
+                hide: ["Cambodia_Newborn Immunizations Set", "Cambodia_Child Immunizations Set"]
+            }
+        } else {
+            return {
+                hide: ["Cambodia_Child Immunizations Set", "Cambodia_Newborn Immunizations Set", "Cambodia_Pregnant Women Immunizations Set"]
             }
         }
     },
