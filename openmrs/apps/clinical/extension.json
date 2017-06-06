@@ -147,57 +147,68 @@
     "order": 3,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalConceptSetGroupObservationsChiefComplaint": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.chiefComplaint",
+  "bahmniClinicalConceptSetGroupObservationsChiefComplaintForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.chiefComplaintForm",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
     "type": "config",
     "extensionParams": {
       "default": true,
-      "conceptName": "Cambodia_Chief Complaint Set"
+      "conceptName": "Cambodia_Chief Complaint Form"
     },
     "order": 10,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalConceptSetGroupObservationsPastHistory": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.pastHistory",
+  "bahmniClinicalConceptSetGroupObservationsPastHistoryForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.pastHistoryForm",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
     "type": "config",
     "extensionParams": {
       "default": true,
-      "conceptName": "Cambodia_Past Medical History Set"
+      "conceptName": "Cambodia_Past Medical History Form"
     },
     "order": 10,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalConceptSetGroupObservationsVitalReviewOfSystems": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.reviewOfSystems",
+  "bahmniClinicalConceptSetGroupObservationsVitalReviewOfSystemsForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.reviewOfSystemsForm",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
     "type": "config",
     "extensionParams": {
       "default": true,
-      "conceptName": "Cambodia_Review of Systems Set"
+      "conceptName": "Cambodia_Review of Systems Form"
     },
     "order": 30,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalConceptSetGroupObservationsPhysicalExamSet": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.physicalExamSet",
+  "bahmniClinicalConceptSetGroupObservationsPhysicalExamForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.physicalExamForm",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
     "type": "config",
     "extensionParams": {
       "default": true,
-      "conceptName": "Cambodia_Physical Exam Set"
+      "conceptName": "Cambodia_Physical Exam Form"
     },
     "order": 10,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalConceptSetGroupObservationsAllergiesSet": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.allergiesSet",
+  "bahmniClinicalConceptSetGroupObservationsAllergiesForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.allergiesForm",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
     "type": "config",
     "extensionParams": {
       "default": true,
-      "conceptName": "Cambodia_Allergies Set"
+      "conceptName": "Cambodia_Allergies Form"
+    },
+    "order": 10,
+    "requiredPrivilege": "app:clinical"
+  },
+  "bahmniClinicalConceptSetGroupObservationsImmunizationsSet": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.immunizationsSet",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "Cambodia_Immunizations Form"
     },
     "order": 10,
     "requiredPrivilege": "app:clinical"
