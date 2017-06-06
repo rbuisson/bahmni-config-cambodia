@@ -174,19 +174,15 @@
                 "showDetailsButton":true,
                 "displayOrder":9,
                 "dashboardConfig":{  
-                    "conceptNames":[  
-                        "Systolic",
-                        "Diastolic",
-                        "Posture",
-                        "Temperature"
-                    ]
+                    "conceptNames":[
+                        "Cambodia_Lab Test Summary"
+                    ],
+                    "numberOfVisits": "2",
+                    "showHeader": true
                 },
                 "expandedViewConfig":{  
                     "conceptNames":[  
-                        "Systolic",
-                        "Diastolic",
-                        "Posture",
-                        "Temperature"
+                        "Cambodia_Lab Test Summary"
                     ],
                     "showDetailsButton":true
                 }
@@ -200,24 +196,6 @@
                     "conceptNames":[  
                         "BACTERIOLOGY CONCEPT SET"
                     ]
-                }
-            },
-            "labResults":{  
-                "translationKey":"DASHBOARD_TITLE_LAB_RESULTS_KEY",
-                "type":"labOrders",
-                "displayOrder":6,
-                "dashboardConfig":{  
-                    "title":null,
-                    "numberOfVisits":6,
-                    "showChart":true,
-                    "showTable":false,
-                    "showNormalLabResults": true,
-                    "showCommentsExpanded": true,
-                    "showAccessionNotes": true,
-                    "showDetailsButton":false
-                },
-                "expandedViewConfig":{  
-                    "numberOfVisits":10
                 }
             },
             "nutritionalValues":{  
