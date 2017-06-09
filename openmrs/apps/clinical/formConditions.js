@@ -142,11 +142,11 @@ Bahmni.ConceptSet.FormConditions.rules = {
         var fieldValue = formFieldValues['Cambodia_Head Exam'];
         if (fieldValue == "Cambodia_Abnormal") {
             return {
-                enable: ["Cambodia_Head Exam Details"]
+                enable: ["Cambodia_Head Exam Details", "Cambodia_Head Exam Abnormalities"]
             }
         } else {
             return {
-                disable: ["Cambodia_Head Exam Details"]
+                disable: ["Cambodia_Head Exam Details", "Cambodia_Head Exam Abnormalities"]
             }
         }
     },
@@ -166,11 +166,11 @@ Bahmni.ConceptSet.FormConditions.rules = {
         var fieldValue = formFieldValues['Cambodia_Ears Exam'];
         if (fieldValue == "Cambodia_Abnormal") {
             return {
-                enable: ["Cambodia_Ears Exam Details"]
+                enable: ["Cambodia_Ears Exam Details", "Cambodia_Ears Exam Abnormalities"]
             }
         } else {
             return {
-                disable: ["Cambodia_Ears Exam Details"]
+                disable: ["Cambodia_Ears Exam Details", "Cambodia_Ears Exam Abnormalities"]
             }
         }
     },
@@ -248,11 +248,11 @@ Bahmni.ConceptSet.FormConditions.rules = {
         var fieldValue = formFieldValues['Cambodia_Flank and Back Exam'];
         if (fieldValue == "Cambodia_Abnormal") {
             return {
-                enable: ["Cambodia_Flank and Back Exam Details"]
+                enable: ["Cambodia_Flank and Back Exam Details", "Cambodia_Flank and Back Exam Abnormalities"]
             }
         } else {
             return {
-                disable: ["Cambodia_Flank and Back Exam Details"]
+                disable: ["Cambodia_Flank and Back Exam Details", "Cambodia_Flank and Back Exam Abnormalities"]
             }
         }
     },
@@ -290,10 +290,12 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
 
         if (fieldValue && fieldValue.indexOf('Cambodia_Abnormal') > -1) {
+            sections.enable.push("Cambodia_Musculoskeletal Exam Abnormalities")
             sections.enable.push("Cambodia_Muscle Strength Set")
             sections.enable.push("Cambodia_Deep Tendon Reflex Set")
             sections.enable.push("Cambodia_Musculoskeletal and Neurological Exam Details")
         } else {
+            sections.disable.push("Cambodia_Musculoskeletal Exam Abnormalities")
             sections.disable.push("Cambodia_Muscle Strength Set")
             sections.disable.push("Cambodia_Deep Tendon Reflex Set")
             sections.disable.push("Cambodia_Musculoskeletal and Neurological Exam Details")
