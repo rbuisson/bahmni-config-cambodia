@@ -76,34 +76,7 @@
                     "visitAttribute"
                 ]
             },
-            "tuberculosis": {
-                "title": "Tuberculosis Follow Up",
-                "type": "tuberculosis",
-                "isObservation": true,
-                "dashboardConfig": {
-                    "conceptNames": [
-                        "Tuberculosis Followup Template"
-                    ],
-                    "numberOfVisits":2,
-                    "showDetailsButton":true,
-                    "pivotTable":{  
-                        "numberOfVisits":"10",
-                        "groupBy":"encounters",
-                        "obsConcepts":[  
-                            "Weight",
-                            "Cambodia_Vital Signs Basic Set",
-                            "Cambodia_Vital Signs Extended Set"
-                        ],
-                        "drugConcepts":[  
-
-                        ],
-                        "labConcepts":[  
-
-                        ]
-                    }
-                }
-            },
-            "disposition":{  
+            "disposition":{
                 "translationKey":"DASHBOARD_TITLE_DISPOSITION_KEY",
                 "showDetailsButton":true,
                 "type":"disposition",
@@ -139,19 +112,7 @@
                 "type":"programs",
                 "displayOrder":10
             },
-            "radiologyOrders":{  
-                "orderType":"Radiology Order",
-                "type":"ordersControl",
-                "translationKey":"DASHBOARD_TITLE_RADIOLOGY_ORDERS_KEY",
-                "displayOrder":17,
-                "dashboardConfig":{  
-                    "conceptNames":[  
-                        "Summary"
-                    ],
-                    "numberOfVisits":4
-                }
-            },
-            "labOrdersDisplayControl":{  
+            "labOrdersDisplayControl":{
                 "translationKey":"DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
                 "type":"ordersControl",
                 "orderType":"Lab Order",
@@ -211,208 +172,16 @@
                     "groupByVisits":true
                 }
             },
-            "diabetes":{  
-                "title":"Diabetes",
-                "templateName":"Diabetes Templates",
-                "type":"diseaseTemplate",
-                "displayOrder":18,
-                "dashboardConfig":{  
-                    "showOnly":[  
-
-                    ]
-                },
-                "expandedViewConfig":{  
-                    "showDetailsButton":true,
-                    "pivotTable":{  
-                        "numberOfVisits":"15",
-                        "groupBy":"encounters",
-                        "obsConcepts":[  
-                            "Weight",
-                            "Height",
-                            "Systolic",
-                            "Diastolic",
-                            "Diabetes, Foot Exam",
-                            "Diabetes, Eye Exam"
-                        ],
-                        "drugConcepts":[  
-                            "Ipratropium Pressurised",
-                            "Garbhpal Rasa"
-                        ],
-                        "labConcepts":[  
-                            "RBS",
-                            "FBS",
-                            "PP2BS",
-                            "Hb1AC",
-                            "Creatinine",
-                            "Albumin",
-                            "Polymorph"
-                        ]
-                    }
-                }
-            },
-            "admissionDetails":{  
-                "translationKey":"DASHBOARD_TITLE_ADMISSION_DETAILS_KEY",
-                "type":"admissionDetails",
-                "displayOrder":19,
-                "showDetailsButton":true
-            },
             "conditions": {
                 "translationKey":"CONDITION_LIST_DISPLAY_CONTROL_TITLE",
                 "type": "conditionsList",
                 "displayOrder": 20
             },
-            "formsDisplay": {
-                "type": "forms",
-                "displayOrder": 21,
-                "dashboardConfig": {
-                    "title": null,
-                    "maximumNoOfVisits": 10
-                },
-                "formGroup": [ ],
-                "translationKey": "DASHBOARD_TITLE_FORMS_DISPLAY_CONTROL_KEY"
-            }
-        }
-    },
-    "trends":{  
-        "translationKey":"DASHBOARD_TAB_TRENDS_KEY",
-        "displayByDefault":true,
-        "maxRecentlyViewedPatients":10,
-        "sections":{  
-            "patientInformation":{  
-                "translationKey":"DASHBOARD_TITLE_PATIENT_INFORMATION_KEY",
-                "type":"patientInformation",
-                "patientAttributes":[  
-                    "caste",
-                    "class",
-                    "education",
-                    "occupation",
-                    "debt",
-                    "distanceFromCenter",
-                    "isUrban",
-                    "cluster",
-                    "RationCard",
-                    "familyIncome"
-                ],
-                "addressFields":[  
-                    "address1",
-                    "address2",
-                    "cityVillage",
-                    "countryDistrict"
-                ],
-                "displayOrder":0
-            },
-            "growthChart":{  
-                "type":"observationGraph",
-                "title":"Growth Chart",
-                "config":{  
-                    "yAxisConcepts":[  
-                        "Weight"
-                    ],
-                    "referenceData":"growthChartReference.csv",
-                    "numberOfVisits":20
-                },
-                "displayOrder":1
-            },
-            "BP":{  
-                "type":"observationGraph",
-                "title":"BP",
-                "config":{  
-                    "yAxisConcepts":[  
-                        "Cambodia_Systolic Blood Pressure",
-                        "Cambodia Diastolic Blood Pressure"
-                    ],
-                    "xAxisConcept":"observationDateTime",
-                    "numberOfVisits":10
-                },
-                "displayOrder":2
-            },
-            "weight/BMI":{  
-                "type":"observationGraph",
-                "title":"Weight/BMI",
-                "config":{  
-                    "yAxisConcepts":[  
-                        "Weight",
-                        "BMI"
-                    ],
-                    "xAxisConcept":"observationDateTime",
-                    "numberOfVisits":10
-                },
-                "displayOrder":3
-            },
-            "observationGraph":{  
-                "type":"observationGraph",
-                "title":"Pulse",
-                "config":{  
-                    "yAxisConcepts":[  
-                        "Cambodia_Pulse"
-                    ],
-                    "xAxisConcept":"observationDateTime",
-                    "numberOfVisits":10
-                },
-                "displayOrder":5
-            },
-            "diabetes":{  
-                "title":"Diabetes",
-                "templateName":"Diabetes, Progress",
-                "type":"diseaseTemplate",
-                "dashboardConfig":{  
-                    "showOnly":[  
-
-                    ]
-                },
-                "expandedViewConfig":{  
-                    "showDetailsButton":true,
-                    "pivotTable":{  
-                        "numberOfVisits":"10",
-                        "groupBy":"visits",
-                        "obsConcepts":[  
-                            "Diabetes, Blood Pressure",
-                            "Diabetes, A1C",
-                            "Diabetes, LDL",
-                            "Diabetes, Ulcers on Feet",
-                            "Blood Sugar Fasting",
-                            "Blood Sugar PP"
-                        ],
-                        "labConcepts":[  
-                            "RBS",
-                            "FBS",
-                            "PP2BS",
-                            "Hb1AC",
-                            "Creatinine",
-                            "Cholesterol"
-                        ]
-                    }
-                },
-                "displayOrder":6
-            }
-        }
-    },
-    "patientSummary":{  
-        "translationKey":"DASHBOARD_TAB_PATIENT_SUMMARY_KEY",
-        "maxRecentlyViewedPatients":10,
-        "sections":{  
-            "Bacteriology Concept Set":{  
-                "displayType":"Full-Page",
-                "translationKey":"DASHBOARD_TITLE_BACTERIOLOGY_RESULTS_KEY",
-                "type":"obsToObsFlowSheet",
-                "dashboardConfig":{  
-                    "numberOfVisits":1,
-                    "templateName":"BACTERIOLOGY CONCEPT SET",
-                    "groupByConcept":"Specimen Collection Date",
-                    "conceptNames":[  
-                        "Specimen Id"
-                    ]
-                },
-                "expandedViewConfig":{  
-                    "templateName":"BACTERIOLOGY CONCEPT SET",
-                    "groupByConcept":"Specimen Collection Date"
-                }
-            },
-            "HistoryAndExamination":{  
+            "HistoryAndExamination":{
                 "type":"historyAndExamination",
                 "isObservation":true,
                 "displayType":"Full-Page",
-                "dashboardConfig":{  
+                "dashboardConfig":{
                     "showGroupDateTime":false,
                     "conceptNames":[
                         "Cambodia_Pulse",
@@ -426,48 +195,69 @@
                 "displayOrder":6,
                 "translationKey":"DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY"
             },
-            "drugOther":{  
+            "drugOther":{
                 "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
                 "type":"drugOrderDetails",
                 "displayType":"Full-Page",
                 "showDetailsButton":true,
                 "displayOrder":24,
-                "dashboardConfig":{  
+                "dashboardConfig":{
                     "showOnlyActive":true,
                     "drugConceptSet":"All Other Drugs"
                 }
             },
-            "malaria":{  
-                "title":"Malaria",
-                "type":"obsToObsFlowSheet",
-                "displayType":"Full-Page",
-                "displayOrder":26,
-                "dashboardConfig":{  
-                    "groupByConcept":"Malaria, Treatment Start Date",
-                    "templateName":"Malaria",
-                    "conceptNames":[  
-                        "Malaria, Parents Name",
-                        "Malaria, drug regimen",
-                        "Malaria, Malaria Type",
-                        "Malaria, Source"
-                    ]
-                }
-            },
-            "Chronic Treatment Chart":{  
-                "displayType":"Full-Page",
-                "title":"Chronic Treatment Chart",
-                "type":"chronicTreatmentChart",
-                "dashboardConfig":{  
-                    "drugs":[  
-
-                    ]
+            "growthChart":{
+                "type":"observationGraph",
+                "title":"Growth Chart",
+                "config":{
+                    "yAxisConcepts":[
+                        "Weight"
+                    ],
+                    "referenceData":"growthChartReference.csv",
+                    "numberOfVisits":20
                 },
-                "expandedViewConfig":{  
-                    "drugs":[  
-
-                    ]
-                }
+                "displayOrder":1
+            },
+            "BP":{
+                "type":"observationGraph",
+                "title":"BP",
+                "config":{
+                    "yAxisConcepts":[
+                        "Cambodia_Systolic Blood Pressure",
+                        "Cambodia Diastolic Blood Pressure"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":2
+            },
+            "weight/BMI":{
+                "type":"observationGraph",
+                "title":"Weight/BMI",
+                "config":{
+                    "yAxisConcepts":[
+                        "Weight",
+                        "BMI"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":3
+            },
+            "observationGraph":{
+                "type":"observationGraph",
+                "title":"Pulse",
+                "config":{
+                    "yAxisConcepts":[
+                        "Cambodia_Pulse"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":5
             }
+
         }
+
     }
 }
