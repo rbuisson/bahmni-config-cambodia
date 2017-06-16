@@ -3,7 +3,7 @@
         "translationKey":"DASHBOARD_TAB_GENERAL_KEY",
         "displayByDefault":true,
         "maxRecentlyViewedPatients":10,
-        "sections":{  
+        "sections":{
             "patientInformation":{  
                 "translationKey":"DASHBOARD_TITLE_PATIENT_INFORMATION_KEY",
                 "type":"patientInformation",
@@ -39,19 +39,19 @@
                 "dashboardConfig":{  
                     "showGroupDateTime":false,
                     "conceptNames":[
-                        "Cambodia_BCG",
+                        "Cambodia_BCG Set",
                         "Cambodia_HepB at birth Set",
                         "Cambodia_Polio Set",
                         "Cambodia_DTP-Hep-Hip Set",
                         "Cambodia_PCV Set",
-                        "Cambodia_MR***",
-                        "Cambodia_MR1",
-                        "Cambodia_JE",
-                        "Cambodia_Tetanus1",
-                        "Cambodia_Tetanus2",
-                        "Cambodia_Tetanus3",
-                        "Cambodia_Tetanus4",
-                        "Cambodia_Tetanus5"
+                        "Cambodia_MR*** Set",
+                        "Cambodia_MR1 Set",
+                        "Cambodia_JE Set",
+                        "Cambodia_Tetanus1 Set",
+                        "Cambodia_Tetanus2 Set",
+                        "Cambodia_Tetanus3 Set",
+                        "Cambodia_Tetanus4 Set",
+                        "Cambodia_Tetanus5 Set"
                     ]
                 },
                 "displayOrder":6,
