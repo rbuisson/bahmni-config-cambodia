@@ -61,7 +61,7 @@
   "metadata.visitType.outpatient.name":"អ្នកជំងឺ(ក្រៅ)",
   "metadata.visitType.outpatient.description":"អ្នកជំងឺដែលបានទៅព្យាបាលនៅមន្ទីរព្យាបាលរោគ",
   "Location.village":"ភូមិ",
-  "Location.commune":"ឃុំ",
+  "impl.commune":"ឃុំ",
   "Location.district":"ស្រុក",
   "Location.province":"ខេត្ត",
   "Location.country":"ប្រទេស"

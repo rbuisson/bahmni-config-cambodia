@@ -55,7 +55,7 @@
   "metadata.visitType.outpatient.name":"Outpatient",
   "metadata.visitType.outpatient.description":"Ouptatient visti type ('correction': VISIT)",
   "Location.village":"Village",
-  "Location.commune":"Commune",
+  "impl.commune":"Commune",
   "Location.district":"District",
   "Location.province":"Province",
   "Location.country":"Country"
