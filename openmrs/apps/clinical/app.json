@@ -66,6 +66,9 @@
         "Cambodia_Past Medical History": {
             "multiSelect": true
         },
+        "Cambodia_Referred To": {
+            "conciseText": true
+        },
         "CAMBODIA_Immunizations": {
             "multiSelect": true
         },
