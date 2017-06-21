@@ -60,7 +60,7 @@
       "maxConceptSetLevels": 3,
       "allowOnlyCodedDiagnosis": false,
       "conceptSetUI": {
-        "Chied Complaint": {
+        "Cambodia_New Immunization": {
             "multiSelect": true
         },
         "Cambodia_Past Medical History": {

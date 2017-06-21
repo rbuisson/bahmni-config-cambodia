@@ -67,5 +67,10 @@
   "PATIENT_VISIT_PAGE_KEY":"Patient Visit Page",
   "HOME_DASHBOARD_KEY":"Home Dashboard",
   "MEDICATION_CHANGE_DURATION_BUTTON": "Change Duration",
-  "DASHBOARD_TITLE_Consultation_KEY": "Consultation Notes"
+  "DASHBOARD_TITLE_Consultation_KEY": "Consultation Notes",
+
+  "IMMUNIZATION" : "Immunization",
+  "NO_IMMUNIZATION_FOR_PATIENT": "No Immunization for this patient",
+  "DATE_GIVEN": "Date Given",
+  "COMPLETED": "Completed"
 }

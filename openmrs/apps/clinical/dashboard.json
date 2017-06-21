@@ -19,6 +19,59 @@
                     "countryDistrict"
                 ]
             },
+            "customControl": {
+                "type": "custom",
+                "displayOrder": 6,
+                "config": {
+                    "translationKey": "IMMUNIZATION",
+                    "template": "<immunization></immunization>",
+                    "pastImmunizationConcepts":[
+                        "Cambodia_Polio1 Set",
+                        "Cambodia_Polio2 Set",
+                        "Cambodia_Polio3 Set",
+                        "Cambodia_DTP-Hep-Hip1 Set",
+                        "Cambodia_DTP-Hep-Hip2 Set",
+                        "Cambodia_DTP-Hep-Hip3 Set",
+                        "Cambodia_PCV1 Set",
+                        "Cambodia_PCV2 Set",
+                        "Cambodia_PCV3 Set",
+                        "Cambodia_MR*** Set",
+                        "Cambodia_JE Set",
+                        "Cambodia_BCG Set",
+                        "Cambodia_HepB at birth Set",
+                        "Cambodia_MR1 Set",
+                        "Cambodia_Tetanus1 Set",
+                        "Cambodia_Tetanus2 Set",
+                        "Cambodia_Tetanus3 Set",
+                        "Cambodia_Tetanus4 Set",
+                        "Cambodia_Tetanus5 Set"
+                    ],
+                    "newImmunizationConcepts":[
+                        "Cambodia_New Immunization"
+                    ],
+                    "displayedImmunization": [
+                        "Cambodia_Polio1",
+                        "Cambodia_Polio2",
+                        "Cambodia_Polio3",
+                        "Cambodia_DTP-Hep-Hip1",
+                        "Cambodia_DTP-Hep-Hip2",
+                        "Cambodia_DTP-Hep-Hip3",
+                        "Cambodia_PCV1",
+                        "Cambodia_PCV2",
+                        "Cambodia_PCV3",
+                        "Cambodia_MR***",
+                        "Cambodia_JE",
+                        "Cambodia_BCG",
+                        "Cambodia_HepB at birth",
+                        "Cambodia_MR1",
+                        "Cambodia_Tetanus1",
+                        "Cambodia_Tetanus2",
+                        "Cambodia_Tetanus3",
+                        "Cambodia_Tetanus4",
+                        "Cambodia_Tetanus5"
+                    ]
+                }
+            },
             "allergies":{  
                 "type":"historyAndExamination",
                 "isObservation":true,
@@ -31,31 +84,6 @@
                 },
                 "displayOrder":6,
                 "title":"Allergies"
-            },
-            "immunizations":{  
-                "type":"historyAndExamination",
-                "isObservation":true,
-                "displayType":"Half-Page",
-                "dashboardConfig":{  
-                    "showGroupDateTime":false,
-                    "conceptNames":[
-                        "Cambodia_BCG Set",
-                        "Cambodia_HepB at birth Set",
-                        "Cambodia_Polio Set",
-                        "Cambodia_DTP-Hep-Hip Set",
-                        "Cambodia_PCV Set",
-                        "Cambodia_MR*** Set",
-                        "Cambodia_MR1 Set",
-                        "Cambodia_JE Set",
-                        "Cambodia_Tetanus1 Set",
-                        "Cambodia_Tetanus2 Set",
-                        "Cambodia_Tetanus3 Set",
-                        "Cambodia_Tetanus4 Set",
-                        "Cambodia_Tetanus5 Set"
-                    ]
-                },
-                "displayOrder":6,
-                "title":"Immunizations"
             },
             "diagnosis":{  
                 "translationKey":"DASHBOARD_TITLE_DIAGNOSIS_KEY",
@@ -188,7 +216,7 @@
                         "Chief Complaint Data",
                         "Examination Notes",
                         "Smoking History",
-                        "Clief COmplaint Notes",
+                        "Chief Complaint Notes",
                         "Blood Pressure"
                     ]
                 },

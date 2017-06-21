@@ -1,6 +1,103 @@
 'use strict';
 
 angular.module('bahmni.common.displaycontrol.custom')
+    .directive('immunization', ['observationsService', 'appService', 'spinner', function (observationsService, appService, spinner) {
+      var link = function ($scope) {
+        var pastImmunizationConcepts = $scope.config.pastImmunizationConcepts;
+
+        $scope.contentUrl = appService.configBaseUrl() + "/customDisplayControl/views/immunization.html";
+
+        $scope.immunizations = [];
+
+        spinner.forPromise(observationsService.fetch($scope.patient.uuid, pastImmunizationConcepts, "latest", undefined, undefined, undefined).then(function (response) {
+          var pastImmunizations = response.data;
+
+          pastImmunizations = _.map(pastImmunizations, function(item, index) {
+            var immunization = {}
+            immunization.uuid = item.groupMembers[0].conceptUuid;
+            immunization.name = item.groupMembers[0].conceptNameToDisplay;
+            immunization.value = item.groupMembers[0].valueAsString;
+            immunization.fullySpecifiedName = item.groupMembers[0].concept.name;
+
+            if (item.groupMembers.length > 1) {
+              immunization.date = item.groupMembers[1].value;
+            }
+
+            return immunization
+          });
+
+          var newImmunizationConcepts = $scope.config.newImmunizationConcepts;
+
+          spinner.forPromise(observationsService.fetch($scope.patient.uuid, newImmunizationConcepts, "latest", undefined, undefined, undefined).then(function (response) {
+            var newImmunizations = response.data;
+
+            newImmunizations = _.map(newImmunizations, function (item, index) {
+              var immunization =  {};
+              immunization.uuid = item.value.uuid;
+              immunization.name = item.valueAsString;
+              immunization.value = "OBS_BOOLEAN_YES_KEY";
+              immunization.date = item.observationDateTime;
+              immunization.fullySpecifiedName = item.value.name;
+
+              return immunization
+            });
+
+            // Remove duplicated items
+            var newImmunizationsToRemove = []
+            var pastImmunizationsToRemove = []
+
+            var i;
+            for (i = pastImmunizations.length - 1; i >= 0; i -= 1) {
+
+              var item1 = pastImmunizations[i]
+
+              var j;
+              for (j = newImmunizations.length - 1; j >= 0; j -= 1) {
+
+                var item2 = newImmunizations[j];
+
+                if (item1.uuid == item2.uuid) {
+                  if (new Date(item1.date) > new Date(item2.date) ) {
+                    newImmunizationsToRemove.push(j);
+                  } else {
+                    pastImmunizationsToRemove.push(i);
+                  }
+
+                }
+              }
+            }
+
+            pastImmunizationsToRemove.forEach(function (value) {
+              pastImmunizations.splice(value, 1);
+            })
+
+            newImmunizationsToRemove.forEach(function (value) {
+              newImmunizations.splice(value, 1);
+            })
+
+            var allImmunizations = pastImmunizations.concat(newImmunizations);
+
+            // Order the immunizations based on the config
+            $scope.config.displayedImmunization.forEach(function(item1) {
+              allImmunizations.forEach(function (item2) {
+                if (item1 == item2.fullySpecifiedName) {
+                  $scope.immunizations.push(item2);
+                }
+              })
+            })
+
+          }));
+
+        }));
+
+      };
+
+      return {
+        restrict: 'E',
+        link: link,
+        template: '<ng-include src="contentUrl"/>'
+      }
+    }])
     .directive('birthCertificate', ['observationsService', 'appService', 'spinner', function (observationsService, appService, spinner) {
             var link = function ($scope) {
                 console.log("inside birth certificate");
