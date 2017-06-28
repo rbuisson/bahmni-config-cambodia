@@ -604,5 +604,21 @@ Bahmni.ConceptSet.FormConditions.rules = {
     }
 
     return sections
+},
+'Cambodia_Is Small Dental Surgery Performed' : function (formName, formFieldValues) {
+    var fieldValue = formFieldValues['Cambodia_Is Small Dental Surgery Performed'];
+
+    var sections = {
+        "enable": [],
+        "disable": []
+    }
+
+    if (fieldValue) {
+        sections.enable.push("Cambodia_Coded Small Dental Surgery Performed")
+    } else {
+        sections.disable.push("Cambodia_Coded Small Dental Surgery Performed")
+    }
+
+    return sections
 }
 };
