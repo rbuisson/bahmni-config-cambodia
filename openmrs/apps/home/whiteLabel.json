@@ -6,6 +6,7 @@
   },
   "loginPage": {
     "logo": "/bahmni/images/bahmniLogoFull.png",
+    "bottomBanner": "/bahmni_config/openmrs/apps/home/bottom_banner.png",
     "showHeaderText": true,
     "showTitleText": false
   },
