@@ -1,0 +1,71 @@
+{
+  "MODULE_LABEL_ACTIVE_KEY": "សកម្ម",
+  "MODULE_LABEL_PROGRAMS_KEY": "កម្មវិធី",
+  "MODULE_LABEL_MY_PATIENTS_KEY": "អ្នកជម្ងឺរបស់ខ្ញុំ",
+  "MODULE_LABEL_ACTIVE_PATIENTS_BY_LOCATION": "អ្នកជម្ងឺតាមតំបន់",
+  "MODULE_LABEL_OPD_1_KEY": "អាគាពិនិត្យជម្ងឺក្រៅ-1",
+  "MODULE_LABEL_ALL_KEY": "ទាំងអស់",
+
+  "DASHBOARD_TITLE_LAB_RESULTS_KEY": "លទ្ធផលពិសោធន៍",
+  "DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY": "Lab Orders Fulfillment",
+  "DASHBOARD_TITLE_PACS_KEY": "Pacs",
+  "DASHBOARD_TITLE_RADIOLOGY_KEY": "វិទ្យុ​សាស្ត្រ និង​ថត​ឆ្លុះ",
+  "DASHBOARD_TITLE_VISITS_KEY": "ការមកពិគ្រោះជម្ងឺ",
+  "DASHBOARD_TITLE_PROGRAMS_KEY": "កម្មវីធី",
+  "DASHBOARD_TITLE_TREATMENTS_KEY": "ការព្យាបាល",
+  "DASHBOARD_TITLE_DISPOSITION_KEY": "Disposition",
+  "DASHBOARD_TITLE_DIAGNOSIS_KEY": "រោគវិនិច្ឆ័យ",
+  "DASHBOARD_TITLE_ADMISSION_DETAILS_KEY": "ពត៍មានលម្អិត​នៃការទទូលសំរាក",
+  "DASHBOARD_TITLE_NUTRITIONAL_VALUES_KEY": "តម្លៃអាហារូបត្ថម្ភ",
+  "DASHBOARD_TITLE_SECOND_VITALS_KEY": "សញ្ញាអាយុជីវិតលើកទីពីរ",
+  "DASHBOARD_TITLE_GYNAECOLOGY_KEY": "រោគស្រ្តី",
+  "DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY": "ប្រវត្តិ និងការពិនិត្យ",
+  "DASHBOARD_TITLE_OBSTETRICS_KEY": "សម្ភោព",
+  "DASHBOARD_TITLE_NAVIGATION_LINKS_CONTROL_KEY": "កំណត់តំណភ្ជាប់រុករក",
+  "DASHBOARD_TITLE_RADIOLOGY_ORDERS_KEY": "វេជ្ជបញ្ជាវិទ្យុ​សាស្ត្រ",
+  "DASHBOARD_TITLE_VITALS_KEY": "សញ្ញាអាយុជីវិត",
+  "DASHBOARD_TITLE_PATIENT_INFORMATION_KEY": "ពត៍មានអ្នកជម្ងឺ",
+  "DASHBOARD_TITLE_BACTERIOLOGY_RESULTS_KEY":"លទ្ធផលបាក់តេរីវិទ្យា",
+  "DASHBOARD_TITLE_FORMS_DISPLAY_CONTROL_KEY":"ទំរង់",
+
+
+  "DASHBOARD_TAB_GENERAL_KEY": "ទូទៅ",
+  "DASHBOARD_TAB_TRENDS_KEY": "និន្នាការ",
+  "DASHBOARD_TAB_PATIENT_SUMMARY_KEY": "សង្ខេបអ្នកជម្ងឺ",
+  "DASHBOARD_TAB_DISCHARGE_SUMMARY_KEY": "សង្ខេបពីការចាកចេញ",
+  "DASHBOARD_TAB_ORDERS_KEY": "បញ្ជា",
+
+  "LAB_INVESTIGATIONS_KEY":"ការធ្វើពិសោធន៍",
+  "PACS_ORDERS_VISIT_PAGE_KEY": "ទំព័រ​បញ្ជាPACSអ្នកជម្ងឺ",
+
+  "DISCHARGE_SUMMARY_DIAGNOSIS_KEY" :"រោគវិនិច្ឆ័យ",
+
+  "DISCHARGE_SUMMARY_ADVICE_ON_DISCHARGE_KEY": "ការណែនាំរបស់គ្រូពេទ្យនៅពេលបញ្ចេញទៅ",
+  "DISCHARGE_SUMMARY_AT_ADMISSION_KEY": "នៅពេលការទទូលសំរាក",
+  "DISCHARGE_SUMMARY_ADMISSION_DETAILS_KEY": "ពត៍មានលម្អិត​នៃការទទូលសំរាក",
+  "DISCHARGE_SUMMARY_CLINICAL_NOTES_KEY": "កំណត់ត្រាគ្លីនិកវេជ្ជសាស្រ្ត",
+  "DISCHARGE_SUMMARY_AT_DISCHARGE_KEY": "នៅពេលបញ្ចេញ",
+  "DISCHARGE_SUMMARY_TREATMENTS_KEY": "ការព្យាបាល",
+
+
+  "OBSERVATIONS_BOARD_LABEL_KEY":"ការពិនិត្យតាមដាន",
+  "MEDICATIONS_BOARD_LABEL_KEY":"ឱសថ",
+  "ORDERS_BOARD_LABEL_KEY":"បញ្ជា",
+  "BACTERIOLOGY_BOARD_LABEL_KEY":"បាក់តេរីវិទ្យា",
+  "CONSULTATION_BOARD_LABEL_KEY":"ពិគ្រោះជម្ងឺ",
+  "DISPOSITION_BOARD_LABEL_KEY":"Disposition",
+  "DIAGNOSIS_BOARD_LABEL_KEY":"រោគវិនិច្ឆ័យ",
+
+  "CLINICAL_ORDER_RADIOLOGY_NEED_PRINT": "ត្រូវការបោះពុម្ពសម្រាប់បញ្ជានេះ",
+  "CLINICAL_ORDER_RADIOLOGY_NEED_PRINT_BUTTON": "ត្រូវការបោះពុម្ព",
+
+  "CONSULTATION_PAGE_KEY" :"ពិគ្រោះជម្ងឺ",
+  "PROGRAM_MANAGEMENT_PAGE_KEY":"ទំព័រការគ្រប់គ្រងកម្មវិធី",
+  "DISCHARGE_SUMMARY_PAGE_KEY":"ទំព័រសង្ខេបពីការចាកចេញ",
+  "PATIENT_ADT_PAGE_KEY":"ទំព័រ ទទូលសំរាក/ចាកចេញ/ផ្ទេរ(ADT) អ្នកជម្ងឺ",
+  "PATIENT_DASHBOARD_KEY":"ផ្ទាំងរបស់អ្នកជម្ងឺ",
+  "PATIENT_VISIT_PAGE_KEY":"ទំព័រ​ពិនិត្យអ្នកជម្ងឺ",
+  "HOME_DASHBOARD_KEY":"ផ្ទាំងទំព័រដើម",
+  "MEDICATION_CHANGE_DURATION_BUTTON": "ផ្លាស់ប្តូររយៈពេល",
+  "DASHBOARD_TITLE_Consultation_KEY": "កំណត់ត្រាពិគ្រោះជម្ងឺ"
+}
