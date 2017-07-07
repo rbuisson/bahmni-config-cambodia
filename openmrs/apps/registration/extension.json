@@ -59,6 +59,19 @@
         "order": 2,
         "requiredPrivilege": "Edit Visits"
     },
+    "referredFrom":{
+        "id": "bahmni.registration.conceptSetGroup.referredFrom",
+        "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
+        "type": "config",
+        "extensionParams": {
+            "conceptName": "Cambodia_Referred From Set",
+            "translationKey": "REFERRAL",
+            "conceptNames": ["Cambodia_Referred From"],
+            "required":false
+        },
+        "order": 3,
+        "requiredPrivilege": "Edit Visits"
+    },
     "feeInformation":{
         "id": "bahmni.registration.conceptSetGroup.feeInformation",
         "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
@@ -68,7 +81,7 @@
             "translationKey": "FEE_INFORMATION_LOCALE_KEY",
             "required":false
         },
-        "order": 3,
+        "order": 4,
         "requiredPrivilege": "Edit Visits"
     }
 }
