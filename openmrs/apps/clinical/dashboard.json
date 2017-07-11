@@ -248,6 +248,16 @@
                 },
                 "displayOrder":1
             },
+            "dentalExam": {
+                "type": "forms",
+                "displayOrder": 21,
+                "hideEmptyDisplayControl": true,
+                "dashboardConfig": {
+                    "maximumNoOfVisits": 10
+                },
+                "formGroup": [ "Cambodia_Dental Exam Form"],
+                "translationKey": "DASHBOARD_TITLE_DENTAL_EXAM_KEY"
+            },
             "BP":{
                 "type":"observationGraph",
                 "title":"BP",
