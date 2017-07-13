@@ -258,20 +258,21 @@
                 "formGroup": [ "Cambodia_Dental Exam Form"],
                 "translationKey": "DASHBOARD_TITLE_DENTAL_EXAM_KEY"
             },
-            "BP":{
+            "bpPulse":{
                 "type":"observationGraph",
-                "title":"BP",
+                "title":"BP/Pulse",
                 "config":{
                     "yAxisConcepts":[
                         "Cambodia_Systolic Blood Pressure",
-                        "Cambodia_Diastolic Blood Pressure"
+                        "Cambodia_Diastolic Blood Pressure",
+                        "Cambodia_Pulse"
                     ],
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
                 },
                 "displayOrder":2
             },
-            "weight/BMI":{
+            "weightBMI":{
                 "type":"observationGraph",
                 "title":"Weight/BMI",
                 "config":{
@@ -283,18 +284,6 @@
                     "numberOfVisits":10
                 },
                 "displayOrder":3
-            },
-            "observationGraph":{
-                "type":"observationGraph",
-                "title":"Pulse",
-                "config":{
-                    "yAxisConcepts":[
-                        "Cambodia_Pulse"
-                    ],
-                    "xAxisConcept":"observationDateTime",
-                    "numberOfVisits":10
-                },
-                "displayOrder":5
             }
 
         }
