@@ -1,18 +1,15 @@
-{  
-    "general":{  
+{
+    "general":{
         "translationKey":"DASHBOARD_TAB_GENERAL_KEY",
         "displayByDefault":true,
         "maxRecentlyViewedPatients":10,
         "sections":{
-            "patientInformation":{  
+            "patientInformation":{
                 "translationKey":"DASHBOARD_TITLE_PATIENT_INFORMATION_KEY",
                 "type":"patientInformation",
                 "displayOrder":0,
                 "ageLimit":12,
                 "patientAttributes":[
-                    "givenNameLocal",
-                    "middleNameLocal",
-                    "familyNameLocal",
                     "impl.guardianName"
                 ],
                 "addressFields":[
@@ -23,7 +20,7 @@
             },
             "customControl": {
                 "type": "custom",
-                "displayOrder": 6,
+                "displayOrder": 40,
                 "config": {
                     "translationKey": "IMMUNIZATION",
                     "template": "<immunization></immunization>",
@@ -74,167 +71,199 @@
                     ]
                 }
             },
-            "allergies":{  
+            "allergies":{
                 "type":"historyAndExamination",
                 "isObservation":true,
                 "displayType":"Half-Page",
-                "dashboardConfig":{  
+                "dashboardConfig":{
                     "showGroupDateTime":false,
                     "conceptNames":[
                         "Cambodia_Allergies"
                     ]
                 },
-                "displayOrder":6,
+                "displayOrder":71,
                 "title":"Allergies"
             },
-            "diagnosis":{  
-                "translationKey":"DASHBOARD_TITLE_DIAGNOSIS_KEY",
-                "type":"diagnosis",
-                "showCertainty":true,
-                "showOrder":true,
-                "showDetailsButton":true,
-                "displayOrder":1
-            },
-            "navigationLinksControl":{  
+            "navigationLinksControl":{
                 "translationKey":"DASHBOARD_TITLE_NAVIGATION_LINKS_CONTROL_KEY",
                 "type":"navigationLinksControl",
                 "displayOrder":2,
-                "showLinks":[  
+                "showLinks":[
                     "home",
                     "visit",
                     "registration",
                     "visitAttribute"
                 ]
             },
-            "disposition":{
-                "translationKey":"DASHBOARD_TITLE_DISPOSITION_KEY",
-                "showDetailsButton":true,
-                "type":"disposition",
-                "numberOfVisits":1,
-                "displayOrder":7
-            },
-            "treatments":{  
+            "treatments":{
                 "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
                 "type":"treatment",
-                "displayOrder":4,
-                "dashboardConfig":{  
-                    "showFlowSheet":true,
-                    "showListView":true,
+                "displayOrder":50,
+                "dashboardConfig":{
                     "showRoute":true,
                     "showDrugForm":true,
-                    "numberOfVisits":5,
+                    "numberOfVisits":2,
                     "showOtherActive":true,
                     "showDetailsButton":true
                 },
-                "expandedViewConfig":{  
+                "expandedViewConfig":{
                     "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
                     "showFlowSheet":true,
                     "showListView":true,
                     "showRoute":true,
                     "showDrugForm":true,
-                    "numberOfVisits":10,
                     "showOtherActive":true,
                     "showDetailsButton":true
                 }
-            },
-            "programs":{  
-                "translationKey":"DASHBOARD_TITLE_PROGRAMS_KEY",
-                "type":"programs",
-                "displayOrder":10
             },
             "labOrdersDisplayControl":{
                 "translationKey":"DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
                 "type":"ordersControl",
                 "orderType":"Lab Order",
                 "showDetailsButton":true,
-                "displayOrder":9,
-                "dashboardConfig":{  
+                "displayOrder":70,
+                "dashboardConfig":{
                     "conceptNames":[
-                        "Cambodia_Lab Test Summary"
+                        "Cambodia_Lab Test Notes"
                     ],
-                    "numberOfVisits": "2",
+                    "numberOfVisits": 2,
                     "showHeader": true
                 },
-                "expandedViewConfig":{  
-                    "conceptNames":[  
-                        "Cambodia_Lab Test Summary"
+                "expandedViewConfig":{
+                    "conceptNames":[
+                        "Cambodia_Lab Test Notes"
                     ],
                     "showDetailsButton":true
                 }
             },
-            "nutritionalValues":{  
-                "translationKey":"DASHBOARD_TITLE_NUTRITIONAL_VALUES_KEY",
-                "type":"vitals",
-                "isObservation":true,
-                "displayOrder":11,
-                "dashboardConfig":{  
-                    "conceptNames":[  
-                        "HEIGHT",
-                        "Weight",
-                        "BMI Data",
-                        "BMI Status Data"
-                    ],
-                    "showDetailsButton":true,
-                    "numberOfVisits":2
-                },
-                "expandedViewConfig":{  
-                    "conceptNames":[  
-                        "HEIGHT",
-                        "Weight",
-                        "BMI",
-                        "BMI STATUS"
-                    ],
-                    "numberOfVisits":2,
-                    "scope":"latest",
-                    "showDetailsButton":true,
-                    "pivotTable":{  
-
-                    }
+            "allPackOrders": {
+                "displayOrder":49,
+                "orderType": "Radiology Order",
+                "type": "pacsOrders",
+                "translationKey": "DASHBOARD_TITLE_RADIOLOGY_KEY",
+                "dashboardConfig":{
+                    "pacsImageUrl":"http://10.0.0.10:8080/oviyam2/viewer.html?patientID={{patientID}}&accessionNumber={{orderNumber}}",
+                    "numberOfVisits":4
                 }
             },
-            "visits":{  
+            "visits":{
                 "translationKey":"DASHBOARD_TITLE_VISITS_KEY",
                 "type":"visits",
                 "displayOrder":3,
-                "dashboardConfig":{  
+                "dashboardConfig":{
                     "title":null,
-                    "maximumNoOfVisits":8,
+                    "maximumNoOfVisits":10,
                     "groupByVisits":true
                 }
+            },
+            "referral": {
+                "type": "vitals",
+                "isObservation":true,
+                "displayOrder": 111,
+                "hideEmptyDisplayControl": false,
+                "dashboardConfig": {
+                    "conceptNames": [ "Cambodia_Referred To", "Cambodia_Referral Notes", "Cambodia_Referred From"],
+                    "scope":"latest"
+                },
+
+                "translationKey": "DASHBOARD_TITLE_DISPOSITION_KEY"
+            },
+            "diagnosis":{
+                "translationKey":"DASHBOARD_TITLE_DIAGNOSIS_KEY",
+                "type":"diagnosis",
+                "showCertainty":false,
+                "showOrder":false,
+                "showDetailsButton":true,
+                "displayOrder":14
             },
             "conditions": {
                 "translationKey":"CONDITION_LIST_DISPLAY_CONTROL_TITLE",
                 "type": "conditionsList",
-                "displayOrder": 20
+                "displayOrder": 15
+            },
+            "chiefComplaint":{
+                "translationKey":"DASHBOARD_TITLE_CHIEF_COMPLAINT_KEY",
+                "type":"vitals",
+                "isObservation":true,
+                "displayOrder":14,
+                "dashboardConfig":{
+                    "conceptNames":[
+                        "Coded Diagnosis",
+                        "Cambodia_Chief Complaint",
+                        "Cambodia_History of Present Illness"
+                    ],
+                    "numberOfVisits": 2
+                },
+                "expandedViewConfig":{
+                    "conceptNames":[
+                        "Coded Diagnosis",
+                        "Cambodia_Chief Complaint",
+                        "Cambodia_History of Present Illness"
+                    ],
+                    "showDetailsButton":true,
+                    "pivotTable":{
+                        "numberOfVisits":"5",
+                        "groupBy":"encounters",
+                        "obsConcepts":[
+                            "Coded Diagnosis",
+                            "Cambodia_Chief Complaint",
+                            "Cambodia_History of Present Illness"
+                           ]
+                    }
+                }
             },
             "HistoryAndExamination":{
-                "type":"historyAndExamination",
+                "type":"vitals",
                 "isObservation":true,
-                "displayType":"Half-Page",
                 "dashboardConfig":{
+                    "numberOfVisits":"5",
                     "showGroupDateTime":false,
                     "conceptNames":[
-                        "Cambodia_Pulse",
-                        "Chief Complaint Data",
-                        "Examination Notes",
-                        "Smoking History",
-                        "Chief Complaint Notes",
-                        "Blood Pressure"
+                        "Cambodia_Past Medical History",
+                        "Cambodia_Past Cancer Details",
+                        "Cambodia_Past Medical History Details",
+                        "Cambodia_Other Past Medical History",
+                        "Cambodia_Past Surgical History",
+                        "Cambodia_Social History",
+                        "Cambodia_Newborn Immunizations Set",
+                        "Cambodia_Child Immunizations Set",
+                        "Cambodia_Pregnant Women Immunizations Set",
+                        "Cambodia_List Medications"
                     ]
                 },
-                "displayOrder":6,
+                "expandedViewConfig":{
+                    "conceptNames":[
+                        "Cambodia_Past Medical History",
+                        "Cambodia_Past Cancer Details",
+                        "Cambodia_Past Medical History Details",
+                        "Cambodia_Other Past Medical History",
+                        "Cambodia_Past Surgical History",
+                        "Cambodia_Social History",
+                        "Cambodia_Newborn Immunizations Set",
+                        "Cambodia_Child Immunizations Set",
+                        "Cambodia_Pregnant Women Immunizations Set",
+                        "Cambodia_List Medications"
+                    ],
+
+                    "pivotTable":{
+                        "numberOfVisits":"5",
+                        "groupBy":"encounters",
+                        "obsConcepts":[
+                            "Cambodia_Past Medical History",
+                            "Cambodia_Past Cancer Details",
+                            "Cambodia_Past Medical History Details",
+                            "Cambodia_Other Past Medical History",
+                            "Cambodia_Past Surgical History",
+                            "Cambodia_Social History",
+                            "Cambodia_Newborn Immunizations Set",
+                            "Cambodia_Child Immunizations Set",
+                            "Cambodia_Pregnant Women Immunizations Set",
+                            "Cambodia_List Medications"
+                        ]
+                    }
+                },
+                "displayOrder":20,
                 "translationKey":"DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY"
-            },
-            "drugOther":{
-                "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
-                "type":"drugOrderDetails",
-                "displayType":"Half-Page",
-                "showDetailsButton":true,
-                "displayOrder":24,
-                "dashboardConfig":{
-                    "showOnlyActive":true,
-                    "drugConceptSet":"All Other Drugs"
-                }
             },
             "growthChart":{
                 "type":"observationGraph",
@@ -244,14 +273,14 @@
                         "Weight"
                     ],
                     "referenceData":"growthChartReference.csv",
-                    "numberOfVisits":20
+                    "numberOfVisits":10
                 },
-                "displayOrder":1
+                "displayOrder":140
             },
             "dentalExam": {
                 "type": "forms",
-                "displayOrder": 21,
-                "hideEmptyDisplayControl": true,
+                "displayOrder": 100,
+                "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
                     "maximumNoOfVisits": 10
                 },
@@ -260,7 +289,7 @@
             },
             "bpPulse":{
                 "type":"observationGraph",
-                "title":"BP/Pulse",
+                "title":"BP / Pulse",
                 "config":{
                     "yAxisConcepts":[
                         "Cambodia_Systolic Blood Pressure",
@@ -270,11 +299,11 @@
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
                 },
-                "displayOrder":2
+                "displayOrder":110
             },
             "weightBMI":{
                 "type":"observationGraph",
-                "title":"Weight/BMI",
+                "title":"Weight / BMI",
                 "config":{
                     "yAxisConcepts":[
                         "Weight",
@@ -283,7 +312,42 @@
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
                 },
-                "displayOrder":3
+                "displayOrder":120
+            },
+            "vitals":{
+                "translationKey":"DASHBOARD_TITLE_VITALS_KEY",
+                "type":"vitals",
+                "isObservation":true,
+
+                "displayOrder":12,
+                "dashboardConfig":{
+                    "showDetailsButton":true,
+                    "conceptNames":[
+                        "Cambodia_Vital Signs Extended Form","Weight", "BMI Data", "BMI Status Data"
+                    ],
+                    "groupBy":"encounters",
+                    "scope":"latest"
+
+                },
+                "expandedViewConfig":{
+                    "conceptNames":[
+                        "Cambodia_Vital Signs Extended Form","Weight", "BMI Data", "BMI Status Data"
+                    ],
+                    "showDetailsButton":true,
+                    "pivotTable":{
+                        "numberOfVisits":"10",
+                        "groupBy":"encounters",
+                        "obsConcepts":[
+                            "Cambodia_Vital Signs Extended Form","Weight", "BMI Data", "BMI Status Data"
+                        ],
+                        "drugConcepts":[
+
+                        ],
+                        "labConcepts":[
+
+                        ]
+                    }
+                }
             }
 
         }
