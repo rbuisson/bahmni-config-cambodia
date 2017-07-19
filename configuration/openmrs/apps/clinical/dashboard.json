@@ -103,8 +103,7 @@
                     "showRoute":true,
                     "showDrugForm":true,
                     "numberOfVisits":2,
-                    "showOtherActive":true,
-                    "showDetailsButton":true
+                    "showOtherActive":true
                 },
                 "expandedViewConfig":{
                     "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
@@ -112,15 +111,13 @@
                     "showListView":true,
                     "showRoute":true,
                     "showDrugForm":true,
-                    "showOtherActive":true,
-                    "showDetailsButton":true
+                    "showOtherActive":true
                 }
             },
             "labOrdersDisplayControl":{
                 "translationKey":"DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
                 "type":"ordersControl",
                 "orderType":"Lab Order",
-                "showDetailsButton":true,
                 "displayOrder":70,
                 "dashboardConfig":{
                     "conceptNames":[
@@ -132,8 +129,7 @@
                 "expandedViewConfig":{
                     "conceptNames":[
                         "Cambodia_Lab Test Notes"
-                    ],
-                    "showDetailsButton":true
+                    ]
                 }
             },
             "allPackOrders": {
@@ -173,12 +169,12 @@
                 "type":"diagnosis",
                 "showCertainty":false,
                 "showOrder":false,
-                "showDetailsButton":true,
                 "displayOrder":14
             },
             "conditions": {
                 "translationKey":"CONDITION_LIST_DISPLAY_CONTROL_TITLE",
                 "type": "conditionsList",
+                "showDetailsButton": false,
                 "displayOrder": 15
             },
             "chiefComplaint":{
@@ -200,7 +196,6 @@
                         "Cambodia_Chief Complaint",
                         "Cambodia_History of Present Illness"
                     ],
-                    "showDetailsButton":true,
                     "pivotTable":{
                         "numberOfVisits":"5",
                         "groupBy":"encounters",
@@ -225,9 +220,6 @@
                         "Cambodia_Other Past Medical History",
                         "Cambodia_Past Surgical History",
                         "Cambodia_Social History",
-                        "Cambodia_Newborn Immunizations Set",
-                        "Cambodia_Child Immunizations Set",
-                        "Cambodia_Pregnant Women Immunizations Set",
                         "Cambodia_List Medications"
                     ]
                 },
@@ -239,12 +231,8 @@
                         "Cambodia_Other Past Medical History",
                         "Cambodia_Past Surgical History",
                         "Cambodia_Social History",
-                        "Cambodia_Newborn Immunizations Set",
-                        "Cambodia_Child Immunizations Set",
-                        "Cambodia_Pregnant Women Immunizations Set",
                         "Cambodia_List Medications"
                     ],
-
                     "pivotTable":{
                         "numberOfVisits":"5",
                         "groupBy":"encounters",
@@ -255,9 +243,6 @@
                             "Cambodia_Other Past Medical History",
                             "Cambodia_Past Surgical History",
                             "Cambodia_Social History",
-                            "Cambodia_Newborn Immunizations Set",
-                            "Cambodia_Child Immunizations Set",
-                            "Cambodia_Pregnant Women Immunizations Set",
                             "Cambodia_List Medications"
                         ]
                     }
@@ -321,9 +306,14 @@
 
                 "displayOrder":12,
                 "dashboardConfig":{
-                    "showDetailsButton":true,
                     "conceptNames":[
-                        "Cambodia_Vital Signs Extended Form","Weight", "BMI Data", "BMI Status Data"
+                        "Cambodia_Pulse",
+                        "Cambodia_Systolic Blood Pressure",
+                        "Cambodia_Diastolic Blood Pressure",
+                        "Cambodia_Temperature",
+                        "Cambodia_Respiratory Rate",
+                        "Cambodia_Oxygen Saturation",
+                        "Cambodia_Capillary Refill Time","Weight", "BMI Data", "BMI Status Data"
                     ],
                     "groupBy":"encounters",
                     "scope":"latest"
@@ -333,7 +323,6 @@
                     "conceptNames":[
                         "Cambodia_Vital Signs Extended Form","Weight", "BMI Data", "BMI Status Data"
                     ],
-                    "showDetailsButton":true,
                     "pivotTable":{
                         "numberOfVisits":"10",
                         "groupBy":"encounters",
