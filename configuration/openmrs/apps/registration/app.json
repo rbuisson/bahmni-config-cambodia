@@ -28,7 +28,8 @@
                 ]
             },
             "defaults":  {
-                "metadata.personAttributeType.nationality.name": "Cambodia_Khmer"
+                "impl.nationality": "Cambodia_Khmer",
+                "impl.distanceFromHealthCenter": "Cambodia_Zone A"
             }
         },
         "addressHierarchy": {
