@@ -75,37 +75,37 @@
         "CAMBODIA_Immunizations": {
             "multiSelect": true
         },
-        "CAMBODIA_General Findings": {
+        "CAMBODIA_General Symptoms": {
             "multiSelect": true
         },
-        "Cambodia_HEENT Findings": {
+        "Cambodia_HEENT Symptoms": {
             "multiSelect": true
         },
-        "Cambodia_Cardiovascular Findings": {
+        "Cambodia_Cardiovascular Symptoms": {
             "multiSelect": true
         },
-        "Cambodia_Respiratory Findings": {
+        "Cambodia_Respiratory Symptoms": {
             "multiSelect": true
         },
-        "Cambodia_Gastrointestinal Findings": {
+        "Cambodia_Gastrointestinal Symptoms": {
             "multiSelect": true
         },
-        "Cambodia_Genitourinary Female Findings": {
+        "Cambodia_Genitourinary Female Symptoms": {
             "multiSelect": true
         },
-        "Cambodia_Genitourinary Male Findings": {
+        "Cambodia_Genitourinary Male Symptoms": {
             "multiSelect": true
         },
-        "Cambodia_Neurologic Findings": {
+        "Cambodia_Neurologic Symptoms": {
             "multiSelect": true
         },
-        "Cambodia_Musculoskeletal Findings": {
+        "Cambodia_Musculoskeletal Symptoms": {
             "multiSelect": true
         },
-        "Cambodia_Endocrine Findings": {
+        "Cambodia_Endocrine Symptoms": {
             "multiSelect": true
         },
-        "Cambodia_Skin Findings": {
+        "Cambodia_Skin Symptoms": {
             "multiSelect": true
         },
         "Cambodia_Skin Exam": {
