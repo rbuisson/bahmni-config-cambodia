@@ -64,6 +64,34 @@
                 "fields": ["givenNameLocal", "middleNameLocal", "familyNameLocal"]
             }
         },
-        "afterVisitSaveForwardUrl" : "./index.html#/search"
+        "afterVisitSaveForwardUrl" : "./index.html#/search",
+        "conceptSetUI": {
+            "Cambodia_Pulse": {
+                "disableAddNotes": true
+            },
+            "Cambodia_Systolic Blood Pressure": {
+                "disableAddNotes": true
+            },
+            "Cambodia_Diastolic Blood Pressure": {
+                "disableAddNotes": true
+            },
+            "Cambodia_Temperature": {
+                "disableAddNotes": true
+            },
+            "Cambodia_Respiratory Rate": {
+                "disableAddNotes": true
+            },
+            "HEIGHT": {
+                "disableAddNotes": true
+            },
+            "WEIGHT": {
+                "disableAddNotes": true
+            },
+            "REGISTRATION FEES": {
+                "disableAddNotes": true
+            },
+            "defaults": {
+            }
+        }
     }
 }

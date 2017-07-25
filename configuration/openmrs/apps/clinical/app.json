@@ -183,6 +183,144 @@
             "multiSelect": true,
             "autocomplete": true
         },
+        "Cambodia_Pulse": {
+            "disableAddNotes": true
+        },
+        "Cambodia_Systolic Blood Pressure": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Diastolic Blood Pressure": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Temperature": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Respiratory Rate": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Oxygen Saturation": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Capillary Refill Time": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Polio1": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Polio2": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Polio3": {
+          "disableAddNotes": true
+        },
+        "Cambodia_DTP-Hep-Hip1": {
+          "disableAddNotes": true
+        },
+        "Cambodia_DTP-Hep-Hip2": {
+          "disableAddNotes": true
+        },
+        "Cambodia_DTP-Hep-Hip3": {
+          "disableAddNotes": true
+        },
+        "Cambodia_PCV1": {
+          "disableAddNotes": true
+        },
+        "Cambodia_PCV2": {
+          "disableAddNotes": true
+        },
+        "Cambodia_PCV3": {
+          "disableAddNotes": true
+        },
+        "Cambodia_MR***": {
+          "disableAddNotes": true
+        },
+        "Cambodia_JE": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Medications": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Has Allergies": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Skin Exam": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Head Exam": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Head Exam Abnormalities": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Neck Exam": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Ears Exam": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Ears Exam Abnormalities": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Eyes Exam": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Chest and Lungs Exam": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Cardiovascular Exam": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Abdomen Exam": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Genitourinary Exam": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Regular Rate and Rhythm": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Carotid bruit": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Flank and Back Exam": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Flank and Back Exam Abnormalities": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Musculoskeletal Exam Abnormalities": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Muscle strength": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Deep Tendon Reflex": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Musculoskeletal and Neurological Exam": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Other Physical Abnormalities": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Is Small Dental Surgery Performed": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Coded Small Dental Surgery Performed": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Other Small Dental Surgery": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Scaling": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Prevention Education": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Prevention Fluoride": {
+          "disableAddNotes": true
+        },
         "defaults": {
         }
     },
