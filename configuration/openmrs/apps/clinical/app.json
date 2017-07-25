@@ -72,10 +72,10 @@
         "Cambodia_Referred To": {
             "conciseText": true
         },
-        "CAMBODIA_Immunizations": {
+        "Cambodia_Immunizations": {
             "multiSelect": true
         },
-        "CAMBODIA_General Symptoms": {
+        "Cambodia_General Symptoms": {
             "multiSelect": true
         },
         "Cambodia_HEENT Symptoms": {
