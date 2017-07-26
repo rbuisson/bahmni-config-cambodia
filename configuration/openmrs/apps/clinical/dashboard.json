@@ -318,13 +318,13 @@
                 "dashboardConfig":{
                     "scope":"latest",
                     "conceptNames":[
-                        "Cambodia_Pulse",
-                        "Cambodia_Systolic Blood Pressure",
-                        "Cambodia_Diastolic Blood Pressure",
-                        "Cambodia_Temperature",
-                        "Cambodia_Respiratory Rate",
-                        "Cambodia_Oxygen Saturation",
-                        "Cambodia_Capillary Refill Time","Weight", "BMI Data", "BMI Status Data"
+                        "Cambodia_Pulse Data",
+                        "Cambodia_Systolic Blood Pressure Data",
+                        "Cambodia_Diastolic Blood Pressure Data",
+                        "Cambodia_Temperature Data",
+                        "Cambodia_Respiratory Rate Data",
+                        "Cambodia_Oxygen Saturation Data",
+                        "Cambodia_Capillary Refill Time Data","Weight", "BMI Data", "BMI Status Data"
                     ]
                 },
                 "expandedViewConfig":{

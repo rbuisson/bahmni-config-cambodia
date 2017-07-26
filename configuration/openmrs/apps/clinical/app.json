@@ -183,26 +183,33 @@
             "multiSelect": true,
             "autocomplete": true
         },
-        "Cambodia_Pulse": {
+        "Cambodia_Pulse Data": {
+            "hideAbnormalButton": true,
             "disableAddNotes": true
         },
-        "Cambodia_Systolic Blood Pressure": {
+        "Cambodia_Systolic Blood Pressure Data": {
+          "hideAbnormalButton": true,
           "disableAddNotes": true
         },
-        "Cambodia_Diastolic Blood Pressure": {
+        "Cambodia_Diastolic Blood Pressure Data": {
+          "hideAbnormalButton": true,
           "disableAddNotes": true
         },
-        "Cambodia_Temperature": {
+        "Cambodia_Temperature Data": {
+          "hideAbnormalButton": true,
           "disableAddNotes": true
         },
-        "Cambodia_Respiratory Rate": {
+        "Cambodia_Respiratory Rate Data": {
+          "hideAbnormalButton": true,
           "disableAddNotes": true
         },
-        "Cambodia_Oxygen Saturation": {
+        "Cambodia_Oxygen Saturation Data": {
+          "hideAbnormalButton": true,
           "disableAddNotes": true
         },
-        "Cambodia_Capillary Refill Time": {
-          "disableAddNotes": true
+        "Cambodia_Capillary Refill Time Data": {
+          "disableAddNotes": true,
+          "hideAbnormalButton": true
         },
         "Cambodia_Polio1": {
           "disableAddNotes": true

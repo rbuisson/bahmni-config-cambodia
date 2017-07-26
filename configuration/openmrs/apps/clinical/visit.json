@@ -16,13 +16,13 @@
                 "config": {
                     "groupBy": "encounters",
                     "obsConcepts": [
-                        "Cambodia_Pulse",
-                        "Cambodia_Diastolic Blood Pressure",
-                        "Cambodia_Systolic Blood Pressure",
-                        "Cambodia_Temperature",
-                        "Cambodia_Respiratory Rate",
-                        "Cambodia_Oxygen Saturation",
-                        "Cambodia_Capillary Refill Time",
+                        "Cambodia_Pulse Data",
+                        "Cambodia_Diastolic Blood Pressure Data",
+                        "Cambodia_Systolic Blood Pressure Data",
+                        "Cambodia_Temperature Data",
+                        "Cambodia_Respiratory Rate Data",
+                        "Cambodia_Oxygen Saturation Data",
+                        "Cambodia_Capillary Refill Time Data",
                         "Height",
                         "WEIGHT"
                     ],
