@@ -324,17 +324,39 @@
                         "Cambodia_Temperature Data",
                         "Cambodia_Respiratory Rate Data",
                         "Cambodia_Oxygen Saturation Data",
-                        "Cambodia_Capillary Refill Time Data","Weight", "BMI Data", "BMI Status Data"
+                        "Cambodia_Capillary Refill Time Data",
+                        "BMI Data", 
+                        "BMI Status Data"
                     ]
                 },
                 "expandedViewConfig":{
                     "conceptNames":[
-                        "Cambodia_Vital Signs Extended Form","Weight", "BMI Data", "BMI Status Data"
+                        "Cambodia_Pulse Data",
+                        "Cambodia_Diastolic Blood Pressure Data",
+                        "Cambodia_Systolic Blood Pressure Data",
+                        "Cambodia_Temperature Data",
+                        "Cambodia_Respiratory Rate Data",
+                        "Cambodia_Oxygen Saturation Data",
+                        "Cambodia_Capillary Refill Time Data",
+                        "Height",
+                        "WeighT",
+                        "BMI Data",
+                        "BMI Status Data"
                     ],
                     "pivotTable":{
                         "groupBy":"encounters",
                         "obsConcepts":[
-                            "Cambodia_Vital Signs Extended Form","Weight", "BMI Data", "BMI Status Data"
+                            "Cambodia_Pulse Data",
+                            "Cambodia_Diastolic Blood Pressure Data",
+                            "Cambodia_Systolic Blood Pressure Data",
+                            "Cambodia_Temperature Data",
+                            "Cambodia_Respiratory Rate Data",
+                            "Cambodia_Oxygen Saturation Data",
+                            "Cambodia_Capillary Refill Time Data",
+                            "Height",
+                            "WeighT",
+                            "BMI Data",
+                            "BMI Status Data"
                         ],
                         "drugConcepts":[
 
