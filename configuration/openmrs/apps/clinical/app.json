@@ -277,9 +277,11 @@
           "disableAddNotes": true
         },
         "Cambodia_Muscle strength": {
+          "hideAbnormalButton": true,
           "disableAddNotes": true
         },
         "Cambodia_Deep Tendon Reflex": {
+          "hideAbnormalButton": true,
           "disableAddNotes": true
         },
         "Cambodia_Musculoskeletal and Neurological Exam": {
