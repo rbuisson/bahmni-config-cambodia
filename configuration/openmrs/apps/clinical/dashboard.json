@@ -114,11 +114,11 @@
                     "showOtherActive":true
                 }
             },
-            "labOrdersDisplayControl":{
+            "labOrders":{
                 "translationKey":"DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
                 "type":"ordersControl",
                 "orderType":"Lab Order",
-                "displayOrder":70,
+                "displayOrder":49,
                 "dashboardConfig":{
                     "conceptNames":[
                         "Cambodia_Lab Test Notes"
@@ -132,16 +132,18 @@
                     ]
                 }
             },
-            "allPackOrders": {
-                "displayOrder":49,
+            "radioOrders": {
+                "displayOrder":70,
                 "orderType": "Radiology Order",
-                "type": "pacsOrders",
+                "type": "ordersControl",
                 "translationKey": "DASHBOARD_TITLE_RADIOLOGY_KEY",
                 "dashboardConfig":{
-                    "pacsImageUrl":"http://10.0.0.10:8080/oviyam2/viewer.html?patientID={{patientID}}&accessionNumber={{orderNumber}}",
+                     "conceptNames": [
+                        "Summary"
+                    ],
                     "numberOfVisits":10
                 }
-            },
+            },  
             "visits":{
                 "translationKey":"DASHBOARD_TITLE_VISITS_KEY",
                 "type":"visits",
@@ -198,12 +200,10 @@
                         "Coded Diagnosis",
                         "Diagnosis Certainty",
                         "Diagnosis order",
-                        "Bahmni Initial Diagnosis",
-                        "Bahmni Diagnosis Revised",
                         "Bahmni Diagnosis Status"
                     ],
                     "pivotTable":{
-                        "groupBy":"encounters",
+                        "groupBy":"visits",
                         "obsConcepts":[
                             "Cambodia_Chief Complaint",
                             "Cambodia_History of Present Illness",
@@ -211,8 +211,6 @@
                             "Coded Diagnosis",
                             "Diagnosis Certainty",
                             "Diagnosis order",
-                            "Bahmni Initial Diagnosis",
-                            "Bahmni Diagnosis Revised",
                             "Bahmni Diagnosis Status"
                         ]
                     }

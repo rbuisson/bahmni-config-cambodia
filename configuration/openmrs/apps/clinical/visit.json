@@ -9,57 +9,22 @@
         },
         "defaultSections": false,
         "sections": {
-            "pivotTable":{
-                "type": "pivotTable",
-                "displayOrder": 0,
-                "title": "Vitals Flowsheet",
-                "config": {
-                    "groupBy": "encounters",
-                    "obsConcepts": [
-                        "Cambodia_Pulse Data",
-                        "Cambodia_Diastolic Blood Pressure Data",
-                        "Cambodia_Systolic Blood Pressure Data",
-                        "Cambodia_Temperature Data",
-                        "Cambodia_Respiratory Rate Data",
-                        "Cambodia_Oxygen Saturation Data",
-                        "Cambodia_Capillary Refill Time Data",
-                        "Height",
-                        "Weight",
-                        "BMI Data",
-                        "BMI Status Data"
-                    ],
-                    "labConcepts": ""
-                }
-            },
-            "conditions": {
-                "title": "Conditions",
-                "type": "conditionsList",
-                "displayOrder": 2,
-                "config": { }
-            },
-            "clinicalNotes":{
+            "obser":{
                 "type": "observation",
-                "displayOrder": 5,
-                "translationKey": "DISCHARGE_SUMMARY_CLINICAL_NOTES_KEY",
+                "displayOrder": 2,
+                "translationKey":"Observations",
                 "config": {
                     "conceptNames": [
-                        "History and Examination Notes",
-                        "Lab Investigation Notes",
-                        "Radiology Notes",
-                        "Other Notes"
-                    ],
-                    "scope": "latest",
-                    "numberOfVisits": "1"
-                }
-            },
-                        "diagnoses":{
-                "type": "diagnosis",
-                "displayOrder": 4,
-                "config": {
-                    "translationKey" : "DISCHARGE_SUMMARY_DIAGNOSIS_KEY",
-                    "showCertainty": false,
-                    "showOrder": false,
-                    "showDetailsButton": true
+                        "Cambodia_Past Medical History Form",
+                        "Cambodia_Vital Signs Basic Set",
+                        "Cambodia_Vital Signs Extended Form",
+                        "Cambodia_Review of Systems Form",
+                        "Cambodia_Allergies Form",
+                        "Cambodia_Immunizations Form",
+                        "Cambodia_Physical Exam Form",
+                        "Cambodia_Dental Exam Form", 
+                        "Cambodia_Referral Form"
+                    ]
                 }
             },
             "labInvestigations":{
@@ -76,37 +41,10 @@
                     "initialAccessionCount": 1,
                     "latestAccessionCount": 1
                 }
-            },
-            "Treatments": {
-                "type": "treatment",
-                "displayOrder": 6,
-                "config": {
-                    "translationKey": "VISIT_TITLE_TREATMENTS_KEY",
-                    "showFlowSheet": true,
-                    "showListView": true,
-                    "showOtherActive": false,
-                    "showDetailsButton": true,
-                    "showRoute": true,
-                    "showDrugForm": true,
-                    "showProvider":false
-                }
-            },
-            "Radiology Orders": {
-                "type": "order",
-                "displayOrder": 0,
-                "translationKey": "Radiology Orders",
-                "config": {
-                    "translationKey": "Radiology Orders",
-                    "name": "ordersControl",
-                    "orderType": "Radiology Order",
-                    "conceptNames": [
-                        "Summary"
-                    ]
-                }
             }
         }
     },
-    "orders":{
+    "stubTab":{
         "translationKey": " ",
         "defaultSections": true,
         "sections": {
