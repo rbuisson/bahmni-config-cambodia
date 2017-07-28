@@ -109,18 +109,20 @@
             "multiSelect": true
         },
         "Cambodia_Skin Exam": {
-            "required": true
+            "required": true,
+            "disableAddNotes": true
         },
         "Cambodia_Skin Exam Abnormalities": {
-            "multiSelect": true
+            "multiSelect": true,
+            "disableAddNotes": true
         },
         "Cambodia_Head Exam": {
-          "required": true,
-          "disableAddNotes": true
+            "required": true,
+            "disableAddNotes": true
         },
         "Cambodia_Head Exam Abnormalities": {
-          "multiSelect": true,
-          "disableAddNotes": true
+            "multiSelect": true,
+            "disableAddNotes": true
         },
         "Cambodia_Neck Exam": {
             "required": true,
@@ -134,7 +136,7 @@
             "required": true,
             "disableAddNotes": true
         },
-        "Cambodia_Ears Abnormalities": {
+        "Cambodia_Ears Exam Abnormalities": {
             "multiSelect": true,
             "disableAddNotes": true
         },
@@ -162,6 +164,12 @@
             "multiSelect": true,
             "disableAddNotes": true
         },
+        "Cambodia_Regular Rate and Rhythm": {
+            "disableAddNotes": true
+        },        
+        "Cambodia_Carotid bruit": {
+            "disableAddNotes": true
+        },        
         "Cambodia_Abdomen Exam": {
             "required": true,
             "disableAddNotes": true
@@ -185,12 +193,16 @@
         "Cambodia_Flank and Back Exam": {
             "required": true,
             "disableAddNotes": true
+        },        
+        "Cambodia_Flank and Back Exam Abnormalities": {
+            "multiSelect": true,
+            "disableAddNotes": true
         },
         "Cambodia_Musculoskeletal and Neurological Exam": {
             "required": true,
             "disableAddNotes": true
         },
-        "Cambodia_Musculoskeletal and Neurological Exam Abnormalities": {
+        "Cambodia_Musculoskeletal Exam Abnormalities": {
             "multiSelect": true,
             "disableAddNotes": true
         },
@@ -264,12 +276,99 @@
         "Cambodia_PCV3": {
           "disableAddNotes": true
         },
-        "Cambodia_MR***": {
+        "Cambodia_MR1": {
           "disableAddNotes": true
         },
         "Cambodia_JE": {
           "disableAddNotes": true
         },
+        "Cambodia_MR***": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Tetanus1": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Tetanus2": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Tetanus3": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Tetanus4": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Tetanus5": {
+          "disableAddNotes": true
+        },
+        "Cambodia_MR***": {
+          "disableAddNotes": true
+        },
+        "Cambodia_BCG": {
+          "disableAddNotes": true
+        },        
+        "Cambodia_Polio1, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Polio2, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Polio3, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_DTP-Hep-Hip1, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_DTP-Hep-Hip2, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_DTP-Hep-Hip3, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_PCV1, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_PCV2, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_PCV3, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_MR1, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_JE, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_MR***, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Tetanus1, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Tetanus2, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Tetanus3, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Tetanus4, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_Tetanus5, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_MR***, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_BCG, Date Given": {
+          "disableAddNotes": true
+        },
+        "Cambodia_HepB at birth": {
+          "disableAddNotes": true
+        },
+        "Cambodia_HepB at birth, time administered after birth": {
+          "disableAddNotes": true
+        },        
         "Cambodia_Medications": {
           "disableAddNotes": true
         },
