@@ -67,23 +67,23 @@
         "afterVisitSaveForwardUrl" : "./index.html#/search",
         "conceptSetUI": {
             "Cambodia_Pulse Data": {
-                "hideAbnormalButton": true,
+                "hideAbnormalButton": false,
                 "disableAddNotes": true
             },
             "Cambodia_Systolic Blood Pressure Data": {
-                "hideAbnormalButton": true,
+                "hideAbnormalButton": false,
                 "disableAddNotes": true
             },
             "Cambodia_Diastolic Blood Pressure Data": {
-                "hideAbnormalButton": true,
+                "hideAbnormalButton": false,
                 "disableAddNotes": true
             },
             "Cambodia_Temperature Data": {
-                "hideAbnormalButton": true,
+                "hideAbnormalButton": false,
                 "disableAddNotes": true
             },
             "Cambodia_Respiratory Rate Data": {
-                "hideAbnormalButton": true,
+                "hideAbnormalButton": false,
                 "disableAddNotes": true
             },
             "HEIGHT": {
