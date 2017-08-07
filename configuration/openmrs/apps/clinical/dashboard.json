@@ -22,7 +22,7 @@
                 "type": "custom",
                 "displayOrder": 40,
                 "config": {
-                    "translationKey": "IMMUNIZATION",
+                    "translationKey": "IMPL_IMMUNIZATIONS",
                     "template": "<immunization></immunization>",
                     "immunizationSets":[
                         "Cambodia_Polio1 Set",
@@ -82,6 +82,7 @@
                     ]
                 },
                 "displayOrder":71,
+                "translationKey":"IMPL_ALLERGIES",
                 "title":"Allergies"
             },
             "navigationLinksControl":{
@@ -115,7 +116,7 @@
                 }
             },
             "labOrders":{
-                "translationKey":"DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
+                "translationKey":"IMPL_LAB",
                 "type":"ordersControl",
                 "orderType":"Lab Order",
                 "displayOrder":49,
@@ -164,7 +165,7 @@
                     "scope":"latest"
                 },
 
-                "translationKey": "DASHBOARD_TITLE_DISPOSITION_KEY"
+                "translationKey": "IMPL_REFERRALS"
             },
             "diagnosis":{
                 "translationKey":"DASHBOARD_TITLE_DIAGNOSIS_KEY",
@@ -180,7 +181,7 @@
                 "displayOrder": 15
             },
             "chiefComplaint":{
-                "translationKey":"DASHBOARD_TITLE_CHIEF_COMPLAINT_KEY",
+                "translationKey":"IMPL_CHIEF_COMPLAINT",
                 "type":"vitals",
                 "isObservation":true,
                 "displayOrder":14,
@@ -279,7 +280,7 @@
                     "maximumNoOfVisits": 3
                 },
                 "formGroup": [ "Cambodia_Dental Exam Form"],
-                "translationKey": "DASHBOARD_TITLE_DENTAL_EXAM_KEY"
+                "translationKey": "IMPL_DENTAL"
             },
             "bpPulse":{
                 "type":"observationGraph",

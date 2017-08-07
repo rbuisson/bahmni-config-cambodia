@@ -12,7 +12,7 @@
             "obser":{
                 "type": "observation",
                 "displayOrder": 2,
-                "translationKey":"Observations",
+                "translationKey":"IMPL_OBSERVATIONS",
                 "config": {
                     "conceptNames": [
                         "Cambodia_Past Medical History Form",

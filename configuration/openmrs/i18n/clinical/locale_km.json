@@ -68,5 +68,13 @@
   "PATIENT_VISIT_PAGE_KEY":"ទំព័រ​ពិនិត្យអ្នកជម្ងឺ",
   "HOME_DASHBOARD_KEY":"ផ្ទាំងទំព័រដើម",
   "MEDICATION_CHANGE_DURATION_BUTTON": "ផ្លាស់ប្តូររយៈពេល",
-  "DASHBOARD_TITLE_Consultation_KEY": "កំណត់ត្រាពិគ្រោះជម្ងឺ"
+  "DASHBOARD_TITLE_Consultation_KEY": "កំណត់ត្រាពិគ្រោះជម្ងឺ",
+
+  "IMPL_ALLERGIES": "អាល់លែកហ្សី",
+  "IMPL_IMMUNIZATIONS": "ថ្នាំបង្ការ",
+  "IMPL_CHIEF_COMPLAINT": "ការត្អួញត្អែរ",
+  "IMPL_REFERRALS": "បញ្ចូន",
+  "IMPL_DENTAL": "ទន្តិក",
+  "IMPL_LAB": "បញ្ជាពិសោធន៍",
+  "IMPL_OBSERVATIONS": "ការពិនិត្យតាមដាន"
 }

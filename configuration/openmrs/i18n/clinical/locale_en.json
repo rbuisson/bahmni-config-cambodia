@@ -73,6 +73,13 @@
   "IMMUNIZATION" : "Immunization",
   "NO_IMMUNIZATION_FOR_PATIENT": "No Immunization for this patient",
   "DATE_GIVEN": "Date Given",
-  "COMPLETED": "Completed"
+  "COMPLETED": "Completed",
 
+  "IMPL_ALLERGIES": "Allergies",
+  "IMPL_IMMUNIZATIONS": "Immunizations",
+  "IMPL_CHIEF_COMPLAINT": "Chief Complaint",
+  "IMPL_REFERRALS": "Referrals",
+  "IMPL_DENTAL": "Dental",
+  "IMPL_LAB": "Lab Orders",
+  "IMPL_OBSERVATIONS": "Observations"
 }

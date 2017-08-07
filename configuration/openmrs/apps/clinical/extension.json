@@ -144,7 +144,7 @@
       "default": true,
       "conceptName": "Cambodia_Past Medical History Form"
     },
-    "order": 10,
+    "order": 20,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalConceptSetGroupObservationsVitalReviewOfSystemsForm": {
@@ -166,7 +166,7 @@
       "default": true,
       "conceptName": "Cambodia_Physical Exam Form"
     },
-    "order": 10,
+    "order": 40,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalConceptSetGroupObservationsAllergiesForm": {
@@ -177,7 +177,7 @@
       "default": true,
       "conceptName": "Cambodia_Allergies Form"
     },
-    "order": 10,
+    "order": 50,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalConceptSetGroupObservationsImmunizationsSet": {
@@ -188,7 +188,7 @@
       "default": true,
       "conceptName": "Cambodia_Immunizations Form"
     },
-    "order": 10,
+    "order": 60,
     "requiredPrivilege": "app:clinical"
   },  
   "bahmniClinicalBillingTreatment": {
