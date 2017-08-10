@@ -14,7 +14,7 @@ angular.module('bahmni.common.displaycontrol.custom')
 
           pastImmunizations = _.map(pastImmunizations, function(item, index) {
             var immunization = {}
-            immunization.uuid = item.groupMembers[0].conceptUuid;
+            immunization.conceptUuid = item.groupMembers[0].conceptUuid;
             immunization.name = item.groupMembers[0].conceptNameToDisplay;
             immunization.value = item.groupMembers[0].valueAsString;
             immunization.fullySpecifiedName = item.groupMembers[0].concept.name;
@@ -28,12 +28,12 @@ angular.module('bahmni.common.displaycontrol.custom')
 
           var newImmunizationConcepts = $scope.config.newImmunizationConcepts;
 
-          spinner.forPromise(observationsService.fetch($scope.patient.uuid, newImmunizationConcepts, "latest", undefined, undefined, undefined).then(function (response) {
+          spinner.forPromise(observationsService.fetch($scope.patient.uuid, newImmunizationConcepts, undefined, undefined, undefined).then(function (response) {
             var newImmunizations = response.data;
 
             newImmunizations = _.map(newImmunizations, function (item, index) {
               var immunization =  {};
-              immunization.uuid = item.value.uuid;
+              immunization.conceptUuid = item.value.uuid;
               immunization.name = item.valueAsString;
               immunization.value = "OBS_BOOLEAN_YES_KEY";
               immunization.date = item.observationDateTime;
@@ -42,7 +42,25 @@ angular.module('bahmni.common.displaycontrol.custom')
               return immunization
             });
 
-            // Remove duplicated items
+            // Remove possible duplicates in the new immunizations to keep only the most recent ones.
+            var k = 0
+            var duplicatesToRemove = [];
+
+            for (k = newImmunizations.length - 1; k >= 0; k -= 1) {
+                var itemK = newImmunizations[k]
+                var l = 0;
+                for (l = newImmunizations.length - 1; l >= 0; l -= 1) {
+                    var itemL = newImmunizations[l]
+                    if (itemK.conceptUuid == itemL.conceptUuid) {
+                        if (new Date(itemK.date) > new Date(itemL.date) ) {
+                            newImmunizations.splice(l)
+                        }
+                    }
+                }
+            }
+
+            
+            // Remove duplicated items between past and new immunizations (keep only the most recent one)
             var newImmunizationsToRemove = []
             var pastImmunizationsToRemove = []
 
@@ -56,7 +74,7 @@ angular.module('bahmni.common.displaycontrol.custom')
 
                 var item2 = newImmunizations[j];
 
-                if (item1.uuid == item2.uuid) {
+                if (item1.conceptUuid == item2.conceptUuid) {
                   if (new Date(item1.date) > new Date(item2.date) ) {
                     newImmunizationsToRemove.push(j);
                   } else {
