@@ -24,7 +24,7 @@
                 "config": {
                     "translationKey": "IMMUNIZATION",
                     "template": "<immunization></immunization>",
-                    "pastImmunizationConcepts":[
+                    "immunizationSets":[
                         "Cambodia_Polio1 Set",
                         "Cambodia_Polio2 Set",
                         "Cambodia_Polio3 Set",
@@ -45,10 +45,10 @@
                         "Cambodia_Tetanus4 Set",
                         "Cambodia_Tetanus5 Set"
                     ],
-                    "newImmunizationConcepts":[
+                    "immunizationQuestions":[
                         "Cambodia_New Immunization"
                     ],
-                    "displayedImmunization": [
+                    "immunizationsDisplayed": [
                         "Cambodia_Polio1",
                         "Cambodia_Polio2",
                         "Cambodia_Polio3",
