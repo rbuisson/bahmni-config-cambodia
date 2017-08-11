@@ -77,7 +77,7 @@
         "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
         "type": "config",
         "extensionParams": {
-            "conceptName": "Fee Information",
+            "conceptName": "Cambodia_Fee Information",
             "translationKey": "FEE_INFORMATION_LOCALE_KEY",
             "required":false
         },

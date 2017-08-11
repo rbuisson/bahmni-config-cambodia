@@ -92,7 +92,10 @@
             "WEIGHT": {
                 "disableAddNotes": true
             },
-            "REGISTRATION FEES": {
+            "Cambodia_Registration Fee": {
+                "disableAddNotes": true
+            },
+            "Cambodia_Payment Method": {
                 "disableAddNotes": true
             },
             "defaults": {
