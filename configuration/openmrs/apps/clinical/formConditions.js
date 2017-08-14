@@ -89,11 +89,11 @@ Bahmni.ConceptSet.FormConditions.rules = {
             return {
                 hide: ["Cambodia_Pregnant Women Immunizations Set"],
             }
-        } else if (patientAge >= 1 && patientAge < 16) {
+        } else if (patientAge >= 1 && patientAge < 13) {
             return {
                 hide: ["Cambodia_Pregnant Women Immunizations Set"]
             }
-        } else if (patientAge >= 16 && patientGender == 'F') {
+        } else if (patientAge >= 13 && patientGender == 'F') {
             return {
                 show: ["Cambodia_Pregnant Women Immunizations Set"]
             }

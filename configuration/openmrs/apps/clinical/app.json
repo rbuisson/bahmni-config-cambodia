@@ -407,6 +407,81 @@
         "Cambodia_Prevention Fluoride": {
           "disableAddNotes": true
         },
+        "Cambodia_ANC_Symptoms": {
+            "disableAddNotes": true
+        },
+        "Cambodia_ANC Visit Number": {
+            "disableAddNotes": true
+        },
+        "Cambodia_Gestation": {
+            "disableAddNotes":true
+        },
+        "WEIGHT": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Pulse": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Fetal Pulse": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Height Of Uterus": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Presenting Part": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Prenatal Care": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Prevention": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Dangerous signs": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Delivery planning": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Breast Feeding": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Newborn Care": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Postnatal Care": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Immunization": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Previous Pregnancies Set": {
+            "allowAddMore": true
+        },
+        "Cambodia_Pregnancy Outcome": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Living Child": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Date of Last Delivery": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Date of Last Menstrual Period": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Expected Due Date": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Problems During Last Pregnancy": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Problems During Last Delivery": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Previous Caesarean Section": {
+            "disableAddNotes":true
+        },
         "defaults": {
         }
     },
