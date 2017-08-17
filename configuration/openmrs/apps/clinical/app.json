@@ -407,8 +407,13 @@
         "Cambodia_Prevention Fluoride": {
           "disableAddNotes": true
         },
+        "Cambodia_ANC Referral Reason": {
+            "disableAddNotes": true,
+            "multiSelect": true
+        },
         "Cambodia_ANC_Symptoms": {
-            "disableAddNotes": true
+            "disableAddNotes": true,
+            "multiSelect": true
         },
         "Cambodia_ANC Visit Number": {
             "disableAddNotes": true
@@ -431,28 +436,11 @@
         "Cambodia_Presenting Part": {
             "disableAddNotes":true
         },
-        "Cambodia_Prenatal Care": {
-            "disableAddNotes":true
+        "Cambodia_Education Topic": {
+            "disableAddNotes":true,
+            "multiSelect": true
         },
-        "Cambodia_Prevention": {
-            "disableAddNotes":true
-        },
-        "Cambodia_Dangerous signs": {
-            "disableAddNotes":true
-        },
-        "Cambodia_Delivery planning": {
-            "disableAddNotes":true
-        },
-        "Cambodia_Breast Feeding": {
-            "disableAddNotes":true
-        },
-        "Cambodia_Newborn Care": {
-            "disableAddNotes":true
-        },
-        "Cambodia_Postnatal Care": {
-            "disableAddNotes":true
-        },
-        "Cambodia_Immunization": {
+        "Cambodia_Followup Appointment Date": {
             "disableAddNotes":true
         },
         "Cambodia_Previous Pregnancies Set": {
