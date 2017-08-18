@@ -470,6 +470,48 @@
         "Cambodia_Previous Caesarean Section": {
             "disableAddNotes":true
         },
+        "Cambodia_LEU" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_NIT" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_URO" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_PRO" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_pH" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_BLO" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_SG" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_KET" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_BIL" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_GLU" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_ASC" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_Fasting Blood Glucose" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_PP Blood Glucose" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_Malaria Rapid Test" : {
+          "disableAddNotes": true
+        },
         "defaults": {
         }
     },
