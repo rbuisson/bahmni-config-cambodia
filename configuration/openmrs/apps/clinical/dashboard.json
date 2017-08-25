@@ -122,14 +122,16 @@
                 "displayOrder":49,
                 "dashboardConfig":{
                     "conceptNames":[
-                        "Cambodia_Lab Test Notes"
+                        "Cambodia_Lab Tests Results Notes",
+                        "Cambodia_Lab Tests Results Attachment"
                     ],
                     "numberOfVisits": 3,
                     "showHeader": true
                 },
                 "expandedViewConfig":{
                     "conceptNames":[
-                        "Cambodia_Lab Test Notes"
+                        "Cambodia_Lab Tests Results Notes",
+                        "Cambodia_Lab Tests Results Attachment"
                     ]
                 }
             },
