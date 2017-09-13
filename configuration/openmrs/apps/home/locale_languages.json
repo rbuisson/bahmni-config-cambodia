@@ -1,7 +1,12 @@
-{"locales": [ {"code": "en", "nativeName": "English"},
-  {"code": "km", "nativeName": "ភាសាខ្មែរ"},
-  {"code": "es", "nativeName": "Español"},
-  {"code": "fr", "nativeName": "Français"},
-  {"code": "it", "nativeName": "Italiano"},
-  {"code": "pt_BR", "nativeName": "Português"}]
+{
+  "locales": [
+    {
+      "code": "km",
+      "nativeName": "ភាសាខ្មែរ"
+    },
+    {
+      "code": "en",
+      "nativeName": "English"
+    }
+  ]
 }
