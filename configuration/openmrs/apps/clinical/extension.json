@@ -125,50 +125,17 @@
     "order": 3,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalConceptSetGroupObservationsChiefComplaintForm": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.chiefComplaintForm",
+  "bahmniClinicalConceptSetGroupObservationsVisitForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.visitForm",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
     "type": "config",
     "extensionParams": {
       "default": true,
-      "conceptName": "Cambodia_Chief Complaint Form"
+      "conceptName": "Cambodia_Visit Form"
     },
-    "order": 10,
+    "order": 1,
     "requiredPrivilege": "app:clinical"
-  },
-  "bahmniClinicalConceptSetGroupObservationsPastHistoryForm": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.pastHistoryForm",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "default": true,
-      "conceptName": "Cambodia_Past Medical History Form"
-    },
-    "order": 20,
-    "requiredPrivilege": "app:clinical"
-  },
-  "bahmniClinicalConceptSetGroupObservationsVitalReviewOfSystemsForm": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.reviewOfSystemsForm",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "default": true,
-      "conceptName": "Cambodia_Review of Systems Form"
-    },
-    "order": 30,
-    "requiredPrivilege": "app:clinical"
-  },
-  "bahmniClinicalConceptSetGroupObservationsPhysicalExamForm": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.physicalExamForm",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "default": true,
-      "conceptName": "Cambodia_Physical Exam Form"
-    },
-    "order": 40,
-    "requiredPrivilege": "app:clinical"
-  },
+  },  
   "bahmniClinicalConceptSetGroupObservationsAllergiesForm": {
     "id": "bahmni.clinical.conceptSetGroup.observations.allergiesForm",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
