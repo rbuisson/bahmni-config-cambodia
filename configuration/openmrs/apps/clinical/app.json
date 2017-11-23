@@ -512,6 +512,37 @@
         "Cambodia_Malaria Rapid Test" : {
           "disableAddNotes": true
         },
+        "Cambodia_Date of Delivery" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_Newborn Sex" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_Newborn Weight" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_PNC Problems During Delivery" : {
+          "multiSelect": true,
+          "disableAddNotes": true
+        },
+        "Cambodia_PNC First Visit" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_Maternal Care" : {
+          "multiSelect": true,
+          "disableAddNotes": true
+        },
+        "Cambodia_Neonatal Care" : {
+          "multiSelect": true,
+          "disableAddNotes": true
+        },
+        "Cambodia_Counselling" : {
+          "multiSelect": true,
+          "disableAddNotes": true
+        },
+        "Cambodia_PNC Next Appointment" : {
+          "disableAddNotes": true
+        },
         "defaults": {
         }
     },
