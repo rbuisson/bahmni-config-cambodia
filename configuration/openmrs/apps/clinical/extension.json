@@ -133,18 +133,86 @@
       "default": true,
       "conceptName": "Cambodia_Consultation Form"
     },
-    "order": 1,
     "requiredPrivilege": "app:clinical"
   },  
-  "bahmniClinicalConceptSetGroupObservationsAllergiesForm": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.allergiesForm",
+  "bahmniClinicalConceptSetGroupObservationsVitalsForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.VitalsForm",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
     "type": "config",
     "extensionParams": {
       "default": true,
-      "conceptName": "Cambodia_Allergies Form"
+      "conceptName": "Cambodia_Vital Signs Extended Form"
     },
-    "order": 50,
+    "requiredPrivilege": "app:clinical"
+  },
+  "bahmniClinicalConceptSetGroupObservationsANCForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.ANCForm",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "Cambodia_ANC Visit Form"
+    },
+    "requiredPrivilege": "app:clinical"
+  },
+  "bahmniClinicalConceptSetGroupObservationsANChistForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.ANChistForm",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "Cambodia_ANC Obstetric History Form"
+    },
+    "requiredPrivilege": "app:clinical"
+  },
+  "bahmniClinicalConceptSetGroupObservationsPNCForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.PNCForm",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "Cambodia_PNC Form"
+    },
+    "requiredPrivilege": "app:clinical"
+  },
+  "bahmniClinicalConceptSetGroupObservationsBirthSpacingForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.BirthSpacingForm",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "Cambodia_Birth Spacing Form"
+    },
+    "requiredPrivilege": "app:clinical"
+  },
+  "bahmniClinicalConceptSetGroupObservationsReferralForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.ReferralForm",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "Cambodia_Referral Form"
+    },
+    "requiredPrivilege": "app:clinical"
+  },
+  "bahmniClinicalConceptSetGroupObservationsDentalForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.DentalForm",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "Cambodia_Dental Exam Form"
+    },
+    "requiredPrivilege": "app:clinical"
+  },
+  "bahmniClinicalConceptSetGroupObservationsLabForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.LabForm",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "Cambodia_Lab Tests Results Form"
+    },
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalConceptSetGroupObservationsImmunizationsSet": {
@@ -155,7 +223,6 @@
       "default": true,
       "conceptName": "Cambodia_Immunizations Form"
     },
-    "order": 60,
     "requiredPrivilege": "app:clinical"
   },  
   "bahmniClinicalBillingTreatment": {
