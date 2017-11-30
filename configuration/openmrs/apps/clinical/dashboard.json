@@ -189,32 +189,23 @@
                 "displayOrder":14,
                 "dashboardConfig":{
                     "conceptNames":[
-                        "Coded Diagnosis",
                         "Cambodia_Chief Complaint",
-                        "Cambodia_History of Present Illness"
-                    ],
-                    "scope": "latest"
+                        "Cambodia_History of Present Illness",
+                        "Cambodia_Old Case"
+                    ]
                 },
                 "expandedViewConfig":{
                     "conceptNames":[
                         "Cambodia_Chief Complaint",
                         "Cambodia_History of Present Illness",
-                        "Non-coded Diagnosis",
-                        "Coded Diagnosis",
-                        "Diagnosis Certainty",
-                        "Diagnosis order",
-                        "Bahmni Diagnosis Status"
+                        "Cambodia_Old Case"
                     ],
                     "pivotTable":{
                         "groupBy":"visits",
                         "obsConcepts":[
                             "Cambodia_Chief Complaint",
                             "Cambodia_History of Present Illness",
-                            "Non-coded Diagnosis",
-                            "Coded Diagnosis",
-                            "Diagnosis Certainty",
-                            "Diagnosis order",
-                            "Bahmni Diagnosis Status"
+                            "Cambodia_Old Case"
                         ]
                     }
                 }
