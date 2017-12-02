@@ -452,7 +452,13 @@
         "Cambodia_Living Child": {
             "disableAddNotes":true
         },
+        "Cambodia_Pregnancy Date": {
+            "disableAddNotes":true
+        },
         "Cambodia_Date of Last Delivery": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Newborn Survived": {
             "disableAddNotes":true
         },
         "Cambodia_Date of Last Menstrual Period": {
@@ -469,6 +475,29 @@
         },
         "Cambodia_Previous Caesarean Section": {
             "disableAddNotes":true
+        },
+        "Cambodia_Acceptor": {
+            "disableAddNotes":true,
+            "multiSelect":true
+        },
+        "Cambodia_Stopped Contraception": {
+            "disableAddNotes":true
+        },
+        "Cambodia_Contraceptives Past": {
+            "disableAddNotes":true,
+            "multiSelect":true
+        },
+        "Cambodia_Contraceptives Present": {
+            "disableAddNotes":true,
+            "multiSelect":true
+        },
+        "Cambodia_Contraceptives Received": {
+            "disableAddNotes":true,
+            "multiSelect":true
+        },
+        "Cambodia_Contraceptive Education": {
+            "disableAddNotes":true,
+            "multiSelect":true
         },
         "Cambodia_LEU" : {
           "disableAddNotes": true
