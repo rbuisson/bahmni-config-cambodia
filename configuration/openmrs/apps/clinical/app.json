@@ -441,7 +441,8 @@
             "multiSelect": true
         },
         "Cambodia_Followup Appointment Date": {
-            "disableAddNotes":true
+            "disableAddNotes":true,
+            "allowFutureDates":true
         },
         "Cambodia_Previous Pregnancies Set": {
             "allowAddMore": true
@@ -465,7 +466,8 @@
             "disableAddNotes":true
         },
         "Cambodia_Expected Due Date": {
-            "disableAddNotes":true
+            "disableAddNotes":true,
+            "allowFutureDates":true
         },
         "Cambodia_Problems During Last Pregnancy": {
             "disableAddNotes":true
@@ -570,7 +572,8 @@
           "disableAddNotes": true
         },
         "Cambodia_PNC Next Appointment" : {
-          "disableAddNotes": true
+          "disableAddNotes": true,
+          "allowFutureDates": true
         },
         "defaults": {
         }
