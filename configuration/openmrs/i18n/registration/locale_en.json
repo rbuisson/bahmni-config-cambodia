@@ -29,7 +29,11 @@
   "impl.healthCenter":"Health center",
   "Location.village":"Village",
   "impl.commune":"Commune",
+  "LOCAL_NAMES":"Name in Khmer",
   "Location.district":"District",
   "Location.province":"Province",
-  "Location.country":"Country"
+  "Location.country":"Country",
+  "givenNameLocal":"Name in Khmer",
+  "middleNameLocal":"Middle names in Khmer",
+  "familyNameLocal":"Family name in Khmer"
 }

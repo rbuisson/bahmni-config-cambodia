@@ -25,7 +25,11 @@
   "impl.healthCenter":"មជ្ឈមណ្ឌលសុខភាព",
   "Location.village":"ក្រុម",
   "impl.commune":"ឃុំ",
+  "LOCAL_NAMES":"ឈ្មោះ-ខ្មែរ",
   "Location.district":"ស្រុក/ក្រុង",
   "Location.province":"ភូមិ",
-  "Location.country":"ប្រទេស"
+  "Location.country":"ប្រទេស",
+  "givenNameLocal":"ឈ្មោះ-ខ្មែរ",
+  "middleNameLocal":"ឈ្មោះកណ្តាល-ខ្មែរ",
+  "familyNameLocal":"ឈ្មោះគ្រួសារ-ខ្មែរ"
 }

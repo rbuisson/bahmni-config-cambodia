@@ -59,9 +59,17 @@
                 "field": "city_village"
             },
             "customAttributes": {
-                "label": "givenNameLocal",
-                "placeholder": "givenNameLocal",
+                "label": "LOCAL_NAMES",
+                "placeholder": "LOCAL_NAMES",
                 "fields": ["givenNameLocal", "middleNameLocal", "familyNameLocal"]
+            }
+        },
+        "patientSearchResults": {
+            "address": {
+                "fields" : ["city_village"]
+            },
+            "personAttributes": {
+                "fields": ["givenNameLocal", "middleNameLocal", "familyNameLocal" ]
             }
         },
         "afterVisitSaveForwardUrl" : "./index.html#/search",
