@@ -169,6 +169,12 @@
         },        
         "Cambodia_Carotid bruit": {
             "disableAddNotes": true
+        },         
+        "Cambodia_Pulses Intensity": {
+            "disableAddNotes": true
+        }, 
+        "Cambodia_Edema Severity": {
+            "disableAddNotes": true
         },        
         "Cambodia_Abdomen Exam": {
             "required": true,
@@ -393,6 +399,7 @@
           "disableAddNotes": true
         },
         "Cambodia_Coded Small Dental Surgery Performed": {
+          "multiSelect": true,
           "disableAddNotes": true
         },
         "Cambodia_Other Small Dental Surgery": {
