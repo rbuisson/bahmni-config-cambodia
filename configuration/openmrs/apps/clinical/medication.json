@@ -7,6 +7,13 @@
         "defaultDurationUnit": "Day(s)",
         "hideOrderSet" : false,
         "defaultInstructions": "As directed",
+          "frequencies":  [
+          "QD - 1X /day",
+          "BID - 2X /day",
+          "TID - 3X /day",
+          "QID - 4X /day",
+          "STAT - Immediately"
+        ],
         "frequencyDefaultDurationUnitsMap": [
           {
             "minFrequency": "1/7",
