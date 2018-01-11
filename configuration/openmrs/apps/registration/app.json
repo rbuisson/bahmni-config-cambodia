@@ -44,6 +44,7 @@
         "autoCompleteFields":["familyName"],
         "searchByIdForwardUrl": "/patient/{{patientUuid}}",
         "showMiddleName": true,
+        "showLastName": true,
         "showBirthTime": false,
 
         "fieldValidation" : {
