@@ -31,7 +31,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         var sections = {
             "show": [],
             "hide": []
-        }
+        };
 
         if (patientAge < 1) {
             return {
@@ -57,7 +57,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         var sections = {
             "show": [],
             "hide": []
-        }
+        };
 
         if (patientAge < 1) {
             return {
@@ -83,7 +83,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         var sections = {
             "show": [],
             "hide": []
-        }
+        };
 
         if (patientAge < 1) {
             return {
@@ -109,7 +109,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         var sections = {
             "show": [],
             "hide": []
-        }
+        };
 
         if (!fieldValue || fieldValue.length == 0) {
             sections.hide.push("Cambodia_Past Medical History Details")
@@ -123,7 +123,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             sections.hide.push("Cambodia_Past Cancer Details");
         }
 
-        return sections
+        return sections;
     },
     'Cambodia_Medications' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_Medications'];
@@ -413,20 +413,20 @@ Bahmni.ConceptSet.FormConditions.rules = {
         var sections = {
             "show": [],
             "hide": []
-        }
+        };
 
         if (patientGender == 'M') {
-            sections.show.push("Cambodia_Genitourinary Male Findings")
-            sections.hide.push("Cambodia_Genitourinary Female Findings")
+            sections.show.push("Cambodia_Genitourinary Male Findings");
+            sections.hide.push("Cambodia_Genitourinary Female Findings");
         } else if (patientGender == 'F') {
-            sections.hide.push("Cambodia_Genitourinary Male Findings")
-            sections.show.push("Cambodia_Genitourinary Female Findings")
+            sections.hide.push("Cambodia_Genitourinary Male Findings");
+            sections.show.push("Cambodia_Genitourinary Female Findings");
         } else {
-            sections.show.push("Cambodia_Genitourinary Male Findings")
-            sections.show.push("Cambodia_Genitourinary Female Findings")            
+            sections.show.push("Cambodia_Genitourinary Male Findings");
+            sections.show.push("Cambodia_Genitourinary Female Findings");
         }
 
-        return sections
+        return sections;
     },
     'Cambodia_Skin Exam' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_Skin Exam'];
@@ -518,7 +518,8 @@ Bahmni.ConceptSet.FormConditions.rules = {
         var sections = {
             "show": [],
             "hide": []
-        }
+
+        };
 
         if (fieldValue && fieldValue.indexOf('Cambodia_Pulses') > -1) {
             sections.show.push("Cambodia_Pulses Intensity")
@@ -532,7 +533,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             sections.hide.push("Cambodia_Edema Severity");
         }
 
-        return sections
+        return sections;
     },
     'Cambodia_Abdomen Exam' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_Abdomen Exam'];
@@ -566,59 +567,63 @@ Bahmni.ConceptSet.FormConditions.rules = {
             "hide": [],
             "enable": [],
             "disable": []
-        }
+        };
 
         if (fieldValue == "Cambodia_Abnormal") {
-            sections.enable.push("Cambodia_Genitourinary Exam Details")
-            sections.enable.push("Cambodia_Genitourinary Male Exam Abnormalities")
-            sections.enable.push("Cambodia_Genitourinary Female Exam Abnormalities")
-            if (patientGender == 'M') sections.hide.push("Cambodia_Genitourinary Female Exam Abnormalities")
+            sections.enable.push("Cambodia_Genitourinary Exam Details");
+            sections.enable.push("Cambodia_Genitourinary Male Exam Abnormalities");
+            sections.enable.push("Cambodia_Genitourinary Female Exam Abnormalities");
+            if (patientGender == 'M') {
+                sections.hide.push("Cambodia_Genitourinary Female Exam Abnormalities");
+            }
         } else {
-            sections.disable.push("Cambodia_Genitourinary Exam Details")
-            sections.disable.push("Cambodia_Genitourinary Male Exam Abnormalities")
-            sections.disable.push("Cambodia_Genitourinary Female Exam Abnormalities")
-            if (patientGender == 'M') sections.hide.push("Cambodia_Genitourinary Female Exam Abnormalities")
+            sections.disable.push("Cambodia_Genitourinary Exam Details");
+            sections.disable.push("Cambodia_Genitourinary Male Exam Abnormalities");
+            sections.disable.push("Cambodia_Genitourinary Female Exam Abnormalities");
+            if (patientGender == 'M') {
+                sections.hide.push("Cambodia_Genitourinary Female Exam Abnormalities");
+            }
 
         }
 
-    return sections
-},
-'Cambodia_Musculoskeletal and Neurological Exam' : function (formName, formFieldValues) {
-    var fieldValue = formFieldValues['Cambodia_Musculoskeletal and Neurological Exam'];
+        return sections;
+    },
+    'Cambodia_Musculoskeletal and Neurological Exam' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Musculoskeletal and Neurological Exam'];
 
-    var sections = {
-        "enable": [],
-        "disable": []
+        var sections = {
+            "enable": [],
+            "disable": []
+        };
+
+        if (fieldValue && fieldValue.indexOf('Cambodia_Abnormal') > -1) {
+            sections.enable.push("Cambodia_Musculoskeletal Exam Abnormalities");
+            sections.enable.push("Cambodia_Muscle Strength Set");
+            sections.enable.push("Cambodia_Deep Tendon Reflex Set");
+            sections.enable.push("Cambodia_Musculoskeletal and Neurological Exam Details");
+        } else {
+            sections.disable.push("Cambodia_Musculoskeletal Exam Abnormalities");
+            sections.disable.push("Cambodia_Muscle Strength Set");
+            sections.disable.push("Cambodia_Deep Tendon Reflex Set");
+            sections.disable.push("Cambodia_Musculoskeletal and Neurological Exam Details");
+        }
+
+        return sections;
+    },
+    'Cambodia_Is Small Dental Surgery Performed' : function (formName, formFieldValues) {
+        var fieldValue = formFieldValues['Cambodia_Is Small Dental Surgery Performed'];
+
+        var sections = {
+            "enable": [],
+            "disable": []
+        };
+
+        if (fieldValue) {
+            sections.enable.push("Cambodia_Coded Small Dental Surgery Performed");
+        } else {
+            sections.disable.push("Cambodia_Coded Small Dental Surgery Performed");
+        }
+
+        return sections;
     }
-
-    if (fieldValue && fieldValue.indexOf('Cambodia_Abnormal') > -1) {
-        sections.enable.push("Cambodia_Musculoskeletal Exam Abnormalities")
-        sections.enable.push("Cambodia_Muscle Strength Set")
-        sections.enable.push("Cambodia_Deep Tendon Reflex Set")
-        sections.enable.push("Cambodia_Musculoskeletal and Neurological Exam Details")
-    } else {
-        sections.disable.push("Cambodia_Musculoskeletal Exam Abnormalities")
-        sections.disable.push("Cambodia_Muscle Strength Set")
-        sections.disable.push("Cambodia_Deep Tendon Reflex Set")
-        sections.disable.push("Cambodia_Musculoskeletal and Neurological Exam Details")
-    }
-
-    return sections
-},
-'Cambodia_Is Small Dental Surgery Performed' : function (formName, formFieldValues) {
-    var fieldValue = formFieldValues['Cambodia_Is Small Dental Surgery Performed'];
-
-    var sections = {
-        "enable": [],
-        "disable": []
-    }
-
-    if (fieldValue) {
-        sections.enable.push("Cambodia_Coded Small Dental Surgery Performed")
-    } else {
-        sections.disable.push("Cambodia_Coded Small Dental Surgery Performed")
-    }
-
-    return sections
-}
 };
