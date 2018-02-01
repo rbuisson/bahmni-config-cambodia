@@ -1,14 +1,13 @@
 {
     "_comment":"This is a concatenation of the Config and Bahmni Apps localization files",
-    "LOCAL_NAMES":"ឈ្មោះ-ខ្មែរ",
-    "Location.village":"ក្រុម",
-    "impl.commune":"ឃុំ",
-    "Location.district":"ស្រុក/ក្រុង",
-    "Location.province":"ភូមិ",
-    "Location.country":"ប្រទេស",
-    "givenNameLocal":"ឈ្មោះ-ខ្មែរ",
-    "middleNameLocal":"ឈ្មោះកណ្តាល-ខ្មែរ",
-    "familyNameLocal":"ឈ្មោះគ្រួសារ-ខ្មែរ",
+
+    "impl.healthCenter": "Health Center",
+    "LOCAL_NAMES":"Local Names",
+    "Location.village":"Village",
+    "Location.district":"District",
+    "Location.country":"Country",
+    "Location.province":"Province",
+    "impl.commune":"Commune",
 
     "REGISTRATION_SEARCH_CONFIG_KEY": "S<u>e</u>arch",
     "REGISTRATION_CREATE_NEW_CONFIG_KEY":"Create <u>N</u>ew",

@@ -256,6 +256,7 @@
             "growthChart":{
                 "type":"observationGraph",
                 "title":"Growth Chart",
+                "translationKey": "IMPL_GROWTH_CHART",
                 "config":{
                     "yAxisConcepts":[
                         "Weight"
@@ -272,12 +273,13 @@
                 "dashboardConfig": {
                     "maximumNoOfVisits": 3
                 },
-                "formGroup": [ "Cambodia_Dental Exam Form"],
+                "formGroup": ["Cambodia_Dental Exam Form"],
                 "translationKey": "IMPL_DENTAL"
             },
             "bpPulse":{
                 "type":"observationGraph",
                 "title":"BP / Pulse",
+                "translationKey": "IMPL_BP_PULSE",
                 "config":{
                     "yAxisConcepts":[
                         "Cambodia_Systolic Blood Pressure",
@@ -292,6 +294,7 @@
             "weightBMI":{
                 "type":"observationGraph",
                 "title":"Weight / BMI",
+                "translationKey": "IMPL_WEIGHT_BMI",
                 "config":{
                     "yAxisConcepts":[
                         "Weight",
