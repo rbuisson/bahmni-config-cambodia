@@ -8,7 +8,7 @@
 </h2>
 
 <div ng-show="!immunizations.length">
-    <div class="placeholder-text">{{::'NO_IMMUNIZATION_FOR_PATIENT' | translate}}</div>
+    <div class="placeholder-text"><p translate="DISPLAY_CONTROL_ERROR_MESSAGE_KEY" translate-values="{displayControl : '{{config.translationKey | translate}}'}"></p></div>
 </div>
 <table ng-show="immunizations.length">
     <thead>
