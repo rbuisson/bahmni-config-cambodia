@@ -32,78 +32,60 @@
           }
         ],
         "drugFormDefaults": {
-          "Ayurvedic": {
-            "doseUnits": "Teaspoon",
-            "route": "Oral"
-          },
           "Capsule": {
             "doseUnits": "Capsule(s)",
-            "route": "Oral"
-          },
-          "Cream": {
-            "route": "Topical"
-          },
-          "Drops": {
-            "doseUnits": "Drop",
-            "route": "Topical"
-          },
-          "Food Supplement": {
-            "doseUnits": "Unit(s)",
-            "route": "Oral"
-          },
-          "Gel": {
-            "route": "Topical"
-          },
-          "Granule": {
-            "doseUnits": "Unit(s)",
-            "route": "Oral"
+            "route": "PO - Oral"
           },
           "Inhaler": {
             "doseUnits": "Puff(s)",
-            "route": "Inhalation"
+            "route": "INH - Inhalation"
           },
-          "Injection": {
-            "doseUnits": "mg",
-            "route": "Intravenous"
+          "Amp": {
+            "doseUnits": "Unit(s)",
+            "route": "IV - Intravenous"
+          },          
+          "Flacon": {
+            "doseUnits": "Unit(s)",
+            "route": "IV - Intravenous"
           },
-          "Jelly": {
-            "route": "Topical"
-          },
-          "Liquid": {
-            "doseUnits": "ml",
-            "route": "Oral"
+          "Solution IV": {
+            "doseUnits": "Unit(s)",
+            "route": "IV - Intravenous"
           },
           "Lotion": {
-            "route": "Topical"
+            "doseUnits": "Unit(s)",
+            "route": "TOP - Topical (skin)"
           },
           "Ointment": {
-            "route": "Topical"
-          },
-          "Pessary": {
             "doseUnits": "Unit(s)",
-            "route": "Per Vaginal"
+            "route": "TOP - Topical (skin)"
           },
-          "Powder": {
-            "doseUnits": "mg",
-            "route": "Topical"
+          "Ovule": {
+            "doseUnits": "Unit(s)",
+            "route": "PV - Per vagina"
           },
-          "Solution": {
-            "doseUnits": "ml",
-            "route": "Topical"
+          "Solution Oral": {
+            "doseUnits": "Unit(s)",
+            "route": "PO - Oral"
           },
-          "Spray": {
+          "Solution Topical": {
+            "doseUnits": "Unit(s)",
+            "route": "TOP - Topical (skin)"
+          },
+          "Spray Nasal": {
             "doseUnits": "Puff(s)",
-            "route": "Nasal"
+            "route": "NAS - Nasal (nose)"
           },
-          "Syrup": {
-            "doseUnits": "ml",
-            "route": "Oral"
+          "Suspension": {
+            "doseUnits": "Teaspoon",
+            "route": "PO - Oral"
           },
           "Tablet": {
             "doseUnits": "Tablet(s)",
-            "route": "Oral"
+            "route": "PO - Oral"
           }
-        }
+        },
+        "routesToMakeDoseSectionNonMandatory" : ["TOP - Topical (skin)", "IV - Intravenous"]
       }
     }
   }
