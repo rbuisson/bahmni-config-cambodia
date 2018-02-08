@@ -81,7 +81,7 @@
                         "Cambodia_Allergies"
                     ]
                 },
-                "displayOrder":71,
+                "displayOrder":70,
                 "translationKey":"IMPL_ALLERGIES",
                 "title":"Allergies"
             },
@@ -119,7 +119,7 @@
                 "translationKey":"IMPL_LAB",
                 "type":"ordersControl",
                 "orderType":"Lab Order",
-                "displayOrder":49,
+                "displayOrder":95,
                 "dashboardConfig":{
                     "conceptNames":[
                         "Cambodia_Lab Tests Results Notes",
@@ -136,7 +136,7 @@
                 }
             },
             "radioOrders": {
-                "displayOrder":70,
+                "displayOrder":102,
                 "orderType": "Radiology Order",
                 "type": "ordersControl",
                 "translationKey": "DASHBOARD_TITLE_RADIOLOGY_KEY",
@@ -268,13 +268,13 @@
             },
             "labTest": {
                 "type": "forms",
-                "displayOrder": 100,
+                "displayOrder": 71,
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
                     "maximumNoOfVisits": 3
                 },
                 "formGroup": ["Cambodia_Lab Tests Results Form"],
-                "translationKey": "IMPL_LAB_RESULTS_KEY"
+                "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY"
             },            
             "offlineMed": {
                 "type": "forms",
@@ -283,12 +283,12 @@
                 "dashboardConfig": {
                     "maximumNoOfVisits": 3
                 },
-                "formGroup": ["Cambodia_Offine Medication"],
+                "formGroup": ["Cambodia_Offline Medication Form"],
                 "translationKey": "IMPL_OFFLINEMED"
             },
             "dentalExam": {
                 "type": "forms",
-                "displayOrder": 100,
+                "displayOrder": 90,
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
                     "maximumNoOfVisits": 3

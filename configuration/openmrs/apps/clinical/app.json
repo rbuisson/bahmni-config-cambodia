@@ -23,6 +23,8 @@
         "visitUuid"
     ],
     "config": {
+        "showSaveConfirmDialog" : true,
+        "allowPatientSwitchOnConsultation": true,
         "enableRadiologyOrderOptions":["Urgent","NeedsPrint"],
         "quickPrints":false,
         "networkConnectivity" : {
@@ -253,6 +255,7 @@
           "hideAbnormalButton": false
         },
         "Cambodia_Old Case": {
+          "required": true,
           "disableAddNotes": true
         },
         "Cambodia_Polio1": {
@@ -451,16 +454,13 @@
             "disableAddNotes":true,
             "allowFutureDates":true
         },
-        "Cambodia_Previous Pregnancies Set": {
-            "allowAddMore": true
-        },
-        "Cambodia_Pregnancy Outcome": {
+        "Cambodia_Pregnancy Number": {
             "disableAddNotes":true
         },
-        "Cambodia_Living Child": {
+        "Cambodia_Living Children": {
             "disableAddNotes":true
         },
-        "Cambodia_Pregnancy Date": {
+        "Cambodia_Abortions": {
             "disableAddNotes":true
         },
         "Cambodia_Date of Last Delivery": {
@@ -477,7 +477,8 @@
             "allowFutureDates":true
         },
         "Cambodia_Problems During Last Pregnancy": {
-            "disableAddNotes":true
+            "disableAddNotes":true,
+            "multiSelect":true
         },
         "Cambodia_Problems During Last Delivery": {
             "disableAddNotes":true
