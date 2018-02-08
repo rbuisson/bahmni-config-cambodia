@@ -266,6 +266,26 @@
                 },
                 "displayOrder":140
             },
+            "labTest": {
+                "type": "forms",
+                "displayOrder": 100,
+                "hideEmptyDisplayControl": false,
+                "dashboardConfig": {
+                    "maximumNoOfVisits": 3
+                },
+                "formGroup": ["Cambodia_Lab Tests Results Form"],
+                "translationKey": "IMPL_LAB_RESULTS_KEY"
+            },            
+            "offlineMed": {
+                "type": "forms",
+                "displayOrder": 100,
+                "hideEmptyDisplayControl": false,
+                "dashboardConfig": {
+                    "maximumNoOfVisits": 3
+                },
+                "formGroup": ["Cambodia_Offine Medication"],
+                "translationKey": "IMPL_OFFLINEMED"
+            },
             "dentalExam": {
                 "type": "forms",
                 "displayOrder": 100,

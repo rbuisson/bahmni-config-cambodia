@@ -8,8 +8,9 @@
     "IMPL_CHIEF_COMPLAINT": "Chief Complaint",
     "IMPL_REFERRALS": "Referrals",
     "IMPL_DENTAL": "Dental",
-    "IMPL_LAB": "Lab Orders",
+    "IMPL_LAB": "Orders",
     "IMPL_OBSERVATIONS": "Observations",
+    "IMPL_OFFLINEMED": "Offline Medication",
 
     "MODULE_LABEL_ACTIVE_KEY": "Active",
     "MODULE_LABEL_PROGRAMS_KEY": "Programs",
