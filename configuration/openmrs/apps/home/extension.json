@@ -50,6 +50,16 @@
     "order": 6,
     "requiredPrivilege": "app:patient-documents"
   },
+  "admin": {
+    "id": "bahmni.admin",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "translationKey": "MODULE_LABEL_ADMIN_KEY",
+    "url": "../admin/#/dashboard/home",
+    "icon": "icon-bahmni-admin",
+    "order": 70,
+    "requiredPrivilege": "app:admin"
+  },
   "orders": {
     "id": "bahmni.orders",
     "extensionPointId": "org.bahmni.home.dashboard",

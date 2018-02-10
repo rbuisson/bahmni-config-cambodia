@@ -17,30 +17,7 @@
                     "countyDistrict",
                     "stateProvince"
                 ]
-            },
-            "navigationLinksControl":{
-                "translationKey":"DASHBOARD_TITLE_NAVIGATION_LINKS_CONTROL_KEY",
-                "type":"navigationLinksControl",
-                "displayOrder":2,
-                "showLinks":[
-                    "home",
-                    "visit",
-                    "registration",
-                    "visitAttribute"
-                ]
-            },                    
-            "summary": {
-                "type": "forms",
-                "displayOrder": 4,
-                "hideEmptyDisplayControl": false,
-                "dashboardConfig": {
-                    "maximumNoOfVisits": 5,
-                    "conceptNames":[
-                        
-                    ]
-                },     
-                "translationKey": "DASHBOARD_TITLE_VISITS_KEY"
-            },
+            },                 
             "vitals":{
                 "translationKey":"DASHBOARD_TITLE_VITALS_KEY",
                 "type":"vitals",
@@ -368,6 +345,18 @@
                 },
 
                 "translationKey": "IMPL_REFERRALS"
+            },            
+            "summary": {
+                "type": "forms",
+                "displayOrder": 110,
+                "hideEmptyDisplayControl": false,
+                "dashboardConfig": {
+                    "maximumNoOfVisits": 5,
+                    "conceptNames":[
+                        
+                    ]
+                },     
+                "translationKey": "DASHBOARD_TITLE_VISITS_KEY"
             },
             "bpPulse":{
                 "type":"observationGraph",
@@ -382,7 +371,7 @@
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
                 },
-                "displayOrder":110
+                "displayOrder":114
             },
             "weightBMI":{
                 "type":"observationGraph",
