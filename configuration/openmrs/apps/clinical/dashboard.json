@@ -254,7 +254,7 @@
                 "displayOrder": 30,
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
-                    "maximumNoOfVisits": 5,
+                    "numberOfVisits": 5,
                     "conceptNames": [
                         "Cambodia_Lab Tests Results Form"
                     ]
@@ -264,10 +264,10 @@
             "offlineMed": {
                 "type": "forms",
                    "isObservation":true,
-                "displayOrder": 102,
+                "displayOrder": 101,
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
-                    "maximumNoOfVisits": 5,
+                    "numberOfVisits": 5,
                     "conceptNames":[
                         "Cambodia_Offline Medication"
                     ]
@@ -320,13 +320,26 @@
                 },
                 "displayOrder":140
             },
+            "patientDocs": {
+                "displayOrder": 100,
+                "type":"historyAndExamination",
+                "isObservation":true,
+                "displayType":"Half-Page",
+                "dashboardConfig":{  
+                    "showGroupDateTime":true,
+                    "conceptNames":[
+                        "Image"
+                    ]
+                },
+                "translationKey": "VISIT_TITLE_PATIENT_FILES_KEY"
+            },
             "dentalExam": {
                 "type": "forms",
                    "isObservation":true,
-                "displayOrder": 100,
+                "displayOrder": 102,
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
-                    "maximumNoOfVisits": 5,
+                    "numberOfVisits": 5,
                       "conceptNames": [
                         "Cambodia_Dental Exam Form"
                     ]
@@ -348,15 +361,34 @@
             },            
             "summary": {
                 "type": "forms",
+                "isObservation":true,
                 "displayOrder": 110,
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
-                    "maximumNoOfVisits": 5,
-                    "conceptNames":[
-                        
+                    "numberOfVisits": 5,
+                    "conceptNames":[ 
+                        "Cambodia_Consultation Form",
+                        "Cambodia_Vital Signs Basic Set",
+                        "Cambodia_Vital Signs Extended Form",
+                        "Cambodia_Offline Medication Form",
+                        "Cambodia_Allergies Form",
+                        "Cambodia_Immunizations Form",
+                        "Cambodia_Lab Tests Results Form",
+                        "Cambodia_Dental Exam Form", 
+                        "Cambodia_Referral Form"   
                     ]
-                },     
+                },
                 "translationKey": "DASHBOARD_TITLE_VISITS_KEY"
+            },
+            "visits":{ 
+                "translationKey":"DASHBOARD_TITLE_VISITS_KEY", 
+                "type":"visits",   
+                "displayOrder":115,  
+                "dashboardConfig":{    
+                    "title":null,  
+                    "maximumNoOfVisits":5, 
+                    "groupByVisits":true   
+                }
             },
             "bpPulse":{
                 "type":"observationGraph",

@@ -15,13 +15,13 @@
                 "translationKey":"IMPL_OBSERVATIONS",
                 "config": {
                     "conceptNames": [
-                        "Cambodia_Past Medical History Form",
+                        "Cambodia_Consultation Form",
                         "Cambodia_Vital Signs Basic Set",
                         "Cambodia_Vital Signs Extended Form",
-                        "Cambodia_Review of Systems Form",
+                        "Cambodia_Offline Medication Form",
                         "Cambodia_Allergies Form",
                         "Cambodia_Immunizations Form",
-                        "Cambodia_Physical Exam Form",
+                        "Cambodia_Lab Tests Results Form",
                         "Cambodia_Dental Exam Form", 
                         "Cambodia_Referral Form"
                     ]
