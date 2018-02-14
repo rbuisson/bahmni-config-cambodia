@@ -45,15 +45,11 @@
             "doseUnits": "Puff(s)",
             "route": "INH - Inhalation"
           },
-          "Amp": {
+          "Injection": {
             "doseUnits": "Unit(s)",
             "route": "IV - Intravenous"
           },          
-          "Flacon": {
-            "doseUnits": "Unit(s)",
-            "route": "IV - Intravenous"
-          },
-          "Solution IV": {
+          "Solution": {
             "doseUnits": "Unit(s)",
             "route": "IV - Intravenous"
           },
@@ -62,24 +58,11 @@
             "route": "TOP - Topical (skin)"
           },
           "Ointment": {
-            "doseUnits": "Unit(s)",
-            "route": "TOP - Topical (skin)"
+            "doseUnits": "Unit(s)"
           },
-          "Ovule": {
+          "Pessary": {
             "doseUnits": "Unit(s)",
             "route": "PV - Per vagina"
-          },
-          "Solution Oral": {
-            "doseUnits": "Unit(s)",
-            "route": "PO - Oral"
-          },
-          "Solution Topical": {
-            "doseUnits": "Unit(s)",
-            "route": "TOP - Topical (skin)"
-          },
-          "Spray Nasal": {
-            "doseUnits": "Puff(s)",
-            "route": "NAS - Nasal (nose)"
           },
           "Suspension": {
             "doseUnits": "Teaspoon",
