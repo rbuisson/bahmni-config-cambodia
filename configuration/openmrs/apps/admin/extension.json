@@ -9,7 +9,8 @@
         "url": "#/csv",
         "icon": "fa-upload",
         "order": 1,
-        "requiredPrivilege": "app:admin"
+        "requiredPrivilege": "app:admin",
+        "requiredPrivilege": "Share Metadata"
     },
     "csvExport":{
         "id": "bahmni.admin.csvExport",
@@ -21,7 +22,8 @@
         "url": "#/csvExport",
         "icon": "fa-download",
         "order": 1,
-        "requiredPrivilege": "app:admin"
+        "requiredPrivilege": "app:admin",
+        "requiredPrivilege": "Share Metadata"
     },
     "auditLog":{
         "id": "bahmni.admin.auditLog",
@@ -45,6 +47,7 @@
         "url": "#/ordersetdashboard",
         "icon": "fa-upload",
         "order": 1,
-        "requiredPrivilege": "app:admin"
+        "requiredPrivilege": "app:admin",
+        "requiredPrivilege": "Manage Order Sets"
     }
 }
