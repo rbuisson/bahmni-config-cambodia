@@ -3,10 +3,10 @@
 
     "impl.healthCenter": "មជ្ឈមណ្ឌលសុខភាព",
     "LOCAL_NAMES":"ឈ្មោះ-ខ្មែរ",
-    "Location.village":"ក្រុម",
+    "Location.village":"ភូមិ",
     "impl.commune":"ឃុំ",
     "Location.district":"ស្រុក/ក្រុង",
-    "Location.province":"ភូមិ",
+    "Location.province":"ខេត្ត",
     "Location.country":"ប្រទេស",
     "givenNameLocal":"ឈ្មោះ-ខ្មែរ",
     "middleNameLocal":"ឈ្មោះកណ្តាល-ខ្មែរ",
@@ -145,5 +145,5 @@
     "EDIT_LABEL": "កែ",
 
     "OBS_ABNORMAL_TRANSLATE_KEY": "មិនធម្មតា"
-    
+
 }
