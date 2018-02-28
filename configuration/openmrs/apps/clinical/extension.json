@@ -163,6 +163,7 @@
       "default": true,
       "conceptName": "Cambodia_ANC Visit Form"
     },
+    "order": 200,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalConceptSetGroupObservationsANChistForm": {
@@ -173,6 +174,7 @@
       "default": true,
       "conceptName": "Cambodia_ANC Obstetric History Form"
     },
+    "order": 100,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalConceptSetGroupObservationsPNCForm": {
@@ -183,6 +185,7 @@
       "default": true,
       "conceptName": "Cambodia_PNC Form"
     },
+    "order": 300,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalConceptSetGroupObservationsBirthSpacingForm": {
@@ -193,6 +196,7 @@
       "default": true,
       "conceptName": "Cambodia_Birth Spacing Form"
     },
+    "order": 400,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalConceptSetGroupObservationsReferralForm": {

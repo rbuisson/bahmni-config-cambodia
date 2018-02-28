@@ -17,7 +17,7 @@
                     "countyDistrict",
                     "stateProvince"
                 ]
-            },                 
+            },
             "vitals":{
                 "translationKey":"DASHBOARD_TITLE_VITALS_KEY",
                 "type":"vitals",
@@ -33,7 +33,7 @@
                         "Cambodia_Respiratory Rate Data",
                         "Cambodia_Oxygen Saturation Data",
                         "Cambodia_Capillary Refill Time Data",
-                        "BMI Data", 
+                        "BMI Data",
                         "BMI Status Data"
                     ]
                 },
@@ -106,57 +106,56 @@
                     "pivotTable":{
                         "numberOfVisits":"5",
                         "groupBy":"encounters",
-                        "obsConcepts":[     
+                        "obsConcepts":[
                             "Cambodia_Chief Complaint",
                             "Cambodia_History of Present Illness",
-                            "Cambodia_Old Case",
+                            "Cambodia_New Case",
                             "Cambodia_Past Medical History",
-                        "Cambodia_Past Cancer Details",
-                        "Cambodia_Past Medical History Details",
-                        "Cambodia_Past Surgical History",
-                        "Cambodia_Social History",
-                        "Cambodia_List Medications",
-                        "Cambodia_General Symptoms",
-                        "Cambodia_Other General Symptoms",
-                        "Cambodia_Skin Symptoms",
-                        "Cambodia_Skin Exam Abnormalities",
-                        "Cambodia_Skin Exam Details",
-                        "Cambodia_HEENT Symptoms",
-                        "Cambodia_Head Exam Abnormalities",
-                        "Cambodia_Neck Exam Abnormalities",
-                        "Cambodia_Ears Exam Abnormalities",
-                        "Cambodia_Eyes Exam Abnormalities",
-                        "Cambodia_HEENT Exam Details and Other",
-                        "Cambodia_Respiratory Symptoms",
-                        "Cambodia_Chest and Lung Exam Abnormalities",
-                        "Cambodia_Chest and Lung Exam Details",
-                        "Cambodia_Cardiovascular Symptoms",
-                        "Cambodia_Regular Rate and Rhythm",
-                        "Cambodia_Carotid Bruit",
-                        "Cambodia_Cardiovascular Exam Abnormalities",
-                        "Cambodia_Edema Severity",
-                        "Cambodia_Pulses Intensity",
-                        "Cambodia_Cardiovascular Exam Details and Other",
-                        "Cambodia_Endocrine Symptoms",
-                        "Cambodia_Other Endocrine Symptoms",
-                        "Cambodia_Gastrointestinal Symptoms",
-                        "Cambodia_Abdomen Exam Abnormalities",
-                        "Cambodia_Abdomen Exam Details",
-                        "Cambodia_Genitourinary Female Symptoms",
-                        "Cambodia_Genitourinary Male Symptoms",
-                        "Cambodia_Genitourinary Female Exam Abnormalities",
-                        "Cambodia_Genitourinary Male Exam Abnormalities",
-                        "Cambodia_Genitourinary Exam Details",
-                        "Cambodia_Flank and Back Exam Abnormalities",
-                        "Cambodia_Flank and Back Exam Details",
-                        "Cambodia_Neurologic Symptoms",
-                        "Cambodia_Musculoskeletal Symptoms",
-                        "Cambodia_Musculoskeletal Exam Abnormalities",
-                        "Cambodia_Muscle Strength Set",
-                        "Cambodia_Deep Tendon Reflex Set",
-                        "Cambodia_Musculoskeletal and Neurological Exam Details",
-                        "Cambodia_Physical Exam Other" 
-                                          ]
+                            "Cambodia_Past Cancer Details",
+                            "Cambodia_Past Medical History Details",
+                            "Cambodia_Past Surgical History",
+                            "Cambodia_Social History",
+                            "Cambodia_List Medications",
+                            "Cambodia_General Symptoms",
+                            "Cambodia_Other General Symptoms",
+                            "Cambodia_Skin Symptoms",
+                            "Cambodia_Skin Exam Abnormalities",
+                            "Cambodia_Skin Exam Details",
+                            "Cambodia_HEENT Symptoms",
+                            "Cambodia_Head Exam Abnormalities",
+                            "Cambodia_Neck Exam Abnormalities",
+                            "Cambodia_Ears Exam Abnormalities",
+                            "Cambodia_Eyes Exam Abnormalities",
+                            "Cambodia_HEENT Exam Details and Other",
+                            "Cambodia_Respiratory Symptoms",
+                            "Cambodia_Chest and Lung Exam Abnormalities",
+                            "Cambodia_Chest and Lung Exam Details",
+                            "Cambodia_Cardiovascular Symptoms",
+                            "Cambodia_Regular Rate and Rhythm",
+                            "Cambodia_Carotid Bruit",
+                            "Cambodia_Cardiovascular Exam Abnormalities",
+                            "Cambodia_Heartrate",
+                            "Cambodia_Cardiovascular Exam Details and Other",
+                            "Cambodia_Endocrine Symptoms",
+                            "Cambodia_Other Endocrine Symptoms",
+                            "Cambodia_Gastrointestinal Symptoms",
+                            "Cambodia_Abdomen Exam Abnormalities",
+                            "Cambodia_Abdomen Exam Details",
+                            "Cambodia_Genitourinary Female Symptoms",
+                            "Cambodia_Genitourinary Male Symptoms",
+                            "Cambodia_Genitourinary Female Exam Abnormalities",
+                            "Cambodia_Genitourinary Male Exam Abnormalities",
+                            "Cambodia_Genitourinary Exam Details",
+                            "Cambodia_Flank and Back Exam Abnormalities",
+                            "Cambodia_Flank and Back Exam Details",
+                            "Cambodia_Neurologic Symptoms",
+                            "Cambodia_Musculoskeletal Symptoms",
+                            "Cambodia_Musculoskeletal Exam Abnormalities",
+                            "Cambodia_Muscle Strength Set",
+                            "Cambodia_Deep Tendon Reflex Set",
+                            "Cambodia_Musculoskeletal and Neurological Exam Details",
+                            "Cambodia_Physical Exam Other"
+                            ]
                     }
                 },
                 "displayOrder":14,
@@ -247,7 +246,7 @@
                     "showDrugForm":true,
                     "showOtherActive":true
                 }
-            },            
+            },
             "labTest": {
                 "type": "forms",
                    "isObservation":true,
@@ -260,7 +259,7 @@
                     ]
                 },
                 "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY"
-            },            
+            },
             "offlineMed": {
                 "type": "forms",
                    "isObservation":true,
@@ -272,7 +271,7 @@
                         "Cambodia_Offline Medication"
                     ]
                 },
-             
+
                 "translationKey": "IMPL_OFFLINEMED"
             },
             "labOrders":{
@@ -306,7 +305,7 @@
                     ],
                     "numberOfVisits":10
                 }
-            },  
+            },
             "growthChart":{
                 "type":"observationGraph",
                 "title":"Growth Chart",
@@ -325,7 +324,7 @@
                 "type":"historyAndExamination",
                 "isObservation":true,
                 "displayType":"Half-Page",
-                "dashboardConfig":{  
+                "dashboardConfig":{
                     "showGroupDateTime":true,
                     "conceptNames":[
                         "Image"
@@ -335,7 +334,7 @@
             },
             "dentalExam": {
                 "type": "forms",
-                   "isObservation":true,
+                "isObservation":true,
                 "displayOrder": 102,
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
@@ -344,8 +343,44 @@
                         "Cambodia_Dental Exam Form"
                     ]
                 },
-                "formGroup": ["Cambodia_Dental Exam Form"],
+                "expandedViewConfig":{
+                    "showGroupDateTime":false,
+                    "conceptNames":[
+                        "Cambodia_Dental Exam Form"
+                    ],
+                    "pivotTable":{
+                    }
+                },
                 "translationKey": "IMPL_DENTAL"
+            },
+            "midwife": {
+                "type": "forms",
+                "hideEmptyDisplayControl": false,
+                "isObservation":true,
+                 "showDetailsButton": true,
+                "displayOrder": 102,
+                "dashboardConfig": {
+                    "numberOfVisits": 5,
+                    "showGroupDateTime":true,
+                    "conceptNames":[
+                        "Cambodia_ANC Obstetric History Form",
+                        "Cambodia_ANC Visit Form",
+                        "Cambodia_PNC Form",
+                        "Cambodia_Birth Spacing Form"
+                    ]
+                },
+                "expandedViewConfig":{
+                    "showGroupDateTime":false,
+                    "conceptNames":[
+                        "Cambodia_ANC Obstetric History Form",
+                        "Cambodia_ANC Visit Form",
+                        "Cambodia_PNC Form",
+                        "Cambodia_Birth Spacing Form"
+                    ],
+                     "pivotTable":{
+                    }
+                },
+                "translationKey": "DASHBOARD_TITLE_GYNAECOLOGY_KEY"
             },
             "referral": {
                 "type": "vitals",
@@ -356,17 +391,16 @@
                     "conceptNames": [ "Cambodia_Referred To", "Cambodia_Referral Notes", "Cambodia_Referred From"],
                     "scope":"latest"
                 },
-
                 "translationKey": "IMPL_REFERRALS"
-            },            
+            },
             "summary": {
                 "type": "forms",
                 "isObservation":true,
-                "displayOrder": 110,
+                "displayOrder": 130,
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
                     "numberOfVisits": 5,
-                    "conceptNames":[ 
+                    "conceptNames":[
                         "Cambodia_Consultation Form",
                         "Cambodia_Vital Signs Basic Set",
                         "Cambodia_Vital Signs Extended Form",
@@ -374,20 +408,44 @@
                         "Cambodia_Allergies Form",
                         "Cambodia_Immunizations Form",
                         "Cambodia_Lab Tests Results Form",
-                        "Cambodia_Dental Exam Form", 
-                        "Cambodia_Referral Form"   
+                        "Cambodia_Dental Exam Form",
+                        "Cambodia_Referral Form",
+                        "Cambodia_ANC Obstetric History Form",
+                        "Cambodia_ANC Visit Form",
+                        "Cambodia_PNC Form",
+                        "Cambodia_Birth Spacing Form"
                     ]
+                },
+                "expandedViewConfig":{
+                    "showGroupDateTime":false,
+                    "conceptNames":[
+                        "Cambodia_Consultation Form",
+                        "Cambodia_Vital Signs Basic Set",
+                        "Cambodia_Vital Signs Extended Form",
+                        "Cambodia_Offline Medication Form",
+                        "Cambodia_Allergies Form",
+                        "Cambodia_Immunizations Form",
+                        "Cambodia_Lab Tests Results Form",
+                        "Cambodia_Dental Exam Form",
+                        "Cambodia_Referral Form",
+                        "Cambodia_ANC Obstetric History Form",
+                        "Cambodia_ANC Visit Form",
+                        "Cambodia_PNC Form",
+                        "Cambodia_Birth Spacing Form"
+                    ],
+                    "pivotTable":{
+                    }
                 },
                 "translationKey": "DASHBOARD_TITLE_VISITS_KEY"
             },
-            "visits":{ 
-                "translationKey":"DASHBOARD_TITLE_VISITS_KEY", 
-                "type":"visits",   
-                "displayOrder":115,  
-                "dashboardConfig":{    
-                    "title":null,  
-                    "maximumNoOfVisits":5, 
-                    "groupByVisits":true   
+            "visits":{
+                "translationKey":"DASHBOARD_TITLE_VISITS_KEY",
+                "type":"visits",
+                "displayOrder":115,
+                "dashboardConfig":{
+                    "title":null,
+                    "maximumNoOfVisits":5,
+                    "groupByVisits":true
                 }
             },
             "bpPulse":{

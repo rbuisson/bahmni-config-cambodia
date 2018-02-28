@@ -23,7 +23,11 @@
                         "Cambodia_Immunizations Form",
                         "Cambodia_Lab Tests Results Form",
                         "Cambodia_Dental Exam Form", 
-                        "Cambodia_Referral Form"
+                        "Cambodia_Referral Form",
+                        "Cambodia_ANC Obstetric History Form",
+                        "Cambodia_ANC Visit Form",
+                        "Cambodia_PNC Form",
+                        "Cambodia_Birth Spacing Form" 
                     ]
                 }
             },
@@ -49,6 +53,5 @@
         "defaultSections": true,
         "sections": {
         }
-
     }
 }

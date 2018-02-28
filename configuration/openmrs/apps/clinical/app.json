@@ -172,10 +172,7 @@
         "Cambodia_Carotid bruit": {
             "disableAddNotes": true
         },         
-        "Cambodia_Pulses Intensity": {
-            "disableAddNotes": true
-        }, 
-        "Cambodia_Edema Severity": {
+        "Cambodia_Heartrate": {
             "disableAddNotes": true
         },        
         "Cambodia_Abdomen Exam": {
@@ -254,7 +251,7 @@
           "disableAddNotes": true,
           "hideAbnormalButton": false
         },
-        "Cambodia_Old Case": {
+        "Cambodia_New Case": {
           "required": true,
           "disableAddNotes": true
         },

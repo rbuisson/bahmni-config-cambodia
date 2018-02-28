@@ -384,29 +384,6 @@ Bahmni.ConceptSet.FormConditions.rules = {
             }
         }
     },
-    'Cambodia_Cardiovascular Exam Abnormalities' : function (formName, formFieldValues) {
-        var fieldValue = formFieldValues['Cambodia_Cardiovascular Exam Abnormalities'];
-
-        var sections = {
-            "show": [],
-            "hide": []
-
-        };
-
-        if (fieldValue && fieldValue.indexOf('Cambodia_Pulses') > -1) {
-            sections.show.push("Cambodia_Pulses Intensity")
-        } else {
-            sections.hide.push("Cambodia_Pulses Intensity")
-        }
-
-        if (fieldValue && fieldValue.indexOf('Cambodia_Edema') > -1) {
-            sections.show.push("Cambodia_Edema Severity")
-        } else {
-            sections.hide.push("Cambodia_Edema Severity");
-        }
-
-        return sections;
-    },
     'Cambodia_Genitourinary Female Symptoms' : function (formName, formFieldValues, patient) {
         var fieldValue = formFieldValues['Cambodia_Genitourinary Female Symptoms'];
         var patientGender = patient['gender'];
