@@ -8,6 +8,8 @@
     "Location.country":"Country",
     "Location.province":"Province",
     "impl.commune":"Commune",
+    "VITAL_SIGNS":"Vital Signs",
+    "REFERRAL":"Referral",
 
     "REGISTRATION_SEARCH_CONFIG_KEY": "S<u>e</u>arch",
     "REGISTRATION_CREATE_NEW_CONFIG_KEY":"Create <u>N</u>ew",

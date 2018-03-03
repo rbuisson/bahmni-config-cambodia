@@ -11,6 +11,8 @@
     "givenNameLocal":"ឈ្មោះ-ខ្មែរ",
     "middleNameLocal":"ឈ្មោះកណ្តាល-ខ្មែរ",
     "familyNameLocal":"ឈ្មោះគ្រួសារ-ខ្មែរ",
+    "VITAL_SIGNS":"សញ្ញាជីវិត",
+    "REFERRAL":"បញ្ចូនមកពី",
 
     "REGISTRATION_SEARCH_CONFIG_KEY": "ស្រាវជ្រាវ (<u>e</u>)",
     "REGISTRATION_CREATE_NEW_CONFIG_KEY":"បង្កើតថ្មី (<u>N</u>)",
