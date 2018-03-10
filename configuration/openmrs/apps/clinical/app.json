@@ -50,7 +50,7 @@
             "familyNameLocal"
           ],
           "additionalPatientIdentifiers": [
-            "National ID"
+            "impl.legacyId"
           ],
           "preferredIdentifier": "Id_Number"
       },

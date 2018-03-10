@@ -39,41 +39,80 @@
         "drugFormDefaults": {
           "Capsule": {
             "doseUnits": "Capsule(s)",
-            "route": "PO - Oral"
+            "route": "PO - Oral",
+            "doseUnits": "ថ្នាំលេប",
+            "route": "PO - មាត់"
           },
           "Inhaler": {
             "doseUnits": "Puff(s)",
-            "route": "INH - Inhalation"
+            "route": "INH - Inhalation",
+            "doseUnits": "ហឺត",
+            "route": "INH"
           },
           "Injection": {
             "doseUnits": "Unit(s)",
-            "route": "IV - Intravenous"
+            "route": "IV - Intravenous",
+            "doseUnits": "ឯកតា",
+            "route": "IV - ចាក់តាមសរសៃ"
           },          
           "Solution": {
             "doseUnits": "Unit(s)",
-            "route": "IV - Intravenous"
+            "route": "IV - Intravenous",
+            "doseUnits": "ឯកតា",
+            "route": "IV - ចាក់តាមសរសៃ"
+          },
+          "Nasal Solution": {
+            "doseUnits": "Drop",
+            "route": "NAS - Nasal (nose)",
+            "doseUnits": "ដំណក់",
+            "route": "NAS - ច្រមុះ"
+          },
+          "Drops": {
+            "doseUnits": "Drop",
+            "doseUnits": "ដំណក់"
+          },
+          "Cream": {
+            "doseUnits": "Unit(s)",
+            "route": "TOP - Topical (skin)",
+            "doseUnits": "ឯកតា",
+            "route": "TOP - Topical (ស្បែក)"
           },
           "Lotion": {
             "doseUnits": "Unit(s)",
-            "route": "TOP - Topical (skin)"
+            "route": "TOP - Topical (skin)",
+            "doseUnits": "ឯកតា",
+            "route": "TOP - Topical (ស្បែក)"
           },
           "Ointment": {
-            "doseUnits": "Unit(s)"
+            "doseUnits": "Unit(s)",
+            "doseUnits": "ឯកតា"
           },
           "Pessary": {
             "doseUnits": "Unit(s)",
+            "route": "PV - Per vagina",
+            "doseUnits": "ឯកតា",
             "route": "PV - Per vagina"
           },
           "Suspension": {
-            "doseUnits": "Teaspoon",
-            "route": "PO - Oral"
+            "doseUnits": "ml",
+            "route": "PO - Oral",
+            "doseUnits": "មីលីលីត្រ",
+            "route": "PO - មាត់"
+          },
+          "Syrup": {
+            "doseUnits": "ml",
+            "route": "PO - Oral",
+            "doseUnits": "មីលីលីត្រ",
+            "route": "PO - មាត់"
           },
           "Tablet": {
             "doseUnits": "Tablet(s)",
-            "route": "PO - Oral"
+            "route": "PO - Oral",
+            "doseUnits": "គ្រាប់ថ្នាំ",
+            "route": "PO - មាត់"
           }
         },
-        "routesToMakeDoseSectionNonMandatory" : ["TOP - Topical (skin)", "IV - Intravenous"]
+        "routesToMakeDoseSectionNonMandatory" : ["TOP - Topical (skin)", "IV - Intravenous", "TOP - Topical (ស្បែក)", "IV - ចាក់តាមសរសៃ"]
       }
     }
   }
