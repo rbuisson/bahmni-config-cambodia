@@ -1,98 +1,88 @@
 {
-    "visitReport10": {
-        "name": "Visit Report",
-        "type": "visits",
-        "config": {
-            "forDataAnalysis": true,
-            "patientAttributes": [
-                "caste",
-                "class",
-                "education",
-                "occupation",
-                "primaryContact"
-            ],
-            "visitAttributes": [
-                "Visit Status",
-                "Admission Status"
-            ],
-            "patientAddresses": [
-                "address3",
-                "city_village"
-            ],
-            "applyDateRangeFor": "visitStopDate",
-            "visitTypesToFilter": [
-                "PHARMACY VISIT",
-                "OPD"
-            ]
-        }
+    "patientReport": {
+        "name": "Patient Information",
+        "type": "PatientReport"
     },
-    "testReport": {
-        "name": "Test Observation Report",
+    "OPD/IPDVisitCount": {
+        "name": "OPD/IPD Visit Count",
+        "type": "IpdOpdVisitCount"
+    },
+    "consultForms":{
+        "name": "Consultation Forms",
         "type": "observations",
         "config": {
-            "patientAttributes": [
-                "caste",
-                "class",
-                "education",
-                "occupation",
-                "primaryContact"
-            ],
-            "patientAddresses": [
-                "address3",
-                "city_village"
-            ],
-            "visitAttributes": [
-                "Visit Status",
-                "Admission Status"
-            ],
+            "patientAttributes": [],
+            "patientAddresses": [],
+            "visitAttributes": [],
             "showVisitInfo": true,
             "showProvider": true,
-            "conceptNamesToFilter": [
-            ],
+            "programsToFilter": [],
+            "conceptNamesToFilter": ["Cambodia_Consultation Form"],
+            "conceptValuesToFilter":[],
+            "conceptClassesToFilter": [],
+            "applyDateRangeFor": "obsDate",
+            "encounterPerRow": true,
+            "additionalPatientIdentifiers": ["impl.legacyId"],
+            "ignoreEmptyValues": false,
             "conceptNameDisplayFormat": "shortNamePreferred",
-            "conceptValuesToFilter": ["0..20","100..","True"],
+            "ageGroupName":"Age group name"
+        }
+    },    
+    "allObs": {
+        "name": "All Observations",
+        "type": "observations",
+        "config": {
+            "patientAttributes": [],
+            "visitAttributes": [],
+            "patientAddresses": [],
+            "showVisitInfo": true,
+            "showProvider": true,
+            "conceptNamesToFilter": [],
+            "conceptNameDisplayFormat": "shortNamePreferred",
+            "conceptValuesToFilter": [],
             "conceptClassesToFilter": [],
             "locationTagsToFilter": [],
             "programsToFilter": [],
             "applyDateRangeFor": "obsDate",
-            "encounterPerRow": true,
-            "forDataAnalysis": true,
-            "visitTypesToFilter": [
-                "PHARMACY VISIT",
-                "OPD"
-            ]
+            "encounterPerRow": false,
+            "ignoreEmptyValues": true,
+            "forDataAnalysis": false,
+            "visitTypesToFilter": []
         }
     },
-    "testFormReport":{
-    "name": "Test Forms Report",
-    "type": "forms",
-     "config": {
-     "patientAttributes": [
-            "caste",
-            "class",
-            "education",
-            "occupation",
-            "primaryContact"
-        ],
-     "patientAddresses": [
-            "address3",
-            "city_village"
-        ],
-     "visitAttributes": [
-            "Visit Status",
-            "Admission Status"
-        ],    
-     "showVisitInfo": true,
-     "showProvider": true,
-     "formNamesToFilter": ["Vitals"],
-     "conceptNameDisplayFormat": "shortNamePreferred",
-     "locationTagsToFilter": [],
-     "programsToFilter": [],
-     "applyDateRangeFor": "obsDate",
-     "visitTypesToFilter": []
-     }
-},
-    "chiefComplaintReport": {
+    "bloodPressure": {
+        "name": "Blood Pressure",
+        "type": "obsCount",
+        "config": {
+            "ageGroupName": "All Ages",
+            "conceptNames": [
+                "Cambodia_Diastolic Blood Pressure",
+                "Cambodia_Systolic Blood Pressure"
+            ],
+            "countOnlyClosedVisits": "false",
+            "countOncePerPatient": "false",
+            "visitTypes": []
+        }
+    },
+    "consultForm":{
+        "name": "Consultation Form",
+        "type": "forms",
+        "config": {
+            "patientAttributes": [],
+            "patientAddresses": [],
+            "visitAttributes": [],
+            "showVisitInfo": true,
+            "showProvider": true,
+            "formNamesToFilter": ["Cambodia_Consultation Form"],
+            "conceptNameDisplayFormat": "shortNamePreferred",
+            "locationTagsToFilter": [],
+            "programsToFilter": [],
+            "applyDateRangeFor": "obsDate",
+            "visitTypesToFilter": [],
+            "sortBy" : [{"column" : "Birthdate", "sortOrder" : "desc"}]
+        }
+    },
+    "chiefComplaintQuant": {
         "name": "Chief Complaint Report",
         "type": "obsCount",
         "config": {
@@ -108,49 +98,10 @@
         }
     },
     "inpatientMorbidity": {
-        "name": "Inpatient Morbidity",
-        "type": "diagnosisCount",
+        "name": "Morbidity",
+        "type": "opdPatients",
         "config": {
-            "visitTypes": [
-                "IPD"
-            ]
-        }
-    },
-    "outpatientMorbidity": {
-        "name": "Outpatient Morbidity",
-        "type": "diagnosisCount",
-        "config": {
-            "visitTypes": [
-                "OPD"
-            ]
-        }
-    },
-    "laboratoryServices": {
-        "name": "Laboratory Services",
-        "type": "TestCount"
-    },
-    "genericLaboratoryServices": {
-        "name": "Generic Laboratory Services",
-        "type": "ElisGeneric",
-        "config": {
-            "sqlPath": "/var/www/bahmni_config/openmrs/apps/reports/sql/testCount.sql"
-        }
-    },
-    "bloodPressure": {
-        "name": "Blood Pressure",
-        "type": "obsCount",
-        "config": {
-            "ageGroupName": "All Ages",
-            "conceptNames": [
-                "Systolic",
-                "Diastolic"
-            ],
-            "countOnlyClosedVisits": "false",
-            "countOncePerPatient": "false",
-            "visitTypes": [
-                "OPD",
-                "IPD"
-            ]
+            "visitTypes": []
         }
     },
     "smokingHistoryReport": {
@@ -171,8 +122,7 @@
         "config": {
             "templateName": "Vitals",
             "patientAttributes": [
-                "caste",
-                "education"
+                "impl.nationality"
             ],
             "applyDateRangeFor": "encounterCreateDate"
         }
@@ -208,10 +158,6 @@
             ],
             "countOncePerPatient": "true"
         }
-    },
-    "OPD/IPDVisitCount": {
-        "name": "OPD/IPD Visit Count",
-        "type": "IpdOpdVisitCount"
     },
     "haemoglobinRangeBasedReport": {
         "name": "Haemoglobin Range Based Report",
@@ -271,25 +217,6 @@
             ]
         }
     },
-    "IPDPatientsReport": {
-        "name": "IPD Patients Report",
-        "type": "ipdPatients",
-        "config": {
-            "addressAttributes": [
-                "address1",
-                "city_village"
-            ],
-            "patientAttributes": [
-                "caste",
-                "education"
-            ],
-            "conceptNames": [
-                "Height",
-                "Weight"
-            ],
-            "filterBy": "Date of Discharge"
-        }
-    },
     "nutritionProgramNutritionalStatusOfRegisteredChildren": {
         "name": "Nutrition Program - Nutritional status of registered children",
         "type": "obsCount",
@@ -339,34 +266,32 @@
         "type": "visitReport",
         "config": {
             "personAttributes": [
-                "caste",
-                "class",
-                "education",
-                "occupation",
-                "primaryContact"
             ],
             "visitAttributes": [
                 "Visit Status"
             ]
         }
     },
-    "patientReport": {
-        "name": "Patient Information",
-        "type": "PatientReport"
+        "visitReport10": {
+        "name": "Visit Report",
+        "type": "visits",
+        "config": {
+            "forDataAnalysis": true,
+            "patientAttributes": [],
+            "visitAttributes": [],
+            "patientAddresses": [],
+            "applyDateRangeFor": "visitStopDate",
+            "visitTypesToFilter": []
+        }
     },
     "obsCannedReport": {
         "name": "Obs Canned Report",
         "type": "obsCannedReport",
         "config": {
             "patientAttributes": [
-                "caste",
-                "education"
             ],
             "applyDateRangeFor": "ObsRecording",
-            "addressAttributes": [
-                "postal_code",
-                "city_village"
-            ],
+            "addressAttributes": [],
             "conceptNames": [
                 "Pulse",
                 "WEIGHT",
@@ -377,7 +302,7 @@
                 "HEIGHT",
                 "Temperature"
             ],
-            "enrolledProgram": "HIV Program",
+            "enrolledProgram": "",
             "showObsOnlyForProgramDuration": false
         }
     },
@@ -409,7 +334,7 @@
         }
     },
     "pivotReport": {
-        "name": "Blood Pressure",
+        "name": "Blood Pressure pivot",
         "type": "aggregation",
         "config": {
             "report":{
@@ -419,7 +344,7 @@
                     "showVisitInfo" : true,
                     "forDataAnalysis": true,
                     "visitAttributes": ["Visit Status", "Admission Status"],
-                    "visitTypesToFilter": ["IPD"]
+                    "visitTypesToFilter": []
 
                 }
             },
@@ -442,26 +367,14 @@
                 "type": "visits",
                 "config": {
                     "forDataAnalysis": true,
-                    "patientAttributes": [
-                        "caste",
-                        "class",
-                        "education",
-                        "occupation",
-                        "primaryContact"
-                    ],
+                    "patientAttributes": [],
                     "visitAttributes": [
                         "Visit Status",
                         "Admission Status"
                     ],
-                    "patientAddresses": [
-                        "address3",
-                        "city_village"
-                    ],
+                    "patientAddresses": [],
                     "applyDateRangeFor": "visitStopDate",
-                    "visitTypesToFilter": [
-                        "PHARMACY VISIT",
-                        "OPD"
-                    ]
+                    "visitTypesToFilter": []
                 }
             },
             "rowGroups": [
@@ -521,41 +434,23 @@
                     "type": "visits",
                     "config": {
                         "forDataAnalysis": true,
-                        "patientAttributes": [
-                            "caste",
-                            "class",
-                            "education",
-                            "occupation",
-                            "primaryContact"
-                        ],
+                        "patientAttributes": [],
                         "visitAttributes": [
                             "Visit Status",
                             "Admission Status"
                         ],
-                        "patientAddresses": [
-                            "address3",
-                            "city_village"
-                        ],
+                        "patientAddresses": [],
                         "applyDateRangeFor": "visitStopDate",
-                        "visitTypesToFilter": [
-                            "PHARMACY VISIT",
-                            "OPD"
-                        ]
+                        "visitTypesToFilter": []
                     }
                 },
                 {
                     "name": "Obs Canned Report",
                     "type": "obsCannedReport",
                     "config": {
-                        "patientAttributes": [
-                            "caste",
-                            "education"
-                        ],
+                        "patientAttributes": [],
                         "applyDateRangeFor": "ObsRecording",
-                        "addressAttributes": [
-                            "postal_code",
-                            "city_village"
-                        ],
+                        "addressAttributes": [],
                         "conceptNames": [
                             "Pulse",
                             "WEIGHT",
@@ -566,7 +461,7 @@
                             "HEIGHT",
                             "Temperature"
                         ],
-                        "enrolledProgram": "HIV Program",
+                        "enrolledProgram": "",
                         "showObsOnlyForProgramDuration": false
                     }
                 }
@@ -577,17 +472,8 @@
     "name": "Lab Order Results",
     "type": "labOrders",
     "config": {
-      "patientAttributes": [
-        "caste",
-        "class",
-        "education",
-        "occupation",
-        "primaryContact"
-      ],
-      "patientAddresses": [
-        "address3",
-        "city_village"
-      ],
+      "patientAttributes": [],
+      "patientAddresses": [],
       "visitAttributes": [
         "Visit Status"
       ],
