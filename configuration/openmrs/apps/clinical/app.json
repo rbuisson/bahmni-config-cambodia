@@ -65,6 +65,33 @@
       "maxConceptSetLevels": 3,
       "allowOnlyCodedDiagnosis": false,
       "conceptSetUI": {
+        "Cambodia_Chief Complaint Duration": {
+            "dropdown": true,
+            "disableAddNotes": true
+        },
+        "Cambodia_Complaint 2 Duration": {
+            "dropdown": true,
+            "disableAddNotes": true
+        },
+        "Cambodia_Complaint 3 Duration": {
+            "dropdown": true,
+            "disableAddNotes": true
+        },
+        "Cambodia_Chief Complaint common": {
+            "dropdown": true,
+            "disableAddNotes": true
+        },
+        "Cambodia_Complaint 2 common": {
+            "dropdown": true,
+            "disableAddNotes": true
+        },
+        "Cambodia_Complaint 3 common": {
+            "dropdown": true,
+            "disableAddNotes": true
+        },
+        "Cambodia_Complaint Desc common": {
+            "disableAddNotes": true
+        },
         "Cambodia_New Immunization": {
             "multiSelect": true
         },
@@ -537,6 +564,9 @@
           "disableAddNotes": true
         },
         "Cambodia_ASC" : {
+          "disableAddNotes": true
+        },
+        "Cambodia_Pregnancy Test" : {
           "disableAddNotes": true
         },
         "Cambodia_Fasting Blood Glucose" : {
