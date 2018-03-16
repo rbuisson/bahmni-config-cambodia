@@ -90,7 +90,8 @@
             "disableAddNotes": true
         },
         "Cambodia_Complaint Desc common": {
-            "disableAddNotes": true
+            "disableAddNotes": true,
+            "multiSelect": true
         },
         "Cambodia_New Immunization": {
             "multiSelect": true
