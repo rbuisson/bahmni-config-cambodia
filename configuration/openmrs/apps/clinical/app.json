@@ -89,9 +89,19 @@
             "dropdown": true,
             "disableAddNotes": true
         },
+        "Chief Complaint Data": {
+            "autocomplete":true,
+            "codedConceptName":"Chief Complaint",
+            "nonCodedConceptName":"Non-Coded Chief Complaint",
+            "durationRequired": false,
+            "allowAddMore": true
+        },
         "Cambodia_Complaint Desc common": {
             "disableAddNotes": true,
             "multiSelect": true
+        },
+        "Cambodia_Pregnancy Test": {
+            "disableAddNotes": true
         },
         "Cambodia_New Immunization": {
             "multiSelect": true

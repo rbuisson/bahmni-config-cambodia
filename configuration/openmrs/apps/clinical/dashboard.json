@@ -114,6 +114,10 @@
                         "obsConcepts":[
                             "Cambodia_Chief Complaint",
                             "Cambodia_History of Present Illness",
+                            "Chief Complaint Data",
+                            "Chief Complaint Duration",
+                            "Chief Complaint Notes",
+                            "Cambodia_Complaint Desc common",
                             "Cambodia_New Case",
                             "Cambodia_Past Medical History",
                             "Cambodia_Past Cancer Details",
