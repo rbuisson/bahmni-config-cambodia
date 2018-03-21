@@ -34,6 +34,8 @@
                         "Cambodia_Respiratory Rate Data",
                         "Cambodia_Oxygen Saturation Data",
                         "Cambodia_Capillary Refill Time Data",
+                        "Height",
+                        "WeighT",
                         "BMI Data",
                         "BMI Status Data"
                     ]
