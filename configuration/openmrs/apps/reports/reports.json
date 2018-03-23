@@ -97,13 +97,6 @@
             ]
         }
     },
-    "inpatientMorbidity": {
-        "name": "Morbidity",
-        "type": "opdPatients",
-        "config": {
-            "visitTypes": []
-        }
-    },
     "smokingHistoryReport": {
         "name": "Smoking History Report",
         "type": "obsCount",
