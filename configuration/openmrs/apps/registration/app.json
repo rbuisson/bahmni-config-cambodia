@@ -33,13 +33,13 @@
             }
         },
         "addressHierarchy": {
-            "showAddressFieldsTopDown": false
+            "showAddressFieldsTopDown": true
         },
         "relationshipTypeMap": {
             "Doctor":"provider",
             "Parent":"patient"
         },
-        "prepopulateFields" : ["Location.country"],
+        "prepopulateFields" : ["Location.country", "Location.province", "Location.district", "impl.commune", "Location.village"],
         "autoCompleteFields":["familyName"],
         "searchByIdForwardUrl": "/patient/{{patientUuid}}",
         "showLastName": true,

@@ -1,7 +1,15 @@
 {
     "_comment":"This is a concatenation of the Config and Bahmni Apps localization files",
 
-    "impl.healthCenter": "Health center",
+    "impl.moatKhla":"Moat Khla",
+    "impl.pechakrei":"Pechakrei",
+    "impl.dounSdaeng":"Doun Sdaeng",
+    "impl.peamBang":"Peam Bang",
+    "impl.balat":"Ba Lat",
+    "impl.stuengChrov":"Stueng Chrov",
+    "impl.kampenhTralach":"Kampenh Tralach",
+    "impl.khsachChiRos":"Khsach Chi Ros",
+
     "MODULE_LABEL_REGISTRATION_KEY": "Registration",
     "MODULE_LABEL_CLINICAL_KEY": "Clinical",
     "MODULE_LABEL_INPATIENT_KEY": "InPatient",
