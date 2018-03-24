@@ -1,7 +1,15 @@
 {
     "_comment":"This is a concatenation of the Config and Bahmni Apps localization files",
 
-    "impl.healthCenter": "មជ្ឈមណ្ឌលសុខភាព",
+    "impl.moatKhla":"មាត់ខ្លា",
+    "impl.pechakrei":"ពេជចក្រី",
+    "impl.dounSdaeng":"ដូនស្តើង",
+    "impl.peamBang":"ពាមបាង",
+    "impl.balat":"បាឡាត់",
+    "impl.stuengChrov":"ស្ទឹងជ្រៅ",
+    "impl.kampenhTralach":"កំពេញត្រឡាច",
+    "impl.khsachChiRos":"ខ្សាច់ជីរស់",
+
     "IMPL_ALLERGIES": "អាល់លែកហ្សី",
     "IMPL_IMMUNIZATIONS": "ថ្នាំបង្ការ",
     "IMPL_CHIEF_COMPLAINT": "ការត្អួញត្អែរ",
