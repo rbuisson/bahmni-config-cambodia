@@ -1,23 +1,61 @@
 {
+    "visitReport": {
+        "name": "Visit",
+        "type": "visits",
+        "config": {
+            "visitAttributes": ["Visit Location"],
+            "patientAddresses": ["city_village"],
+            "patientAttributes": ["impl.other","impl.phoneNumber"],
+            "additionalPatientIdentifiers": ["impl.legacyId"],
+            "ageGroupName":"",
+            "excludeColumns": ["Date stopped", "Date Of Admission", "Date Of Discharge", "Visit Type", "New patient visit"]
+        }
+    },
+    "pivotReportOfVisits": {
+        "name": "VisitTotal",
+        "type": "aggregation",
+        "config": {
+            "report":{
+                "type": "visits",
+                "config": {
+                    "forDataAnalysis": true,
+                    "visitAttributes": [                       
+                    ],
+                    "patientAddresses": ["city_village"],
+                    "patientAttributes": ["impl.other"],
+                    "additionalPatientIdentifiers": ["impl.legacyId"],
+                    "ageGroupName":"All Ages", 
+                    "visitTypesToFilter": []
+                }
+            },
+            "rowGroups": [
+                "Gender"
+            ],
+            "columnGroups": [
+                "city_village","impl.other"
+            ],
+            "distinctGroups": [
+                "Patient Identifier"
+            ],
+            "showTotalRow":true,
+            "showTotalColumn":true
+        }
+    },
     "patientReport": {
-        "name": "Patient Information",
+        "name": "PatientDetail",
         "type": "PatientReport"
     },
-    "OPD/IPDVisitCount": {
-        "name": "OPD/IPD Visit Count",
-        "type": "IpdOpdVisitCount"
-    },
     "consultForms":{
-        "name": "Consultation Forms",
+        "name": "ChiefComplaint",
         "type": "observations",
-        "config": {
-            "patientAttributes": [],
+        "config": {   
+            "patientAttributes": ["impl.other","impl.phoneNumber"],
             "patientAddresses": [],
             "visitAttributes": [],
-            "showVisitInfo": true,
+            "showVisitInfo": false,
             "showProvider": true,
             "programsToFilter": [],
-            "conceptNamesToFilter": ["Cambodia_Consultation Form"],
+            "conceptNamesToFilter": ["Chief Complaint"],
             "conceptValuesToFilter":[],
             "conceptClassesToFilter": [],
             "applyDateRangeFor": "obsDate",
@@ -25,348 +63,35 @@
             "additionalPatientIdentifiers": ["impl.legacyId"],
             "ignoreEmptyValues": false,
             "conceptNameDisplayFormat": "shortNamePreferred",
-            "ageGroupName":"Age group name"
-        }
-    },    
-    "allObs": {
-        "name": "All Observations",
-        "type": "observations",
-        "config": {
-            "patientAttributes": [],
-            "visitAttributes": [],
-            "patientAddresses": [],
-            "showVisitInfo": true,
-            "showProvider": true,
-            "conceptNamesToFilter": [],
-            "conceptNameDisplayFormat": "shortNamePreferred",
-            "conceptValuesToFilter": [],
-            "conceptClassesToFilter": [],
-            "locationTagsToFilter": [],
-            "programsToFilter": [],
-            "applyDateRangeFor": "obsDate",
-            "encounterPerRow": false,
-            "ignoreEmptyValues": true,
-            "forDataAnalysis": false,
-            "visitTypesToFilter": []
-        }
-    },
-    "bloodPressure": {
-        "name": "Blood Pressure",
-        "type": "obsCount",
-        "config": {
-            "ageGroupName": "All Ages",
-            "conceptNames": [
-                "Cambodia_Diastolic Blood Pressure",
-                "Cambodia_Systolic Blood Pressure"
-            ],
-            "countOnlyClosedVisits": "false",
-            "countOncePerPatient": "false",
-            "visitTypes": []
-        }
-    },
-    "consultForm":{
-        "name": "Consultation Form",
-        "type": "forms",
-        "config": {
-            "patientAttributes": [],
-            "patientAddresses": [],
-            "visitAttributes": [],
-            "showVisitInfo": true,
-            "showProvider": true,
-            "formNamesToFilter": ["Cambodia_Consultation Form"],
-            "conceptNameDisplayFormat": "shortNamePreferred",
-            "locationTagsToFilter": [],
-            "programsToFilter": [],
-            "applyDateRangeFor": "obsDate",
-            "visitTypesToFilter": [],
-            "sortBy" : [{"column" : "Birthdate", "sortOrder" : "desc"}]
-        }
-    },
-    "chiefComplaintQuant": {
-        "name": "Chief Complaint Report",
-        "type": "obsCount",
-        "config": {
-            "ageGroupName": "All Ages",
-            "conceptNames": [
-                "Chief Complaint"
-            ],
-            "countOnlyClosedVisits": "false",
-            "visitTypes": [
-                "IPD",
-                "OPD"
+            "ageGroupName":"",
+            "excludeColumns": ["Birthdate", "Program Name", "Program Enrollment Date", "Program End Date", "Cancer: describe date, location and type",
+            "Past Medical History Details",
+            "Past Surgical History",
+            "List/Describe Allergies",
+            "List Medications",
+            "Social History",
+            "BCG",
+            "Date Given",
+            "HepB at Birth",
+            "When was the vaccine administered?",
+            "Polio, 1st Injection",
+            "Polio, 2nd Injection",
+            "Polio, 3rd Injection"
             ]
         }
-    },
-    "smokingHistoryReport": {
-        "name": "Smoking History Report",
-        "type": "obsCount",
-        "config": {
-            "ageGroupName": "All Ages",
-            "conceptNames": [
-                "Smoking History"
-            ],
-            "countOnlyClosedVisits": "false",
-            "countOncePerPatient": "true"
-        }
-    },
-    "vitalsTemplateReport": {
-        "name": "Vitals Template Report",
-        "type": "obsTemplate",
-        "config": {
-            "templateName": "Vitals",
-            "patientAttributes": [
-                "impl.nationality"
-            ],
-            "applyDateRangeFor": "encounterCreateDate"
-        }
-    },
-    "tuberculosisIntakeTemplateReport": {
-        "name": "Tuberculosis Intake Template Report",
-        "type": "obsTemplate",
-        "config": {
-            "templateName": "Tuberculosis Intake Template"
-        }
-    },
-    "diabetes": {
-        "name": "Diabetes",
-        "type": "obsCount",
-        "config": {
-            "ageGroupName": "All Ages",
-            "conceptNames": [
-                "Diabetes Intake"
-            ],
-            "visitTypes": [
-                "OPD",
-                "IPD"
-            ]
-        }
-    },
-    "codedValueRangeBasedReport": {
-        "name": "Coded Value Range Based Report",
-        "type": "obsCount",
-        "config": {
-            "ageGroupName": "All Ages",
-            "conceptNames": [
-                "Diabetes, Cormorbidities"
-            ],
-            "countOncePerPatient": "true"
-        }
-    },
-    "haemoglobinRangeBasedReport": {
-        "name": "Haemoglobin Range Based Report",
-        "type": "NumericConceptValuesCount",
-        "config": {
-            "rangeGroupName": "Haemoglobin",
-            "ageGroupName": "Haemoglobin",
-            "conceptNames": [
-                "Haemoglobin"
-            ],
-            "countOncePerPatient": "false"
-        }
-    },
-    "radiology(X-Ray)Count": {
-        "name": "Radiology(X-Ray) Count",
-        "type": "ObsCountByConceptClass",
-        "config": {
-            "conceptClassNames": [
-                "Radiology"
-            ]
-        }
-    },
-    "obsValuesCountsForAlbuminMCHOperationDateAndPosture(bloodPressure)": {
-        "name": "Obs Values Counts for Albumin, MCH, Operation Date and Posture(blood pressure)",
-        "type": "ObsValueCount",
-        "config": {
-            "conceptNames": [
-                "Albumin",
-                "MCH",
-                "Date of Operation",
-                "Posture"
-            ]
-        }
-    },
-    "tuberculosisTreatmentCompletionDates": {
-        "name": "Tuberculosis Treatment Completion dates",
-        "type": "DateConceptValuesPatientsList",
-        "config": {
-            "conceptNames": [
-                "Tuberculosis, Treatment Completion Date"
-            ],
-            "templateName": "Tuberculosis Outcome Template"
-        }
-    },
-    "patientsListWithAlbuminMCHAndHIVELISA(Blood)TestsResults": {
-        "name": "Patients list with Albumin, MCH and HIV ELISA (Blood) tests results",
-        "type": "PatientsWithLabtestResults",
-        "config": {
-            "conceptNames": [
-                "HIV ELISA (Blood)",
-                "Albumin",
-                "MCH"
-            ],
-            "testOutcome": [
-                "abnormal",
-                "normal"
-            ]
-        }
-    },
-    "nutritionProgramNutritionalStatusOfRegisteredChildren": {
-        "name": "Nutrition Program - Nutritional status of registered children",
-        "type": "obsCount",
-        "config": {
-            "ageGroupName": "All Ages",
-            "conceptNames": [
-                "Nutrition, Nutritional Status"
-            ],
-            "countOncePerPatient": "true",
-            "countOnlyClosedVisits": "false"
-        }
-    },
-    "patientsProgramStateCountReport": {
-        "name": "Patients Program State Count Report",
-        "type": "programStateCount",
-        "config": {
-            "programName": "Malaria Program"
-        }
-    },
-    "programPatientStateReport": {
-        "name": "Program Patient State Report",
-        "type": "PatientProgramReport",
-        "config": {
-            "programName": "Malaria Program"
-        }
-    },
-    "programStateTransitionReport": {
-        "name": "Program State Transition Report",
-        "type": "programStateTransitionReport",
-        "config": {
-            "programName": "Malaria Program"
-        }
-    },
-    "OrderFulfillmentReport": {
-        "name": "Order Fulfillment Report",
-        "type": "OrderFulfillmentReport",
-        "config": {
-            "type": "OrderFulfillmentReport",
-            "orderTypes": [
-                "Order",
-                "Drug Order"
-            ]
-        }
-    },
-    "visitReport": {
-        "name": "Visit Report",
-        "type": "visitReport",
-        "config": {
-            "personAttributes": [
-            ],
-            "visitAttributes": [
-                "Visit Status"
-            ]
-        }
-    },
-        "visitReport10": {
-        "name": "Visit Report",
-        "type": "visits",
-        "config": {
-            "forDataAnalysis": true,
-            "patientAttributes": [],
-            "visitAttributes": [],
-            "patientAddresses": [],
-            "applyDateRangeFor": "visitStopDate",
-            "visitTypesToFilter": []
-        }
-    },
-    "obsCannedReport": {
-        "name": "Obs Canned Report",
-        "type": "obsCannedReport",
-        "config": {
-            "patientAttributes": [
-            ],
-            "applyDateRangeFor": "ObsRecording",
-            "addressAttributes": [],
-            "conceptNames": [
-                "Pulse",
-                "WEIGHT",
-                "Vitals, Systolic",
-                "Temperature"
-            ],
-            "visitIndependentConcept": [
-                "HEIGHT",
-                "Temperature"
-            ],
-            "enrolledProgram": "",
-            "showObsOnlyForProgramDuration": false
-        }
-    },
-    "drugOrderReport": {
-        "name": "Drug Order report",
-        "type": "DrugOrder"
-    },
-    "SampleGenericProgramReport": {
-        "name": "Generic program sample report",
-        "type": "programs",
-        "config": {
-            "patientAttributes": [
-                "education",
-                "primaryContact",
-                "secondaryContact",
-                "class",
-                "cluster"
-            ],
-            "patientAddresses": [
-                "city_village",
-                "address3"
-            ],
-            "programAttributes": [],
-            "forDataAnalysis": true,
-            "showAllStates": true,
-            "programNamesToFilter": [
-                "HIV Program"
-            ]
-        }
-    },
-    "pivotReport": {
-        "name": "Blood Pressure pivot",
+    },  
+    "pivotComplaint": {
+        "name": "ComplaintTotal",
         "type": "aggregation",
         "config": {
             "report":{
                 "type": "observations",
                 "config": {
-                    "conceptNamesToFilter":["Diastolic Data", "Systolic Data"],
+                    "conceptNamesToFilter":["Chief Complaint"],
                     "showVisitInfo" : true,
                     "forDataAnalysis": true,
-                    "visitAttributes": ["Visit Status", "Admission Status"],
-                    "visitTypesToFilter": []
-
-                }
-            },
-            "rowGroups": [
-                "Gender"
-            ],
-            "columnGroups": [
-                "Concept Name", "value"
-            ],
-            "distinctGroups": [
-                "Patient Identifier"
-            ]
-        }
-    },
-    "pivotReportOfVisits": {
-        "name": "Aggregation report for visits",
-        "type": "aggregation",
-        "config": {
-            "report":{
-                "type": "visits",
-                "config": {
-                    "forDataAnalysis": true,
-                    "patientAttributes": [],
-                    "visitAttributes": [
-                        "Visit Status",
-                        "Admission Status"
-                    ],
-                    "patientAddresses": [],
-                    "applyDateRangeFor": "visitStopDate",
+                    "ageGroupName": "All Ages",
+                    "visitAttributes": [],
                     "visitTypesToFilter": []
                 }
             },
@@ -374,139 +99,106 @@
                 "Gender"
             ],
             "columnGroups": [
-                "Visit Status"
-            ],
-            "distinctGroups": [
-                "Patient Identifier"
-            ]
-        }
-    },
-    "pivotReportForPrograms": {
-        "name": "HIV Program Pivot Report",
-        "type": "aggregation",
-        "config": {
-            "report": {
-                "type": "programs",
-                "config": {
-                    "patientAttributes": [
-                    ],
-                    "patientAddresses": [
-                        "city_village",
-                        "address3"
-                    ],
-                    "programAttributes": [],
-                    "forDataAnalysis": true,
-                    "showAllStates": true,
-                    "programNamesToFilter": [
-                        "TB Program",
-                        "HIV Program"
-                    ]
-                }
-            },
-            "columnGroups": [
-                "Program name"
-            ],
-            "rowGroups": [
-                "Gender"
+                   "Concept Name", "value"
             ],
             "distinctGroups": [
                 "Patient Identifier"
             ],
             "showTotalRow":true,
             "showTotalColumn":true
-
+        }
+    }, 
+    "dentalForms":{
+        "name": "Dental",
+        "type": "observations",
+        "config": {
+            "patientAttributes": ["impl.other","impl.phoneNumber"],
+            "patientAddresses": [],
+            "visitAttributes": [],
+            "showVisitInfo": false,
+            "showProvider": true,
+            "programsToFilter": [],
+            "conceptNamesToFilter": ["Cambodia_Dental Exam Form"],
+            "conceptValuesToFilter":[],
+            "conceptClassesToFilter": [],
+            "applyDateRangeFor": "obsDate",
+            "encounterPerRow": true,
+            "additionalPatientIdentifiers": ["impl.legacyId"],
+            "ignoreEmptyValues": false,
+            "conceptNameDisplayFormat": "shortNamePreferred",
+            "ageGroupName": "",
+            "excludeColumns": ["Birthdate", "Program Name", "Program Enrollment Date", "Program End Date"
+            ]
+        }
+    },     
+    "midwifeForms":{
+        "name": "Midwife",
+        "type": "observations",
+        "config": {
+            "patientAttributes": ["impl.other","impl.phoneNumber"],
+            "patientAddresses": [],
+            "visitAttributes": [],
+            "showVisitInfo": false,
+            "showProvider": true,
+            "programsToFilter": [],
+            "conceptNamesToFilter": ["Cambodia_ANC Obstetric History Form",
+                        "Cambodia_ANC Visit Form",
+                        "Cambodia_PNC Form",
+                        "Cambodia_Birth Spacing Form"],
+            "conceptValuesToFilter":[],
+            "conceptClassesToFilter": [],
+            "applyDateRangeFor": "obsDate",
+            "encounterPerRow": false,
+            "additionalPatientIdentifiers": ["impl.legacyId"],
+            "ignoreEmptyValues": true,
+            "conceptNameDisplayFormat": "shortNamePreferred",
+            "ageGroupName": "",
+            "excludeColumns": ["Observation Date", "Observation Created Date","Birthdate", "Program Name", "Program Enrollment Date", "Program End Date"
+            ],
+            "sortBy":[{"column":"Patient Identifier"}]
+        }
+    }, 
+    "diagnosisReport": {
+        "name": "Diagnosis",
+        "type": "diagnosisCount",
+        "config": {
+            "icd10ConceptSource":"ICD 10 - WHO",
+            "ageGroupName": "All Ages",
+            "rowsGroupBy": [
+            "header_concept_name",
+            "leaf_concept_name"
+            ],
+            "visitTypes":["OPD"],
+            "columnsGroupBy": [
+            "gender",
+            "agegroup_name"
+            ]
+        }
+    },    
+    "codedValueRangeBasedReport": {
+        "name": "DiagnosisCoded",
+        "type": "obsCount",
+        "config": {
+            "ageGroupName": "All Ages",
+            "conceptNames": [
+                "Coded Diagnosis", "Non-coded Diagnosis"
+            ],
+            "countOncePerPatient": "false",
+            "countOnlyClosedVisits": "false"
         }
     },
-    "concatenatedReport": {
-        "name": "ConcatenatedReport",
-        "type": "concatenated",
+    "obsValuesCountsForAlbuminMCHOperationDateAndPosture(bloodPressure)": {
+        "name": "BPStat",
+        "type": "ObsValueCount",
         "config": {
-            "reports": [
-                {
-                    "name": "Visit Report",
-                    "type": "visits",
-                    "config": {
-                        "forDataAnalysis": true,
-                        "patientAttributes": [],
-                        "visitAttributes": [
-                            "Visit Status",
-                            "Admission Status"
-                        ],
-                        "patientAddresses": [],
-                        "applyDateRangeFor": "visitStopDate",
-                        "visitTypesToFilter": []
-                    }
-                },
-                {
-                    "name": "Obs Canned Report",
-                    "type": "obsCannedReport",
-                    "config": {
-                        "patientAttributes": [],
-                        "applyDateRangeFor": "ObsRecording",
-                        "addressAttributes": [],
-                        "conceptNames": [
-                            "Pulse",
-                            "WEIGHT",
-                            "Vitals, Systolic",
-                            "Temperature"
-                        ],
-                        "visitIndependentConcept": [
-                            "HEIGHT",
-                            "Temperature"
-                        ],
-                        "enrolledProgram": "",
-                        "showObsOnlyForProgramDuration": false
-                    }
-                }
+            "conceptNames": [
+                "Cambodia_Systolic Blood Pressure Abnormal",
+                "Cambodia_Diastolic Blood Pressure Abnormal"
             ]
         }
     },
-  "GenericLabOrderReport": {
-    "name": "Lab Order Results",
-    "type": "labOrders",
-    "config": {
-      "patientAttributes": [],
-      "patientAddresses": [],
-      "visitAttributes": [
-        "Visit Status"
-      ],
-      "showVisitInfo": true,
-      "showProvider": true,
-      "programsToFilter": [],
-      "showReferredOutTests": true,
-      "conceptNamesToFilter": [
-        "Haemoglobin (Blood)"
-      ],
-      "conceptValuesToFilter": [
-        "10..100"
-      ],
-      "forDataAnalysis": true,
-      "excludeColumns": [
-        "address3"
-      ],
-      "showOrderDateTime": true
+    "drugOrderReport": {
+        "name": "DrugOrder",
+        "type": "DrugOrder"
     }
-  },
-  "GenericLabOrderReportAggregation": {
-    "name": "Test Name vs Gender",
-    "type": "aggregation",
-    "config": {
-      "report": {
-        "type": "labOrders",
-        "config": {
-          "forDataAnalysis": true,
-          "showVisitInfo": true
-        }
-      },
-      "rowGroups": [
-        "Test Name"
-      ],
-      "columnGroups": [
-        "Gender"
-      ],
-      "distinctGroups": [
-        "Patient Identifier"
-      ]
-    }
-  }
 }
