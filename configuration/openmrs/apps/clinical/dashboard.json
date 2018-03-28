@@ -7,7 +7,7 @@
             "patientInformation":{
                 "translationKey":"DASHBOARD_TITLE_PATIENT_INFORMATION_KEY",
                 "type":"patientInformation",
-                "displayOrder":0,
+                "displayOrder":1,
                 "ageLimit":12,
                 "patientAttributes":[
                     "impl.guardianName"
@@ -22,7 +22,7 @@
                 "translationKey":"DASHBOARD_TITLE_VITALS_KEY",
                 "type":"vitals",
                 "isObservation":true,
-                "displayOrder":12,
+                "displayOrder":7,
                 "dashboardConfig":{
                     "showDetailsButton": true,
                     "scope":"latest",
@@ -85,7 +85,7 @@
                 "showDetailsButton": true,
                 "showCertainty":false,
                 "showOrder":false,
-                "displayOrder":14
+                "displayOrder":10
             },
             "conditions": {
                 "translationKey":"CONDITION_LIST_DISPLAY_CONTROL_TITLE",
@@ -93,7 +93,7 @@
                 "showDetailsButton": true,
                 "displayOrder": 15
             },
-            "HistoryAndExamination":{
+            "examination":{
                 "type":"forms",
                 "isObservation":true,
                 "dashboardConfig":{
@@ -169,7 +169,7 @@
                             ]
                     }
                 },
-                "displayOrder":14,
+                "displayOrder":20,
                 "translationKey":"DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY"
             },
             "customControl": {
@@ -238,9 +238,31 @@
                         "Cambodia_Allergies"
                     ]
                 },
-                "displayOrder":90,
-                "translationKey":"IMPL_ALLERGIES",
-                "title":"Allergies"
+                "displayOrder":80,
+                "translationKey":"IMPL_ALLERGIES"
+            },
+            "history": {
+                "type": "forms",
+                "isObservation":true,
+                "displayOrder": 14,
+                "hideEmptyDisplayControl": false,
+                "dashboardConfig": {
+                    "showDetailsButton": true,
+                    "numberOfVisits": 5,
+                    "conceptNames": [
+                        "Cambodia_History Form"
+                    ]
+                },
+                "expandedViewConfig":{
+                    "showDetailsButton": true,
+                    "showGroupDateTime":false,
+                    "conceptNames":[
+                        "Cambodia_History Form"
+                    ],
+                    "pivotTable":{
+                    }
+                },
+                "translationKey": "DASHBOARD_TITLE_HISTORY_KEY"
             },
             "treatments":{
                 "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
@@ -263,10 +285,11 @@
                     "showOtherActive":true
                 }
             },
+
             "labTest": {
                 "type": "forms",
                 "isObservation":true,
-                "displayOrder": 30,
+                "displayOrder": 50,
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
                     "showDetailsButton": true,
@@ -306,7 +329,7 @@
                 "type":"ordersControl",
                 "orderType":"Lab Order",
                 "showDetailsButton": true,
-                "displayOrder":71,
+                "displayOrder":102,
                 "dashboardConfig":{
                     "conceptNames":[
                         "Cambodia_Lab Tests Results Notes",
@@ -323,7 +346,7 @@
                 }
             },
             "radioOrders": {
-                "displayOrder":90,
+                "displayOrder":104,
                 "orderType": "Radiology Order",
                 "type": "ordersControl",
                 "translationKey": "DASHBOARD_TITLE_RADIOLOGY_KEY",
@@ -357,7 +380,7 @@
                 "displayOrder":140
             },
             "patientDocs": {
-                "displayOrder": 100,
+                "displayOrder": 85,
                 "type":"historyAndExamination",
                 "isObservation":true,
                 "displayType":"Half-Page",
@@ -382,7 +405,7 @@
             "dentalExam": {
                 "type": "forms",
                 "isObservation":true,
-                "displayOrder": 102,
+                "displayOrder": 96,
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
                     "showDetailsButton": true,
@@ -406,7 +429,7 @@
                 "type": "forms",
                 "hideEmptyDisplayControl": false,
                 "isObservation":true,
-                "displayOrder": 102,
+                "displayOrder": 103,
                 "dashboardConfig": {
                     "numberOfVisits": 5,
                     "showDetailsButton": true,
@@ -443,53 +466,6 @@
                     "scope":"latest"
                 },
                 "translationKey": "IMPL_REFERRALS"
-            },
-            "summary": {
-                "type": "forms",
-                "isObservation":true,
-                "displayOrder": 130,
-                "hideEmptyDisplayControl": false,
-                "dashboardConfig": {
-                    "showDetailsButton": true,
-                    "numberOfVisits": 5,
-                    "conceptNames":[
-                        "Cambodia_Consultation Form",
-                        "Cambodia_Vital Signs Basic Set",
-                        "Cambodia_Vital Signs Extended Form",
-                        "Cambodia_Offline Medication Form",
-                        "Cambodia_Allergies Form",
-                        "Cambodia_Immunizations Form",
-                        "Cambodia_Lab Tests Results Form",
-                        "Cambodia_Dental Exam Form",
-                        "Cambodia_Referral Form",
-                        "Cambodia_ANC Obstetric History Form",
-                        "Cambodia_ANC Visit Form",
-                        "Cambodia_PNC Form",
-                        "Cambodia_Birth Spacing Form"
-                    ]
-                },
-                "expandedViewConfig":{
-                    "showDetailsButton": true,
-                    "showGroupDateTime":false,
-                    "conceptNames":[
-                        "Cambodia_Consultation Form",
-                        "Cambodia_Vital Signs Basic Set",
-                        "Cambodia_Vital Signs Extended Form",
-                        "Cambodia_Offline Medication Form",
-                        "Cambodia_Allergies Form",
-                        "Cambodia_Immunizations Form",
-                        "Cambodia_Lab Tests Results Form",
-                        "Cambodia_Dental Exam Form",
-                        "Cambodia_Referral Form",
-                        "Cambodia_ANC Obstetric History Form",
-                        "Cambodia_ANC Visit Form",
-                        "Cambodia_PNC Form",
-                        "Cambodia_Birth Spacing Form"
-                    ],
-                    "pivotTable":{
-                    }
-                },
-                "translationKey": "DASHBOARD_TITLE_VISITS_KEY"
             },
             "visits":{
                 "translationKey":"DASHBOARD_TITLE_VISITS_KEY",

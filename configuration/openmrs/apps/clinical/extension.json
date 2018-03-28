@@ -134,7 +134,7 @@
       "conceptName": "Cambodia_Offline Medication Form"
     },
     "requiredPrivilege": "app:clinical"
-  },  
+  },
   "bahmniClinicalConceptSetGroupObservationsConsultationForm": {
     "id": "bahmni.clinical.conceptSetGroup.observations.consultationForm",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
@@ -144,7 +144,17 @@
       "conceptName": "Cambodia_Consultation Form"
     },
     "requiredPrivilege": "app:clinical"
-  },  
+  },
+  "bahmniClinicalConceptSetGroupObservationsHistoryForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.historyForm",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "Cambodia_History Form"
+    },
+    "requiredPrivilege": "app:clinical"
+  },
   "bahmniClinicalConceptSetGroupObservationsVitalsForm": {
     "id": "bahmni.clinical.conceptSetGroup.observations.VitalsForm",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
@@ -234,7 +244,7 @@
       "conceptName": "Cambodia_Immunizations Form"
     },
     "requiredPrivilege": "app:clinical"
-  },  
+  },
   "bahmniClinicalBillingTreatment": {
     "id": "bahmni.clinical.billing.treatment",
     "extensionPointId": "org.bahmni.clinical.consultation.board",
