@@ -366,19 +366,6 @@
                     }
                 }
             },
-            "growthChart":{
-                "type":"observationGraph",
-                "title":"Growth Chart",
-                "translationKey": "IMPL_GROWTH_CHART",
-                "config":{
-                    "yAxisConcepts":[
-                        "Weight"
-                    ],
-                    "referenceData":"growthChartReference.csv",
-                    "numberOfVisits":10
-                },
-                "displayOrder":140
-            },
             "patientDocs": {
                 "displayOrder": 85,
                 "type":"historyAndExamination",
@@ -477,35 +464,6 @@
                     "maximumNoOfVisits":5,
                     "groupByVisits":true
                 }
-            },
-            "bpPulse":{
-                "type":"observationGraph",
-                "title":"BP / Pulse",
-                "translationKey": "IMPL_BP_PULSE",
-                "config":{
-                    "yAxisConcepts":[
-                        "Cambodia_Systolic Blood Pressure",
-                        "Cambodia_Diastolic Blood Pressure",
-                        "Cambodia_Pulse"
-                    ],
-                    "xAxisConcept":"observationDateTime",
-                    "numberOfVisits":10
-                },
-                "displayOrder":114
-            },
-            "weightBMI":{
-                "type":"observationGraph",
-                "title":"Weight / BMI",
-                "translationKey": "IMPL_WEIGHT_BMI",
-                "config":{
-                    "yAxisConcepts":[
-                        "Weight",
-                        "BMI"
-                    ],
-                    "xAxisConcept":"observationDateTime",
-                    "numberOfVisits":10
-                },
-                "displayOrder":120
             }
 
         }
