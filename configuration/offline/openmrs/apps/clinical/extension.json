@@ -71,19 +71,6 @@
     "order": 2,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalPatientsSearchOPDActivePatientsByProvider": {
-    "id": "bahmni.clinical.patients.search.OPDActivePatientsByProvider",
-    "extensionPointId": "org.bahmni.patient.search",
-    "type": "config",
-    "extensionParams": {
-      "searchHandler": "emrapi.sqlSearch.activePatientsByProvider",
-      "translationKey": "MODULE_LABEL_OPD_1_KEY",
-      "forwardUrl": "#/default/patient/{{patientUuid}}/consultationContext"
-    },
-    "label": "OPD-1",
-    "order": 3,
-    "requiredPrivilege": "app:clinical"
-  },
   "activePatientsByLocation": {
     "id": "bahmni.clinical.patients.search.activePatientsByLocation",
     "extensionPointId": "org.bahmni.patient.search",
@@ -94,6 +81,20 @@
       "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
     },
     "label": "Active",
+    "order": 3,
+    "requiredPrivilege": "app:clinical"
+  },
+  "awaitingMedicationDispense": {
+    "id": "bahmni.clinical.patients.search.awaitingMedicationDispense",
+    "extensionPointId": "org.bahmni.patient.search",
+    "type": "config",
+    "extensionParams": {
+      "searchHandler": "emrapi.sqlSearch.awaitingMedicationDispense",
+      "translationKey": "IMPL_QUEUE_AWAITING_MEDICATION_DISPENSE",
+      "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard/treatment?tabConfigName=allMedicationTabConfig",
+      "view":"tile"
+    },
+    "label": "AwaitingDispense",
     "order": 4,
     "requiredPrivilege": "app:clinical"
   },
@@ -134,7 +135,7 @@
       "conceptName": "Cambodia_Offline Medication Form"
     },
     "requiredPrivilege": "app:clinical"
-  },  
+  },
   "bahmniClinicalConceptSetGroupObservationsConsultationForm": {
     "id": "bahmni.clinical.conceptSetGroup.observations.consultationForm",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
@@ -144,7 +145,17 @@
       "conceptName": "Cambodia_Consultation Form"
     },
     "requiredPrivilege": "app:clinical"
-  },  
+  },
+  "bahmniClinicalConceptSetGroupObservationsHistoryForm": {
+    "id": "bahmni.clinical.conceptSetGroup.observations.historyForm",
+    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+    "type": "config",
+    "extensionParams": {
+      "default": true,
+      "conceptName": "Cambodia_History Form"
+    },
+    "requiredPrivilege": "app:clinical"
+  },
   "bahmniClinicalConceptSetGroupObservationsVitalsForm": {
     "id": "bahmni.clinical.conceptSetGroup.observations.VitalsForm",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
@@ -234,7 +245,7 @@
       "conceptName": "Cambodia_Immunizations Form"
     },
     "requiredPrivilege": "app:clinical"
-  },  
+  },
   "bahmniClinicalBillingTreatment": {
     "id": "bahmni.clinical.billing.treatment",
     "extensionPointId": "org.bahmni.clinical.consultation.board",
