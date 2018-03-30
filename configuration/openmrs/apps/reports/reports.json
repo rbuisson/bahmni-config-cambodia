@@ -22,7 +22,7 @@
                     "visitAttributes": [                       
                     ],
                     "patientAddresses": ["city_village"],
-                    "patientAttributes": ["impl.other"],
+                    "patientAttributes": ["impl.patientStatus"],
                     "additionalPatientIdentifiers": ["impl.legacyId"],
                     "ageGroupName":"All Ages", 
                     "visitTypesToFilter": []
@@ -32,7 +32,7 @@
                 "Gender"
             ],
             "columnGroups": [
-                "city_village","impl.other"
+                "city_village","impl.patientStatus"
             ],
             "distinctGroups": [
                 "Patient Identifier"
