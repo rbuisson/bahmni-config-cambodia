@@ -43,6 +43,7 @@
         "prepopulateFields" : ["Location.country","Location.province"],
         "autoCompleteFields":["familyName"],
         "searchByIdForwardUrl": "/patient/{{patientUuid}}",
+        "defaultVisitType":"Outpatient",
         "showLastName": true,
         "showBirthTime": false,
 
