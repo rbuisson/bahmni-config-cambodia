@@ -87,12 +87,6 @@
                 "showOrder":false,
                 "displayOrder":10
             },
-            "conditions": {
-                "translationKey":"CONDITION_LIST_DISPLAY_CONTROL_TITLE",
-                "type": "conditionsList",
-                "showDetailsButton": true,
-                "displayOrder": 15
-            },
             "examination":{
                 "type":"forms",
                 "isObservation":true,
