@@ -21,7 +21,8 @@
     "IMPL_GROWTH_CHART":"Growth Chart",
     "IMPL_WEIGHT_BMI":"Weight / BMI",
     "IMPL_OFFLINEMED": "Offline Medication",
-    "IMPL_QUEUE_AWAITING_MEDICATION_DISPENSE":"Awaiting Dispense",
+    "IMPL_QUEUE_DISPENSARY":"Dispensary",
+    "IMPL_QUEUE_WAITING_ROOM":"Waiting Room",
 
     "MODULE_LABEL_ACTIVE_KEY": "Active",
     "MODULE_LABEL_PROGRAMS_KEY": "Programs",

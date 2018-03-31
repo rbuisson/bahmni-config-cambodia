@@ -21,7 +21,8 @@
     "IMPL_GROWTH_CHART":"ក្រាហ្វកំណើន",
     "IMPL_WEIGHT_BMI":"ទម្ងន់ / BMI",
     "IMPL_OFFLINEMED": "ឱសថក្រៅបណ្ដាញ",
-    "IMPL_QUEUE_AWAITING_MEDICATION_DISPENSE":"Awaiting Dispense",
+    "IMPL_QUEUE_DISPENSARY":"ឱសថ",
+    "IMPL_QUEUE_WAITING_ROOM":"បន្ទប់​រង់ចាំ",
 
     "MODULE_LABEL_ACTIVE_KEY": "សកម្ម",
     "MODULE_LABEL_PROGRAMS_KEY": "កម្មវិធី",
