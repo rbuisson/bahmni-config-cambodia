@@ -16,8 +16,8 @@
     "translationKey": "MODULE_LABEL_PROGRAMS_KEY",
     "url": "../clinical/#/programs/patient/search",
     "icon": "icon-bahmni-program",
-    "order": 2,
-    "requiredPrivilege": "app:clinical"
+    "order": 60,
+    "requiredPrivilege": "app:programs"
   },
   "clinical": {
     "id": "bahmni.clinical",
@@ -56,7 +56,7 @@
     "translationKey": "MODULE_LABEL_ORDERS_KEY",
     "url": "../orders/#/search",
     "icon": "icon-bahmni-orders",
-    "order": 10,
+    "order": 2,
     "requiredPrivilege": "app:orders"
   },
   "reports": {
