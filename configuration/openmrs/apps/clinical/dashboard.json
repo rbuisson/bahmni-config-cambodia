@@ -324,15 +324,33 @@
 
                 "translationKey": "IMPL_OFFLINEMED"
             },
-            "labOrders":{
-                "translationKey":"IMPL_LAB",
+            "chemOrders":{
+                "translationKey":"IMPL_CHEM",
                 "type":"ordersControl",
-                "orderType":"Lab Order",
+                "orderType":"Chemistry Order",
                 "showDetailsButton": true,
                 "displayOrder":102,
                 "dashboardConfig":{
                     "conceptNames":[
-                        "Chemistry Order Fulfillment Form",
+                        "Chemistry Order Fulfillment Form"
+                    ],
+                    "numberOfVisits": 5,
+                    "showHeader": true
+                },
+                "expandedViewConfig":{
+                    "conceptNames":[
+                        "Chemistry Order Fulfillment Form"
+                    ]
+                }
+            },            
+            "labOrders":{
+                "translationKey":"IMPL_LAB",
+                "type":"ordersControl",
+                "orderType": "Lab Order",
+                "showDetailsButton": true,
+                "displayOrder":104,
+                "dashboardConfig":{
+                    "conceptNames":[
                         "Lab Order Fulfillment Form"
                     ],
                     "numberOfVisits": 5,
@@ -340,13 +358,12 @@
                 },
                 "expandedViewConfig":{
                     "conceptNames":[
-                        "Chemistry Order Fulfillment Form",
                         "Lab Order Fulfillment Form"
                     ]
                 }
             },
             "radioOrders": {
-                "displayOrder":104,
+                "displayOrder":112,
                 "orderType": "Radiology Order",
                 "type": "ordersControl",
                 "translationKey": "DASHBOARD_TITLE_RADIOLOGY_KEY",
@@ -458,7 +475,7 @@
             "referral": {
                 "type": "vitals",
                 "isObservation":true,
-                "displayOrder": 111,
+                "displayOrder": 115,
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
                     "showDetailsButton": true,
@@ -470,7 +487,7 @@
             "visits":{
                 "translationKey":"DASHBOARD_TITLE_VISITS_KEY",
                 "type":"visits",
-                "displayOrder":115,
+                "displayOrder":111,
                 "showDetailsButton": true,
                 "dashboardConfig":{
                     "title":null,
