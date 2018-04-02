@@ -332,16 +332,16 @@
                 "displayOrder":102,
                 "dashboardConfig":{
                     "conceptNames":[
-                        "Cambodia_Lab Tests Results Notes",
-                        "Cambodia_Lab Tests Results Attachment"
+                        "Chemistry Order Fulfillment Form",
+                        "Lab Order Fulfillment Form"
                     ],
                     "numberOfVisits": 5,
                     "showHeader": true
                 },
                 "expandedViewConfig":{
                     "conceptNames":[
-                        "Cambodia_Lab Tests Results Notes",
-                        "Cambodia_Lab Tests Results Attachment"
+                        "Chemistry Order Fulfillment Form",
+                        "Lab Order Fulfillment Form"
                     ]
                 }
             },

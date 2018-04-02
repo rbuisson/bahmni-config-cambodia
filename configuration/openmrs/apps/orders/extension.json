@@ -12,7 +12,7 @@
 	  "view":""
 	 },
 	 "label": "Radiology Order",
-	 "order": 2,
+	 "order": 7,
 	 "requiredPrivilege": "app:orders"
 	 },
 	 	"bahmniClinicalPatientsSearchLabOrderAllPatients":{
@@ -27,7 +27,23 @@
 	  "forwardButtonTitle" : "View",
 	  "view":""
 	 },
-	 "label": "Lab Order",
+	 "label": "Serology Results",
+	 "order": 2,
+	 "requiredPrivilege": "app:orders"
+	 },
+	 	"bahmniClinicalPatientsSearchChemOrderAllPatients":{
+	 "id": "bahmni.clinical.patients.search.ChemOrderAllPatients",
+	 "extensionPointId": "org.bahmni.patient.search",
+	 "type": "config",
+	 "extensionParams": {
+	  "searchHandler": "emrapi.sqlSearch.activePatients",
+	  "display":"Lab Orders",
+	  "translationKey": "MODULE_LABEL_CHEM_ORDERS_KEY",
+	  "forwardUrl" : "../orders/#/patient/{{patientUuid}}/fulfillment/Chemistry Order",
+	  "forwardButtonTitle" : "View",
+	  "view":""
+	 },
+	 "label": "Chemistry Results",
 	 "order": 1,
 	 "requiredPrivilege": "app:orders"
 	 }

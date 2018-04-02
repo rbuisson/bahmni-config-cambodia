@@ -15,7 +15,7 @@
     "IMPL_CHIEF_COMPLAINT": "Chief Complaint",
     "IMPL_REFERRALS": "Referrals",
     "IMPL_DENTAL": "Dental",
-    "IMPL_LAB": "Orders",
+    "IMPL_LAB": "Lab Orders",
     "IMPL_OBSERVATIONS": "Observations",
     "IMPL_BP_PULSE":"BP / Pulse",
     "IMPL_GROWTH_CHART":"Growth Chart",
@@ -31,7 +31,7 @@
     "MODULE_LABEL_OPD_1_KEY": "OPD-1",
     "MODULE_LABEL_ALL_KEY": "All",
 
-    "DASHBOARD_TITLE_LAB_RESULTS_KEY": "Lab Results",
+    "DASHBOARD_TITLE_LAB_RESULTS_KEY": "Tests in Clinic",
     "DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY": "Lab Orders Fulfillment",
     "DASHBOARD_TITLE_PACS_KEY": "Pacs",
     "DASHBOARD_TITLE_RADIOLOGY_KEY": "Radiology",
