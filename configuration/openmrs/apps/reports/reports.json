@@ -3,9 +3,9 @@
         "name": "Visit",
         "type": "visits",
         "config": {
-            "visitAttributes": ["Visit Location"],
+            "visitAttributes": [],
             "patientAddresses": ["city_village"],
-            "patientAttributes": ["impl.other","impl.phoneNumber"],
+            "patientAttributes": ["patientType","impl.familyNameLocal","impl.givenNameLocal","impl.other","impl.phoneNumber"],
             "additionalPatientIdentifiers": ["impl.legacyId"],
             "ageGroupName":"",
             "excludeColumns": ["Date stopped", "Date Of Admission", "Date Of Discharge", "Visit Type", "New patient visit"]
@@ -19,12 +19,12 @@
                 "type": "visits",
                 "config": {
                     "forDataAnalysis": true,
-                    "visitAttributes": [                       
+                    "visitAttributes": [
                     ],
                     "patientAddresses": ["city_village"],
                     "patientAttributes": ["impl.patientStatus"],
                     "additionalPatientIdentifiers": ["impl.legacyId"],
-                    "ageGroupName":"All Ages", 
+                    "ageGroupName":"All Ages",
                     "visitTypesToFilter": []
                 }
             },
@@ -48,7 +48,7 @@
     "consultForms":{
         "name": "ChiefComplaint",
         "type": "observations",
-        "config": {   
+        "config": {
             "patientAttributes": ["impl.other","impl.phoneNumber"],
             "patientAddresses": [],
             "visitAttributes": [],
@@ -79,7 +79,7 @@
             "Polio, 3rd Injection"
             ]
         }
-    },  
+    },
     "pivotComplaint": {
         "name": "ComplaintTotal",
         "type": "aggregation",
@@ -107,7 +107,7 @@
             "showTotalRow":true,
             "showTotalColumn":true
         }
-    }, 
+    },
     "dentalForms":{
         "name": "Dental",
         "type": "observations",
@@ -130,7 +130,7 @@
             "excludeColumns": ["Birthdate", "Program Name", "Program Enrollment Date", "Program End Date"
             ]
         }
-    },     
+    },
     "midwifeForms":{
         "name": "Midwife",
         "type": "observations",
@@ -157,7 +157,7 @@
             ],
             "sortBy":[{"column":"Patient Identifier"}]
         }
-    }, 
+    },
     "diagnosisReport": {
         "name": "Diagnosis",
         "type": "diagnosisCount",
@@ -174,7 +174,7 @@
             "agegroup_name"
             ]
         }
-    },    
+    },
     "codedValueRangeBasedReport": {
         "name": "DiagnosisCoded",
         "type": "obsCount",

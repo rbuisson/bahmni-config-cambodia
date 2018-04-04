@@ -63,7 +63,7 @@
             "customAttributes": {
                 "label": "LOCAL_NAMES",
                 "placeholder": "LOCAL_NAMES",
-                "fields": ["givenNameLocal", "middleNameLocal", "familyNameLocal"]
+                "fields": ["givenNameLocal", "familyNameLocal"]
             }
         },
         "patientSearchResults": {
@@ -71,7 +71,7 @@
                 "fields" : ["city_village"]
             },
             "personAttributes": {
-                "fields": ["givenNameLocal", "middleNameLocal", "familyNameLocal" ]
+                "fields": ["givenNameLocal", "familyNameLocal" ]
             }
         },
         "afterVisitSaveForwardUrl" : "./index.html#/search",
