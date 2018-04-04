@@ -206,13 +206,13 @@
         },
         "Cambodia_Regular Rate and Rhythm": {
             "disableAddNotes": true
-        },        
+        },
         "Cambodia_Carotid bruit": {
             "disableAddNotes": true
-        },         
+        },
         "Cambodia_Heartrate": {
             "disableAddNotes": true
-        },        
+        },
         "Cambodia_Abdomen Exam": {
             "required": true,
             "disableAddNotes": true
@@ -236,7 +236,7 @@
         "Cambodia_Flank and Back Exam": {
             "required": true,
             "disableAddNotes": true
-        },        
+        },
         "Cambodia_Flank and Back Exam Abnormalities": {
             "multiSelect": true,
             "disableAddNotes": true
@@ -302,6 +302,12 @@
         "Cambodia_Polio3": {
           "disableAddNotes": true
         },
+        "Cambodia_IPV": {
+          "disableAddNotes": true
+        },
+        "Cambodia_IPV, Date Given": {
+          "disableAddNotes": true
+        },
         "Cambodia_DTP-Hep-Hip1": {
           "disableAddNotes": true
         },
@@ -349,7 +355,7 @@
         },
         "Cambodia_BCG": {
           "disableAddNotes": true
-        },        
+        },
         "Cambodia_Polio1, Date Given": {
           "disableAddNotes": true
         },
@@ -412,7 +418,7 @@
         },
         "Cambodia_HepB at birth, time administered after birth": {
           "disableAddNotes": true
-        },        
+        },
         "Cambodia_Medications": {
           "disableAddNotes": true
         },
