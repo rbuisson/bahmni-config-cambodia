@@ -25,6 +25,23 @@ Bahmni.ConceptSet.FormConditions.rules = {
             }
         }
     },
+    'Cambodia_Head Circumference' : function (formName, formFieldValues, patient) {
+        var patientAge = patient['age'];
+        var sections = {
+            "show": [],
+            "hide": []
+        };
+
+        if (patientAge < 5) {
+            return {
+                show: ["Cambodia_Head Circumference"]
+            }
+        } else {
+            return {
+                hide: ["Cambodia_Head Circumference"]
+            }
+        }
+    },
     'Cambodia_Newborn Immunizations Set' : function (formName, formFieldValues, patient) {
         var patientAge = patient['age'];
         var patientGender = patient['gender'];
@@ -35,7 +52,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         if (patientAge < 1) {
             return {
-                show: ["Cambodia_Newborn Immunizations Set"],
+                show: ["Cambodia_Newborn Immunizations Set"]
             }
         } else if (patientAge >= 1 && patientAge < 16) {
             return {
@@ -61,7 +78,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         if (patientAge < 1) {
             return {
-                hide: ["Cambodia_Child Immunizations Set"],
+                hide: ["Cambodia_Child Immunizations Set"]
             }
         } else if (patientAge >= 1 && patientAge < 16) {
             return {
@@ -87,7 +104,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         if (patientAge < 1) {
             return {
-                hide: ["Cambodia_Pregnant Women Immunizations Set"],
+                hide: ["Cambodia_Pregnant Women Immunizations Set"]
             }
         } else if (patientAge >= 1 && patientAge < 13) {
             return {
@@ -397,7 +414,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         } else if (patientGender == 'F') {
             sections.hide.push("Cambodia_Genitourinary Male Symptoms");
             sections.hide.push("Cambodia_Genitourinary Male Exam Abnormalities");
-        } 
+        }
         return sections
     }
 };
