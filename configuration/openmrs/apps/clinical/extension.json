@@ -32,16 +32,16 @@
     "order": 5,
     "requiredPrivilege": "app:radiologyOrders"
   },
-  "bahmniClinicalPatientsSearchAllActivePatients": {
-    "id": "bahmni.clinical.patients.search.allActivePatients",
+  "bahmniClinicalPatientsSearchActivePatientsWithoutObservation": {
+    "id": "bahmni.clinical.patients.search.activePatientsWithoutObservation",
     "extensionPointId": "org.bahmni.patient.search",
     "type": "config",
     "extensionParams": {
-      "searchHandler": "emrapi.sqlSearch.activePatients",
+      "searchHandler": "emrapi.sqlSearch.activePatientsWithoutObservation",
       "translationKey": "IMPL_QUEUE_WAITING_ROOM",
       "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
     },
-    "label": "Active",
+    "label": "With Obs",
     "order": 1,
     "requiredPrivilege": "app:clinical"
   },
@@ -72,16 +72,16 @@
     "order": 3,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalPatientsSearchActivePatientsWithObservation": {
-    "id": "bahmni.clinical.patients.search.activePatientsWithObservation",
+  "bahmniClinicalPatientsSearchAllActivePatients": {
+    "id": "bahmni.clinical.patients.search.allActivePatients",
     "extensionPointId": "org.bahmni.patient.search",
     "type": "config",
     "extensionParams": {
-      "searchHandler": "emrapi.sqlSearch.activePatientsWithObservation",
-      "translationKey": "test",
+      "searchHandler": "emrapi.sqlSearch.activePatients",
+      "translationKey": "IMPL_QUEUE_ALL_VISITS",
       "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
     },
-    "label": "With Obs",
+    "label": "Active",
     "order": 4,
     "requiredPrivilege": "app:clinical"
   },

@@ -26,6 +26,7 @@
     "IMPL_OFFLINEMED": "Offline Medication",
     "IMPL_QUEUE_DISPENSARY":"Dispensary",
     "IMPL_QUEUE_WAITING_ROOM":"Waiting Room",
+    "IMPL_QUEUE_ALL_VISITS":"All Visits",
 
     "MODULE_LABEL_ACTIVE_KEY": "Active",
     "MODULE_LABEL_PROGRAMS_KEY": "Programs",
