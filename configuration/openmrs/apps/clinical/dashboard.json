@@ -313,8 +313,46 @@
                     ]
                 }
             },
-            "radioOrders": {
+            "hemaOrders":{
+                "translationKey":"IMPL_HEMA",
+                "type":"ordersControl",
+                "orderType": "Hematology Order",
+                "showDetailsButton": true,
                 "displayOrder":112,
+                "dashboardConfig":{
+                    "conceptNames":[
+                        "Hematology Order Fulfillment Form"
+                    ],
+                    "numberOfVisits": 5,
+                    "showHeader": true
+                },
+                "expandedViewConfig":{
+                    "conceptNames":[
+                        "Hematology Order Fulfillment Form"
+                    ]
+                }
+            },
+            "microOrders":{
+                "translationKey":"IMPL_MICRO",
+                "type":"ordersControl",
+                "orderType": "Microbiology Order",
+                "showDetailsButton": true,
+                "displayOrder":115,
+                "dashboardConfig":{
+                    "conceptNames":[
+                        "Microbiology Order Fulfillment Form"
+                    ],
+                    "numberOfVisits": 5,
+                    "showHeader": true
+                },
+                "expandedViewConfig":{
+                    "conceptNames":[
+                        "Microbiology Order Fulfillment Form"
+                    ]
+                }
+            },
+            "radioOrders": {
+                "displayOrder":116,
                 "orderType": "Radiology Order",
                 "type": "ordersControl",
                 "translationKey": "DASHBOARD_TITLE_RADIOLOGY_KEY",
@@ -426,7 +464,7 @@
             "referral": {
                 "type": "vitals",
                 "isObservation":true,
-                "displayOrder": 115,
+                "displayOrder": 117,
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
                     "showDetailsButton": true,

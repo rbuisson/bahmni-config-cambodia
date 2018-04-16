@@ -17,7 +17,7 @@
     "IMPL_DENTAL": "Dental",
     "IMPL_LAB": "Serology",
     "IMPL_CHEM": "Chemistry",
-    "IMPL_HEMO": "Hematology",
+    "IMPL_HEMA": "Hematology",
     "IMPL_MICRO": "Microbiology",
     "IMPL_OBSERVATIONS": "Observations",
     "IMPL_BP_PULSE":"BP / Pulse",
