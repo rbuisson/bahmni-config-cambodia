@@ -5,9 +5,9 @@
         "config": {
             "visitAttributes": [],
             "patientAddresses": ["city_village"],
-            "patientAttributes": ["impl.familyNameLocal","impl.givenNameLocal","impl.patientStatus","impl.other","impl.phoneNumber"],
+            "patientAttributes": ["impl.familyNameLocal","impl.givenNameLocal","impl.patientStatus","impl.other","impl.phoneNumber","impl.2ndPhoneNumber","impl.email","impl.nationality","impl.distanceFromHealthCenter", "impl.guardianName"],
             "additionalPatientIdentifiers": ["impl.legacyId"],
-            "ageGroupName":"",
+            "ageGroupName":"All Ages",
             "excludeColumns": ["Date stopped", "Date Of Admission", "Date Of Discharge", "Visit Type", "New patient visit"]
         }
     },
@@ -19,8 +19,7 @@
                 "type": "visits",
                 "config": {
                     "forDataAnalysis": true,
-                    "visitAttributes": [
-                    ],
+                    "visitAttributes": [  ],
                     "patientAddresses": ["city_village"],
                     "patientAttributes": ["impl.patientStatus"],
                     "additionalPatientIdentifiers": ["impl.legacyId"],
@@ -28,34 +27,24 @@
                     "visitTypesToFilter": []
                 }
             },
-            "rowGroups": [
-                "Gender"
-            ],
-            "columnGroups": [
-                "city_village","impl.patientStatus"
-            ],
-            "distinctGroups": [
-                "Patient Identifier"
-            ],
+            "rowGroups": [   "Gender","All Ages" ],
+            "columnGroups": [    "city_village","impl.patientStatus"],
+            "distinctGroups": [ "Patient Identifier" ],
             "showTotalRow":true,
             "showTotalColumn":true
         }
     },
-    "patientReport": {
-        "name": "PatientDetail",
-        "type": "PatientReport"
-    },
     "consultForms":{
-        "name": "ChiefComplaint",
+        "name": "ComplaintDiagnosis",
         "type": "observations",
         "config": {
             "patientAttributes": ["impl.familyNameLocal","impl.givenNameLocal","impl.patientStatus","impl.other","impl.phoneNumber"],
             "patientAddresses": [],
             "visitAttributes": [],
-            "showVisitInfo": false,
+            "showVisitInfo": true,
             "showProvider": true,
             "programsToFilter": [],
-            "conceptNamesToFilter": ["Chief Complaint"],
+            "conceptNamesToFilter": ["Chief Complaint", "Coded Diagnosis", "Non-coded Diagnosis"],
             "conceptValuesToFilter":[],
             "conceptClassesToFilter": [],
             "applyDateRangeFor": "obsDate",
@@ -64,30 +53,17 @@
             "ignoreEmptyValues": false,
             "conceptNameDisplayFormat": "shortNamePreferred",
             "ageGroupName":"",
-            "excludeColumns": ["Birthdate", "Program Name", "Program Enrollment Date", "Program End Date", "Cancer: describe date, location and type",
-            "Past Medical History Details",
-            "Past Surgical History",
-            "List/Describe Allergies",
-            "List Medications",
-            "Social History",
-            "BCG",
-            "Date Given",
-            "HepB at Birth",
-            "When was the vaccine administered?",
-            "Polio, 1st Injection",
-            "Polio, 2nd Injection",
-            "Polio, 3rd Injection"
-            ]
+            "excludeColumns": ["Birthdate", "Program Name", "Program Enrollment Date", "Program End Date","Patient Created Date","Visit Stop Date","Visit Type"]
         }
     },
     "pivotComplaint": {
-        "name": "ComplaintTotal",
+        "name": "ComplaintDiagnosisTotal",
         "type": "aggregation",
         "config": {
             "report":{
                 "type": "observations",
                 "config": {
-                    "conceptNamesToFilter":["Chief Complaint"],
+                    "conceptNamesToFilter":["Chief Complaint", "Coded Diagnosis", "Non-coded Diagnosis", "Diagnosis Certainty"],
                     "showVisitInfo" : true,
                     "forDataAnalysis": true,
                     "ageGroupName": "All Ages",
@@ -95,15 +71,9 @@
                     "visitTypesToFilter": []
                 }
             },
-            "rowGroups": [
-                "Gender"
-            ],
-            "columnGroups": [
-                   "Concept Name", "value"
-            ],
-            "distinctGroups": [
-                "Patient Identifier"
-            ],
+            "rowGroups": [          "Gender"      ],
+            "columnGroups": [             "Concept Name", "value", "Provider"           ],
+            "distinctGroups": [      "Patient Identifier"  ],
             "showTotalRow":true,
             "showTotalColumn":true
         }
@@ -127,8 +97,7 @@
             "ignoreEmptyValues": false,
             "conceptNameDisplayFormat": "shortNamePreferred",
             "ageGroupName": "",
-            "excludeColumns": ["Birthdate", "Program Name", "Program Enrollment Date", "Program End Date"
-            ]
+            "excludeColumns": ["Birthdate", "Program Name", "Program Enrollment Date", "Program End Date"]
         }
     },
     "midwifeForms":{
@@ -141,10 +110,7 @@
             "showVisitInfo": false,
             "showProvider": true,
             "programsToFilter": [],
-            "conceptNamesToFilter": ["Cambodia_ANC Obstetric History Form",
-                        "Cambodia_ANC Visit Form",
-                        "Cambodia_PNC Form",
-                        "Cambodia_Birth Spacing Form"],
+            "conceptNamesToFilter": ["Cambodia_ANC Obstetric History Form", "Cambodia_ANC Visit Form", "Cambodia_PNC Form","Cambodia_Birth Spacing Form"],
             "conceptValuesToFilter":[],
             "conceptClassesToFilter": [],
             "applyDateRangeFor": "obsDate",
@@ -153,8 +119,7 @@
             "ignoreEmptyValues": true,
             "conceptNameDisplayFormat": "shortNamePreferred",
             "ageGroupName": "",
-            "excludeColumns": ["Observation Date", "Observation Created Date","Birthdate", "Program Name", "Program Enrollment Date", "Program End Date"
-            ],
+            "excludeColumns": ["Observation Date", "Observation Created Date","Birthdate", "Program Name", "Program Enrollment Date", "Program End Date"  ],
             "sortBy":[{"column":"Patient Identifier"}]
         }
     },
@@ -164,15 +129,9 @@
         "config": {
             "icd10ConceptSource":"ICD 10 - WHO",
             "ageGroupName": "All Ages",
-            "rowsGroupBy": [
-            "header_concept_name",
-            "leaf_concept_name"
-            ],
+            "rowsGroupBy": [  "header_concept_name",    "leaf_concept_name"    ],
             "visitTypes":["OPD"],
-            "columnsGroupBy": [
-            "gender",
-            "agegroup_name"
-            ]
+            "columnsGroupBy": [    "gender",    "agegroup_name"    ]
         }
     },
     "codedValueRangeBasedReport": {
@@ -180,9 +139,7 @@
         "type": "obsCount",
         "config": {
             "ageGroupName": "All Ages",
-            "conceptNames": [
-                "Coded Diagnosis", "Non-coded Diagnosis"
-            ],
+            "conceptNames": [            "Coded Diagnosis", "Non-coded Diagnosis"        ],
             "countOncePerPatient": "false",
             "countOnlyClosedVisits": "false"
         }
@@ -191,14 +148,59 @@
         "name": "BPStat",
         "type": "ObsValueCount",
         "config": {
-            "conceptNames": [
-                "Cambodia_Systolic Blood Pressure Abnormal",
-                "Cambodia_Diastolic Blood Pressure Abnormal"
-            ]
+            "conceptNames": ["Cambodia_Systolic Blood Pressure Abnormal","Cambodia_Diastolic Blood Pressure Abnormal"]
         }
     },
-    "drugOrderReport": {
-        "name": "DrugOrder",
-        "type": "DrugOrder"
+    "pivotDrug": {
+        "name": "DrugTotal",
+        "type": "aggregation",
+        "config": {
+            "report":{
+                "type": "observations",
+                "config": {
+                    "conceptNamesToFilter":[],
+                    "conceptClassesToFilter":["Drug"],
+                    "showVisitInfo" : true,
+                    "forDataAnalysis": true,
+                    "ageGroupName": "",
+                    "visitAttributes": [],
+                    "visitTypesToFilter": []
+                }
+            },
+            "rowGroups": [  "Gender"  ],
+            "columnGroups": [            "Concept Name", "value", "Provider"     ],
+            "distinctGroups": [   "Patient Identifier" ],
+            "showTotalRow":true,
+            "showTotalColumn":true
+        }
+    },
+    "drug": {
+        "name": "Drug",
+        "type": "OrderFulfillmentReport",
+        "config": {
+            "type": "OrderFulfillmentReport",
+            "orderTypes": [      "Drug Order"      ]
+        }
+    },
+    "orders":{
+        "name": "Orders",
+        "type": "labOrders",
+        "config": {
+            "patientAttributes": [],
+            "patientAddresses": ["city_village"],
+            "visitAttributes": [],
+            "showVisitInfo": true,
+            "showProvider": true,
+            "programsToFilter": [],
+            "conceptNamesToFilter": [],
+            "conceptValuesToFilter": [],
+            "forDataAnalysis": true,
+            "excludeColumns": ["Patient Name"],
+            "showOrderDateTime": true,
+            "additionalPatientIdentifiers": ["impl.legacyId"],
+            "ageGroupName":"All Ages",
+            "showReferredOutTests": false,
+            "excludeColumns": ["city_village","Visit Type",       "Visit Stop Date",       "Visit Type" ]   
+        }
     }
 }
