@@ -32,59 +32,6 @@
     "order": 5,
     "requiredPrivilege": "app:radiologyOrders"
   },
-  "bahmniClinicalPatientsSearchAllActivePatients": {
-    "id": "bahmni.clinical.patients.search.allActivePatients",
-    "extensionPointId": "org.bahmni.patient.search",
-    "type": "config",
-    "extensionParams": {
-      "searchHandler": "emrapi.sqlSearch.activePatients",
-      "translationKey": "MODULE_LABEL_ACTIVE_KEY",
-      "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
-    },
-    "label": "Active",
-    "order": 1,
-    "requiredPrivilege": "app:clinical"
-  },
-  "bahmniClinicalPatientsASearchActivePatientsByProvider": {
-    "id": "bahmni.clinical.patients.search.activePatientsByProvider",
-    "extensionPointId": "org.bahmni.patient.search",
-    "type": "config",
-    "extensionParams": {
-      "searchHandler": "emrapi.sqlSearch.activePatientsByProvider",
-      "translationKey": "MODULE_LABEL_MY_PATIENTS_KEY",
-      "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
-    },
-    "label": "Active",
-    "order": 2,
-    "requiredPrivilege": "app:clinical"
-  },
-  "activePatientsByLocation": {
-    "id": "bahmni.clinical.patients.search.activePatientsByLocation",
-    "extensionPointId": "org.bahmni.patient.search",
-    "type": "config",
-    "extensionParams": {
-      "searchHandler": "emrapi.sqlSearch.activePatientsByLocation",
-      "translationKey": "MODULE_LABEL_ACTIVE_PATIENTS_BY_LOCATION",
-      "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
-    },
-    "label": "Active",
-    "order": 3,
-    "requiredPrivilege": "app:clinical"
-  },
-  "awaitingMedicationDispense": {
-    "id": "bahmni.clinical.patients.search.awaitingMedicationDispense",
-    "extensionPointId": "org.bahmni.patient.search",
-    "type": "config",
-    "extensionParams": {
-      "searchHandler": "emrapi.sqlSearch.awaitingMedicationDispense",
-      "translationKey": "IMPL_QUEUE_AWAITING_MEDICATION_DISPENSE",
-      "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard/treatment?tabConfigName=allMedicationTabConfig",
-      "view":"tile"
-    },
-    "label": "AwaitingDispense",
-    "order": 4,
-    "requiredPrivilege": "app:clinical"
-  },
   "bahmniClinicalPatientsSearchAllPatients": {
     "id": "bahmni.clinical.patients.search.allPatients",
     "extensionPointId": "org.bahmni.patient.search",
