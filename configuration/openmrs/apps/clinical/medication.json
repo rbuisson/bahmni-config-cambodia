@@ -75,6 +75,10 @@
             "doseUnits": "Unit(s)",
             "route": "PV - Per vagina"
           },
+          "Powder": {
+            "doseUnits": "Unit(s)",
+            "route": "PO - Oral"
+          },
           "Suspension": {
             "doseUnits": "ml",
             "route": "PO - Oral"
