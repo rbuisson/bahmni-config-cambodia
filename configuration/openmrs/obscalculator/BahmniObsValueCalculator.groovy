@@ -33,7 +33,22 @@ public class BahmniObsValueCalculator implements ObsValueCalculator {
         OVERWEIGHT("Overweight"),
         OBESE("Obese"),
         SEVERELY_OBESE("Severely Obese"),
-        VERY_SEVERELY_OBESE("Very Severely Obese");
+        VERY_SEVERELY_OBESE("Very Severely Obese"),
+        NEG30plus("below -3"),
+        NEG30("-3"),
+        NEG25("-2.5"),
+        NEG20("-2"),
+        NEG15("-1.5"),
+        NEG10("-1"),
+        NEG05("-0.5"),
+        P00("0"),
+        P05("0.5"),
+        P10("1"),
+        P15("1.5"),
+        P20("2"),
+        P25("2.5"),
+        P30("3"),
+        P30plus("above 3");
 
         private String status;
 
@@ -203,7 +218,7 @@ public class BahmniObsValueCalculator implements ObsValueCalculator {
     };
 
     static def bmiStatus(Double bmi, Integer ageInMonth, String gender) {
-        BMIChart bmiChart = readCSV(OpenmrsUtil.getApplicationDataDirectory() + "obscalculator/BMI_chart.csv");
+        BMIChart bmiChart = readCSV(OpenmrsUtil.getApplicationDataDirectory() + "obscalculator/BMI_chart_SD.csv");
         def bmiChartLine = bmiChart.get(gender, ageInMonth);
         if(bmiChartLine != null ) {
             return bmiChartLine.getStatus(bmi);
@@ -286,7 +301,7 @@ public class BahmniObsValueCalculator implements ObsValueCalculator {
             new File(fileName).withReader { reader ->
                 def header = reader.readLine();
                 reader.splitEachLine(",") { tokens ->
-                    chart.add(new BMIChartLine(tokens[0], tokens[1], tokens[2], tokens[3], tokens[4], tokens[5]));
+                    chart.add(new BMIChartLine(tokens[0], tokens[1], tokens[2], tokens[3], tokens[4], tokens[5], tokens[6], tokens[7], tokens[8], tokens[9],tokens[10], tokens[11], tokens[12], tokens[13], tokens[14], tokens[15]));
                 }
             }
         } catch (FileNotFoundException e) {
@@ -297,31 +312,71 @@ public class BahmniObsValueCalculator implements ObsValueCalculator {
     static class BMIChartLine {
         public String gender;
         public Integer ageInMonth;
-        public Double third;
-        public Double fifteenth;
-        public Double eightyFifth;
-        public Double ninetySeventh;
+        public Double sd30negplus;
+        public Double sd30neg;
+        public Double sd25neg;
+        public Double sd20neg;
+        public Double sd15neg;
+        public Double sd10neg;
+        public Double sd05neg;
+        public Double sd00;
+        public Double sd05;
+        public Double sd10;
+        public Double sd15;
+        public Double sd20;
+        public Double sd25;
+        public Double sd30;
 
-        BMIChartLine(String gender, String ageInMonth, String third, String fifteenth, String eightyFifth, String ninetySeventh) {
+        BMIChartLine(String gender, String ageInMonth, String sd30negplus, String sd30neg, String sd25neg, String sd20neg, String sd15neg, String sd10neg,String sd05neg, String sd00, String sd05, String sd10, String sd15, String sd20, String sd25, String sd30) {
             this.gender = gender
             this.ageInMonth = ageInMonth.toInteger();
-            this.third = third.toDouble();
-            this.fifteenth = fifteenth.toDouble();
-            this.eightyFifth = eightyFifth.toDouble();
-            this.ninetySeventh = ninetySeventh.toDouble();
+            this.sd30negplus = sd30negplus.toDouble();
+            this.sd30neg = sd30neg.toDouble();
+            this.sd25neg = sd25neg.toDouble();
+            this.sd20neg = sd20neg.toDouble();
+            this.sd15neg = sd15neg.toDouble();
+            this.sd10neg = sd10neg.toDouble();
+            this.sd05neg = sd05neg.toDouble();
+            this.sd00 = sd00.toDouble();
+            this.sd05 = sd05.toDouble();
+            this.sd10 = sd10.toDouble();
+            this.sd15 = sd15.toDouble();
+            this.sd20 = sd20.toDouble();
+            this.sd25 = sd25.toDouble();
+            this.sd30 = sd30.toDouble();
         }
 
         public BmiStatus getStatus(Double bmi) {
-            if(bmi < third) {
-                return BmiStatus.SEVERELY_UNDERWEIGHT
-            } else if(bmi < fifteenth) {
-                return BmiStatus.UNDERWEIGHT
-            } else if(bmi < eightyFifth) {
-                return BmiStatus.NORMAL
-            } else if(bmi < ninetySeventh) {
-                return BmiStatus.OVERWEIGHT
+            if(bmi < sd30negplus) {
+                return BmiStatus.NEG30plus
+            } else if(bmi < sd30neg) {
+                return BmiStatus.NEG30
+            } else if(bmi < sd25neg) {
+                return BmiStatus.NEG25
+            } else if(bmi < sd20neg) {
+                return BmiStatus.NEG20
+            } else if(bmi < sd15neg) {
+                return BmiStatus.NEG15
+            } else if(bmi < sd10neg) {
+                return BmiStatus.NEG10
+            } else if(bmi < sd05neg) {
+                return BmiStatus.NEG05
+            } else if(bmi < sd00) {
+                return BmiStatus.P00
+            } else if(bmi < sd05) {
+                return BmiStatus.P05
+            } else if(bmi < sd10) {
+                return BmiStatus.P10
+            } else if(bmi < sd15) {
+                return BmiStatus.P15
+            } else if(bmi < sd20) {
+                return BmiStatus.P20
+            } else if(bmi < sd25) {
+                return BmiStatus.P25
+            } else if(bmi < sd30) {
+                return BmiStatus.P30
             } else {
-                return BmiStatus.OBESE
+                return BmiStatus.P30plus
             }
         }
     }
