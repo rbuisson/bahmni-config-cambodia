@@ -352,7 +352,7 @@
                 }
             },
             "radioOrders": {
-                "displayOrder":116,
+                "displayOrder":114,
                 "orderType": "Radiology Order",
                 "type": "ordersControl",
                 "translationKey": "DASHBOARD_TITLE_RADIOLOGY_KEY",
@@ -371,19 +371,6 @@
                     "pivotTable":{
                     }
                 }
-            },
-            "growthChart":{
-                "type":"observationGraph",
-                "title":"Growth Chart",
-                "translationKey": "IMPL_GROWTH_CHART",
-                "config":{
-                    "yAxisConcepts":[
-                        "BMI"
-                    ],
-                    "referenceData":"growthChartReference.csv",
-                    "numberOfVisits":10
-                },
-                "displayOrder":140
             },
             "patientDocs": {
                 "displayOrder": 85,
@@ -497,7 +484,7 @@
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
                 },
-                "displayOrder":114
+                "displayOrder":120
             },
             "weightBMI":{
                 "type":"observationGraph",
@@ -511,7 +498,35 @@
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
                 },
-                "displayOrder":120
+                "displayOrder":140
+            },
+            "growthChart":{
+                "type":"observationGraph",
+                "title":"Growth Chart",
+                "translationKey": "IMPL_GROWTH_CHART",
+                "config":{
+                    "yAxisConcepts":[
+                        "BMI"
+                    ],
+                    "referenceData":"growthChartReference.csv",
+                    "numberOfVisits":10
+                },
+                "displayOrder":150
+            },
+            "testsInClinic":{
+                "type":"observationGraph",
+                "title":"Glucose",
+                "translationKey": "IMPL_TESTS_IN_CLINIC",
+                "config":{
+                    "yAxisConcepts":[
+                        "Cambodia_Fasting Blood Glucose",
+                        "Cambodia_PP Blood Glucose",
+                        "Cambodia_pH"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":145
             }
 
         }
