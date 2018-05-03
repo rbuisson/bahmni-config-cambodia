@@ -62,8 +62,8 @@
             },
             "customAttributes": {
                 "label": "LOCAL_NAMES",
-                "placeholder": "LOCAL_NAMES",
-                "fields": ["givenNameLocal", "familyNameLocal"]
+                "placeholder": "Enter",
+                "fields": ["givenNameLocal", "familyNameLocal","impl.phoneNumber","impl.2ndPhoneNumber","impl.email","impl.other","impl.guardianName"]
             }
         },
         "patientSearchResults": {
@@ -71,7 +71,7 @@
                 "fields" : ["city_village"]
             },
             "personAttributes": {
-                "fields": ["givenNameLocal", "familyNameLocal" ]
+                "fields": ["familyNameLocal", "givenNameLocal","impl.phoneNumber","impl.other"]
             }
         },
         "afterVisitSaveForwardUrl" : "./index.html#/search",
