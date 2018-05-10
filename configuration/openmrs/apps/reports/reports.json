@@ -5,10 +5,10 @@
         "config": {
             "visitAttributes": [],
             "patientAddresses": ["city_village"],
-            "patientAttributes": ["impl.familyNameLocal","impl.givenNameLocal","impl.patientStatus","impl.other","impl.phoneNumber","impl.2ndPhoneNumber","impl.email","impl.nationality","impl.distanceFromHealthCenter", "impl.guardianName"],
+            "patientAttributes": ["familyNameLocal","givenNameLocal","impl.patientStatus","impl.other","impl.phoneNumber","impl.2ndPhoneNumber","impl.email","impl.nationality","impl.distanceFromHealthCenter", "impl.guardianName"],
             "additionalPatientIdentifiers": ["impl.legacyId"],
             "ageGroupName":"Adult Child",
-            "excludeColumns": ["Date stopped", "Date Of Admission", "Date Of Discharge", "Visit Type", "New patient visit"]
+            "excludeColumns": ["Date stopped", "Date Of Admission", "Date Of Discharge", "Visit Type"]
         }
     },
     "pivotReportOfVisits": {
@@ -28,7 +28,7 @@
                 }
             },
             "rowGroups": [   "Gender","Adult Child" ],
-            "columnGroups": [    "city_village","impl.patientStatus"],
+            "columnGroups": [    "city_village","impl.patientStatus","New patient visit"],
             "distinctGroups": [ "Patient Identifier" ],
             "showTotalRow":true,
             "showTotalColumn":true
@@ -38,7 +38,7 @@
         "name": "ComplaintDiagnosis",
         "type": "observations",
         "config": {
-            "patientAttributes": ["impl.familyNameLocal","impl.givenNameLocal","impl.patientStatus","impl.other","impl.phoneNumber"],
+            "patientAttributes": ["familyNameLocal","givenNameLocal","impl.patientStatus","impl.other","impl.phoneNumber"],
             "patientAddresses": [],
             "visitAttributes": [],
             "showVisitInfo": true,
@@ -82,7 +82,7 @@
         "name": "Dental",
         "type": "observations",
         "config": {
-            "patientAttributes": ["impl.familyNameLocal","impl.givenNameLocal","impl.patientStatus","impl.other","impl.phoneNumber"],
+            "patientAttributes": ["familyNameLocal","givenNameLocal","impl.patientStatus","impl.other","impl.phoneNumber"],
             "patientAddresses": [],
             "visitAttributes": [],
             "showVisitInfo": false,
@@ -104,7 +104,7 @@
         "name": "Midwife",
         "type": "observations",
         "config": {
-            "patientAttributes": ["impl.familyNameLocal","impl.givenNameLocal","impl.patientStatus","impl.other","impl.phoneNumber"],
+            "patientAttributes": ["familyNameLocal","givenNameLocal","impl.patientStatus","impl.other","impl.phoneNumber"],
             "patientAddresses": [],
             "visitAttributes": [],
             "showVisitInfo": false,
