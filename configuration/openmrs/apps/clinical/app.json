@@ -110,7 +110,12 @@
             "multiSelect": true
         },
         "Cambodia_Referred To": {
+            "required": true,
             "conciseText": true
+        },
+        "Cambodia_ANC Referral": {
+            "required": true,
+            "disableAddNotes": true
         },
         "Cambodia_Immunizations": {
             "multiSelect": true
@@ -467,6 +472,7 @@
             "multiSelect": true
         },
         "Cambodia_ANC Visit Number": {
+            "required": true,
             "disableAddNotes": true
         },
         "Cambodia_Gestation": {
@@ -528,6 +534,7 @@
             "disableAddNotes":true
         },
         "Cambodia_Acceptor": {
+            "required":true,
             "disableAddNotes":true,
             "multiSelect":true
         },
