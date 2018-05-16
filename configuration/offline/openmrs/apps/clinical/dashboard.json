@@ -27,56 +27,22 @@
                     "showDetailsButton": true,
                     "scope":"latest",
                     "conceptNames":[
-                        "Cambodia_Pulse Data",
-                        "Cambodia_Systolic Blood Pressure Data",
-                        "Cambodia_Diastolic Blood Pressure Data",
-                        "Cambodia_Temperature Data",
-                        "Cambodia_Respiratory Rate Data",
-                        "Cambodia_Oxygen Saturation Data",
-                        "Cambodia_Capillary Refill Time Data",
-                        "Height",
-                        "WeighT",
-                        "BMI Data",
-                        "BMI Status Data"
-                    ]
+                       "Cambodia_Vital Signs Basic Set",
+                       "Cambodia_Vital Signs Extended Form",
+                       "Nutritional Values",
+                       "BMI Data",
+                       "BMI Status Data"
+                   ]
                 },
                 "expandedViewConfig":{
                     "showDetailsButton": true,
                     "conceptNames":[
-                        "Cambodia_Pulse Data",
-                        "Cambodia_Diastolic Blood Pressure Data",
-                        "Cambodia_Systolic Blood Pressure Data",
-                        "Cambodia_Temperature Data",
-                        "Cambodia_Respiratory Rate Data",
-                        "Cambodia_Oxygen Saturation Data",
-                        "Cambodia_Capillary Refill Time Data",
-                        "Height",
-                        "WeighT",
+                        "Cambodia_Vital Signs Basic Set",
+                        "Cambodia_Vital Signs Extended Form",
+                        "Nutritional Values",
                         "BMI Data",
                         "BMI Status Data"
-                    ],
-                    "pivotTable":{
-                        "groupBy":"encounters",
-                        "obsConcepts":[
-                            "Cambodia_Pulse Data",
-                            "Cambodia_Diastolic Blood Pressure Data",
-                            "Cambodia_Systolic Blood Pressure Data",
-                            "Cambodia_Temperature Data",
-                            "Cambodia_Respiratory Rate Data",
-                            "Cambodia_Oxygen Saturation Data",
-                            "Cambodia_Capillary Refill Time Data",
-                            "Height",
-                            "WeighT",
-                            "BMI Data",
-                            "BMI Status Data"
-                        ],
-                        "drugConcepts":[
-
-                        ],
-                        "labConcepts":[
-
-                        ]
-                    }
+                    ]
                 }
             },
             "diagnosis":{
