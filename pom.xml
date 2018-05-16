@@ -4,7 +4,7 @@
   <artifactId>bahmni-config-cambodia</artifactId>
   <name>Bahmni config for the ODC</name>
   <description>Bahmni configuration for the 'OpenMRS distribution for Cambodia'</description>
-  <version>1.0.5</version>
+  <version>1.0.6-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <developers>
