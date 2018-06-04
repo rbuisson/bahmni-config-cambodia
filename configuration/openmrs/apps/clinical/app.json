@@ -164,6 +164,9 @@
         "Cambodia_Head Exam": {
             "required": true,
             "disableAddNotes": true
+        },        
+        "Cambodia_Head Circumference": {
+            "disableAddNotes": true
         },
         "Cambodia_Head Exam Abnormalities": {
             "multiSelect": true,
@@ -480,6 +483,9 @@
         },
         "WEIGHT": {
             "disableAddNotes":true
+        },        
+        "HEIGHT": {
+            "disableAddNotes":true
         },
         "Cambodia_Pulse": {
             "disableAddNotes":true
@@ -488,6 +494,9 @@
             "disableAddNotes":true
         },
         "Cambodia_Height Of Uterus": {
+            "disableAddNotes":true
+        },        
+        "Cambodia_Stomach_Diameter": {
             "disableAddNotes":true
         },
         "Cambodia_Presenting Part": {
