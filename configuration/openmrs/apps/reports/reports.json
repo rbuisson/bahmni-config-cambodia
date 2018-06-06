@@ -24,7 +24,7 @@
             },
             "rowGroups": [ "impl.patientStatus","New patient visit" ],
             "columnGroups": [    "city_village", "Adult Child","Gender" ],
-            "distinctGroups": [ "Patient Identifier" ],
+            "distinctGroups": [ "Visit Id" ],
             "showTotalRow":true,
             "showTotalColumn":true
         }
@@ -81,7 +81,7 @@
             },
             "rowGroups": [       "Concept Name", "value"        ],
             "columnGroups": [      "Location Name" ,       "Adult Child" , "Gender"       ],
-            "distinctGroups": [    "Patient Identifier"    ],
+            "distinctGroups": [    "Obs Id"    ],
             "showTotalRow":true,
             "showTotalColumn":true
         }
@@ -100,7 +100,7 @@
             },
             "rowGroups": [        "Concept Name", "value"],
             "columnGroups": [         "Location Name"      ,  "Adult Child",   "Gender"          ],
-            "distinctGroups": [    "Patient Identifier"  ],
+            "distinctGroups": [    "Obs Id"  ],
             "showTotalRow":true,
             "showTotalColumn":true
         }
@@ -124,7 +124,7 @@
             },
             "rowGroups": [       "Concept Name", "value"          ],
             "columnGroups": [    "Location Name"    ,"Adult Child", "Gender"       ],
-            "distinctGroups": [    "Patient Identifier"  ],
+            "distinctGroups": [    "Obs Id"  ],
             "showTotalRow":true,
             "showTotalColumn":true
         }
@@ -143,7 +143,7 @@
             },
             "rowGroups": [    "Concept Name"    ],
             "columnGroups": [      "Location Name"    ,"Adult Child", "Gender"       ],
-            "distinctGroups": [      "Patient Identifier"  ],
+            "distinctGroups": [      "Obs Id"  ],
             "showTotalRow":true,
             "showTotalColumn":true
         }
