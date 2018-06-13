@@ -627,6 +627,10 @@
           "disableAddNotes": true,
           "allowFutureDates": true
         },
+        "Offline Diagnosis": {
+            "autocomplete":  true,
+            "allowAddMore": true
+        },
         "defaults": {
         }
     },

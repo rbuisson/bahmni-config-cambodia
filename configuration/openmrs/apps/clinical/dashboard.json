@@ -81,11 +81,29 @@
             },
             "diagnosis":{
                 "translationKey":"DASHBOARD_TITLE_DIAGNOSIS_KEY",
-                "type":"diagnosis",
+                "type":"observation",
+                "isObservation": true,
                 "showDetailsButton": true,
-                "showCertainty":false,
-                "showOrder":false,
-                "displayOrder":10
+                "displayOrder":10,
+                "dashboardConfig": {
+                    "showDetailsButton": true,
+                    "showGroupDateTime": false,
+                    "conceptNames": [
+                        "Coded Diagnosis",
+                        "Non-coded Diagnosis",
+                        "Offline Diagnosis"
+                    ]
+                },
+                "expandedViewConfig":{
+                    "showDetailsButton": true,
+                    "conceptNames":[
+                       "Coded Diagnosis",
+                       "Non-coded Diagnosis",
+                       "Offline Diagnosis"
+                   ],
+                    "pivotTable":{
+                    }
+                }
             },
             "conditions": {
                 "translationKey":"CONDITION_LIST_DISPLAY_CONTROL_TITLE",
