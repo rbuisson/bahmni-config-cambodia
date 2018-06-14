@@ -33,13 +33,13 @@
         "name": "Complaint Diagnosis by Time",
         "type": "observations",
         "config": {
-            "patientAttributes": ["familyNameLocal","givenNameLocal","impl.patientStatus","impl.other","impl.phoneNumber"],
+            "patientAttributes": ["familyNameLocal","givenNameLocal","impl.other","impl.phoneNumber"],
             "showVisitInfo": true,
             "showProvider": true,
-            "conceptNamesToFilter": ["Chief Complaint", "Coded Diagnosis", "Non-coded Diagnosis", "Diagnosis Certainty"],
+            "conceptNamesToFilter": ["Chief Complaint", "Non-coded Chief Complaint", "Coded Diagnosis", "Non-coded Diagnosis", "Diagnosis Certainty", "Offline Diagnosis", "Non-coded Offline Diagnosis","Cambodia_Offline Medication"],
             "conceptValuesToFilter":[],
             "conceptClassesToFilter": [],
-            "preferredColumns": ["Visit Start Date","Location Name","Chief Complaint", "Coded Diagnosis", "Non-coded Diagnosis", "Age", "Gender", "familyNameLocal","givenNameLocal","Patient Name", "Provider", "Adult Child" ],
+            "preferredColumns": ["Visit Start Date","Location Name","Chief Complaint", "Non-coded Chief Complaint", "Coded Diagnosis", "Non-coded Diagnosis", "Diagnosis Certainty", "Offline Diagnosis", "Non-coded Offline Diagnosis","Cambodia_Offline Medication", "Age", "Gender", "familyNameLocal","givenNameLocal","Patient Name", "Provider", "Adult Child" ],
             "sortBy" : [{"column" : "Visit Start Date", "sortOrder" : "asc"}],
             "encounterPerRow": true,
             "additionalPatientIdentifiers": ["impl.legacyId"],
@@ -52,13 +52,13 @@
         "name": "Complaint Diagnosis by Age",
         "type": "observations",
         "config": {
-            "patientAttributes": ["familyNameLocal","givenNameLocal","impl.patientStatus","impl.other","impl.phoneNumber"],
+            "patientAttributes": ["familyNameLocal","givenNameLocal","impl.other","impl.phoneNumber"],
             "showVisitInfo": true,
             "showProvider": true,
-            "conceptNamesToFilter": ["Chief Complaint", "Coded Diagnosis", "Non-coded Diagnosis", "Diagnosis Certainty"],
+            "conceptNamesToFilter": ["Chief Complaint", "Non-coded Chief Complaint", "Coded Diagnosis", "Non-coded Diagnosis", "Diagnosis Certainty", "Offline Diagnosis", "Non-coded Offline Diagnosis","Cambodia_Offline Medication"],
             "conceptValuesToFilter":[],
             "conceptClassesToFilter": [],
-            "preferredColumns": ["Visit Start Date","Location Name","Chief Complaint", "Coded Diagnosis", "Non-coded Diagnosis", "Age", "Gender", "familyNameLocal","givenNameLocal","Patient Name", "Provider", "Adult Child" ],
+            "preferredColumns": ["Visit Start Date","Location Name","Chief Complaint", "Non-coded Chief Complaint", "Coded Diagnosis", "Non-coded Diagnosis", "Diagnosis Certainty", "Offline Diagnosis", "Non-coded Offline Diagnosis","Cambodia_Offline Medication", "Age", "Gender", "familyNameLocal","givenNameLocal","Patient Name", "Provider", "Adult Child" ],
             "sortBy" : [{"column" : "Age", "sortOrder" : "asc"}],
             "encounterPerRow": true,
             "additionalPatientIdentifiers": ["impl.legacyId"],
@@ -74,7 +74,7 @@
             "report":{
                 "type": "observations",
                 "config": {
-                    "conceptNamesToFilter":["Chief Complaint"],
+                    "conceptNamesToFilter":["Chief Complaint","Non-coded Chief Complaint"],
                     "conceptNameDisplayFormat": "shortNamePreferred",
                     "ageGroupName": "Adult Child"
                 }
@@ -93,7 +93,7 @@
             "report":{
                 "type": "observations",
                 "config": {
-                    "conceptNamesToFilter":["Coded Diagnosis", "Non-coded Diagnosis"],
+                    "conceptNamesToFilter":["Coded Diagnosis", "Non-coded Diagnosis", "Offline Diagnosis", "Non-coded Offline Diagnosis"],
                     "conceptNameDisplayFormat": "shortNamePreferred",
                     "ageGroupName": "Adult Child"
                 }
