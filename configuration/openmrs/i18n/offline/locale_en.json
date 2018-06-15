@@ -167,6 +167,7 @@
     "IMPL_TESTS_IN_CLINIC":"Tests in Clinic",
     "IMPL_WEIGHT_BMI":"Weight / BMI",
     "IMPL_OFFLINEMED": "Offline Medication",
+    "IMPL_OFFLINEDIAGNOSIS": "Offline Diagnosis",
     "IMPL_QUEUE_DISPENSARY":"Dispensary",
     "IMPL_QUEUE_WAITING_ROOM":"Waiting Room",
     "IMPL_QUEUE_ALL_VISITS":"This Week",
