@@ -85,6 +85,19 @@
     "order": 4,
     "requiredPrivilege": "app:clinical"
   },
+  "bahmniClinicalPatientsSearchActivePatientsFromOffline": {
+    "id": "bahmni.clinical.patients.search.activePatientsFromOffline",
+    "extensionPointId": "org.bahmni.patient.search",
+    "type": "config",
+    "extensionParams": {
+      "searchHandler": "emrapi.sqlSearch.activePatientsFromOffline",
+      "translationKey": "IMPL_QUEUE_OFFLINE",
+      "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
+    },
+    "label": "Offline",
+    "order": 5,
+    "requiredPrivilege": "app:clinical"
+  },
   "bahmniClinicalPatientsSearchAllPatients": {
     "id": "bahmni.clinical.patients.search.allPatients",
     "extensionPointId": "org.bahmni.patient.search",
@@ -94,7 +107,7 @@
       "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
     },
     "label": "All",
-    "order": 5,
+    "order": 6,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalConceptSetGroupObservationsSecondVitals": {
