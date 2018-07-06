@@ -9,6 +9,8 @@
     "impl.stuengChrov":"Stueng Chrov",
     "impl.kampenhTralach":"Kampenh Tralach",
     "impl.khsachChiRos":"Khsach Chi Ros",
+    "impl.legacyId":"Legacy ID",
+    "impl.legacyId.desc":"Legacy ID",
 
     "IMPL_ALLERGIES": "Allergies",
     "IMPL_IMMUNIZATIONS": "Immunizations",

@@ -9,6 +9,9 @@
     "impl.stuengChrov":"Stueng Chrov",
     "impl.kampenhTralach":"Kampenh Tralach",
     "impl.khsachChiRos":"Khsach Chi Ros",
+    "impl.legacyId":"Legacy ID",
+    "impl.phoneNumber":"Phone number",
+    "impl.other":"Other",
 
     "LOCAL_NAMES":"ឈ្មោះខ្មែរ/phone/guardian/other__",
     "Location.village":"Village",
