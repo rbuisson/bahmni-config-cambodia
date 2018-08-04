@@ -61,7 +61,7 @@
                 "displayOrder":11,
                 "dashboardConfig": {
                     "showDetailsButton": true,
-                    "showGroupDateTime": false,
+                    "showGroupDateTime": true,
                     "conceptNames": [
                         "Cambodia_Offline Diagnosis Form"
                     ]
