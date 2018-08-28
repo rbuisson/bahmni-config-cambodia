@@ -62,7 +62,7 @@
       },
       "allowConsultationWhenNoOpenVisit": false,
       "maxConceptSetLevels": 3,
-      "allowOnlyCodedDiagnosis": false,
+      "allowOnlyCodedDiagnosis": true,
       "conceptSetUI": {
         "Cambodia_Chief Complaint Duration": {
             "dropdown": true,
@@ -91,7 +91,6 @@
         "Chief Complaint Data": {
             "autocomplete":true,
             "codedConceptName":"Chief Complaint",
-            "nonCodedConceptName":"Non-Coded Chief Complaint",
             "durationRequired": false,
             "allowAddMore": true
         },
@@ -644,7 +643,6 @@
         },
         "Offline Diagnosis Data": {
             "codedConceptName":"Offline Diagnosis",
-            "nonCodedConceptName":"Non-coded Offline Diagnosis",
             "autocomplete":  true,
             "allowAddMore": true
         },
