@@ -68,23 +68,11 @@
             "dropdown": true,
             "disableAddNotes": true
         },
-        "Cambodia_Complaint 2 Duration": {
-            "dropdown": true,
-            "disableAddNotes": true
-        },
-        "Cambodia_Complaint 3 Duration": {
-            "dropdown": true,
+        "Cambodia_Existing Patient": {
+            "required": false,
             "disableAddNotes": true
         },
         "Cambodia_Chief Complaint common": {
-            "dropdown": true,
-            "disableAddNotes": true
-        },
-        "Cambodia_Complaint 2 common": {
-            "dropdown": true,
-            "disableAddNotes": true
-        },
-        "Cambodia_Complaint 3 common": {
             "dropdown": true,
             "disableAddNotes": true
         },

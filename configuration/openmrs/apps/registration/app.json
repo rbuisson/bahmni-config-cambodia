@@ -29,8 +29,7 @@
             },
             "defaults":  {
                 "impl.nationality": "Cambodia_Khmer",
-                "impl.distanceFromHealthCenter": "Cambodia_Zone A",
-                "impl.patientStatus": "Cambodia_Old Patient"
+                "impl.distanceFromHealthCenter": "Cambodia_Zone A"
             }
         },
         "addressHierarchy": {
@@ -76,6 +75,10 @@
         },
         "afterVisitSaveForwardUrl" : "./index.html#/search",
         "conceptSetUI": {
+            "Cambodia_Existing Patient": {
+                "required": false,
+                "disableAddNotes": true
+            },
             "Cambodia_Pulse Data": {
                 "hideAbnormalButton": false,
                 "disableAddNotes": true
@@ -93,6 +96,14 @@
                 "disableAddNotes": true
             },
             "Cambodia_Respiratory Rate Data": {
+                "hideAbnormalButton": false,
+                "disableAddNotes": true
+            },
+            "Cambodia_Oxygen Saturation Data": {
+                "hideAbnormalButton": false,
+                "disableAddNotes": true
+            },
+            "Cambodia_Capillary Refill Time Data": {
                 "hideAbnormalButton": false,
                 "disableAddNotes": true
             },

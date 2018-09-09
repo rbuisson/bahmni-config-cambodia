@@ -29,8 +29,7 @@
             },
             "defaults":  {
                 "impl.nationality": "Cambodia_Khmer",
-                "impl.distanceFromHealthCenter": "Cambodia_Zone A",
-                "impl.patientStatus": "Cambodia_Old Patient"
+                "impl.distanceFromHealthCenter": "Cambodia_Zone A"
             }
         },
         "addressHierarchy": {

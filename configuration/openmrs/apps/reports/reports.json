@@ -37,21 +37,21 @@
             "showTotalColumn":true
         }
     },
-    "pivotFirstVisit": {
-        "name": "Total New Patients (only row: First visit = Yes)",
+    "pivotExistingPatient": {
+        "name": "Total New Patients (row: Existing Patient = False, from 10/2018)",
         "type": "aggregation",
         "config": {
             "report":{
-                "type": "visits",
+                "type": "observations",
                 "config": {
-                    "patientAddresses": ["city_village"],
-                    "patientAttributes": ["impl.patientStatus"],
-                    "ageGroupName":"Adult Child"
+                    "conceptNamesToFilter":["Cambodia_Existing Patient"],
+                    "conceptNameDisplayFormat": "shortNamePreferred",
+                    "ageGroupName": "Adult Child"
                 }
             },
-            "rowGroups": [ "impl.patientStatus","New patient visit" ],
-            "columnGroups": [    "city_village", "Adult Child","Gender" ],
-            "distinctGroups": [ "Visit Id" ],
+            "rowGroups": [    "Concept Name", "value"  ],
+            "columnGroups": [      "Location Name"    ,"Adult Child", "Gender"       ],
+            "distinctGroups": [      "Patient Id"  ],
             "showTotalRow":true,
             "showTotalColumn":true
         }

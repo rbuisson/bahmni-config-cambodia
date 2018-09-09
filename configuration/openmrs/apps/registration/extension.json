@@ -36,27 +36,13 @@
         "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
         "type": "config",
         "extensionParams": {
-            "conceptName": "Cambodia_Vital Signs Basic Set",
+            "conceptName": "Cambodia_Vital Signs Extended Form",
             "translationKey": "VITAL_SIGNS",
-            "conceptNames": ["Cambodia_Vital Signs Basic Set"],
+            "conceptNames": ["Cambodia_Vital Signs Extended Form", "BMI Data", "BMI Status Data"],
             "required": false,
             "showLatest": true
         },
         "order": 1,
-        "requiredPrivilege": "Edit Visits"
-    },
-    "nutritionalValues":{
-        "id": "bahmni.registration.conceptSetGroup.nutritionalLevels",
-        "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
-        "type": "config",
-        "extensionParams": {
-            "conceptName": "Nutritional Values",
-            "translationKey": "NUTRITIONAL_VALUES_LOCALE_KEY",
-            "conceptNames": ["Nutritional Values", "BMI Data", "BMI Status Data"],
-            "required":true,
-            "showLatest": true
-        },
-        "order": 2,
         "requiredPrivilege": "Edit Visits"
     },
     "referredFrom":{
