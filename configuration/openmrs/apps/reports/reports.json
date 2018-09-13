@@ -37,21 +37,21 @@
             "showTotalColumn":true
         }
     },
-    "pivotExistingPatient": {
-        "name": "Total New Patients (row: Existing Patient = False, from 10/2018)",
+    "pivotNewPatient": {
+        "name": "Total New Patients (row: First visit = True)",
         "type": "aggregation",
         "config": {
             "report":{
-                "type": "observations",
+                "type": "visits",
                 "config": {
-                    "conceptNamesToFilter":["Cambodia_Existing Patient"],
-                    "conceptNameDisplayFormat": "shortNamePreferred",
+                    "patientAddresses": ["city_village"],
+                    "patientAttributes": ["impl.patientStatus"],
                     "ageGroupName": "Adult Child"
                 }
             },
-            "rowGroups": [    "Concept Name", "value"  ],
-            "columnGroups": [      "Location Name"    ,"Adult Child", "Gender"       ],
-            "distinctGroups": [      "Patient Id"  ],
+            "rowGroups": [ "impl.patientStatus","New patient visit" ],
+            "columnGroups": [    "city_village", "Adult Child","Gender" ],
+            "distinctGroups": [ "Visit Id" ],
             "showTotalRow":true,
             "showTotalColumn":true
         }
@@ -106,7 +106,7 @@
                         "Cambodia_HIV","Cambodia_Postpartum",
                         "True","False",
                         "Trachoma","Abscess of eyelid","Chalazion","Blepharitis","Trichiasis","Lagophthalmos","Ptosis of eyelid","Xanthelasma of eyelid","Cysts of eyelid","Dermatochalasis of eyelid","Dacryoadenitis","Dry eye syndrome","Lacrimal cyst","Epiphora","Acute dacryocystitis","Chronic dacryocystitis","Cyst of orbit","Conjunctivitis","Pterygium of eye","Keratitis","Corneal ulcer","Uveitis","Age related cataract","Cataract, other","Glaucoma","Visual disturbances","Otitis externa","Otitis media, unspecified","Otitis media, chronic","Eye diseases","Eye problem, other",
-                        "Cambodia_Polio1","Cambodia_Polio2","Cambodia_Polio3","Cambodia_IPV","Cambodia_DTP-Hep-Hip1","Cambodia_DTP-Hep-Hip2","Cambodia_DTP-Hep-Hip3","Cambodia_PCV1","Cambodia_PCV2","Cambodia_PCV3","Cambodia_MR1","Cambodia_JE","Cambodia_MR***","Cambodia_Tetanus1","Cambodia_Tetanus2","Cambodia_Tetanus3","Cambodia_Tetanus4","Cambodia_Tetanus5"],
+                        "Cambodia_Polio1","Cambodia_Polio2","Cambodia_Polio3","Cambodia_IPV","Cambodia_DTP-Hep-Hip1","Cambodia_DTP-Hep-Hip2","Cambodia_DTP-Hep-Hip3","Cambodia_PCV1","Cambodia_PCV2","Cambodia_PCV3","Cambodia_JE","Cambodia_MR0","Cambodia_MR1","Cambodia_MR2","Cambodia_Tetanus1","Cambodia_Tetanus2","Cambodia_Tetanus3","Cambodia_Tetanus4","Cambodia_Tetanus5"],
                     "ageGroupName": "Adult Child",
                     "conceptNameDisplayFormat": "shortNamePreferred"
                 }

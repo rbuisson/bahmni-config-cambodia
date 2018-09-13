@@ -64,24 +64,6 @@
       "maxConceptSetLevels": 3,
       "allowOnlyCodedDiagnosis": true,
       "conceptSetUI": {
-        "Cambodia_Chief Complaint Duration": {
-            "dropdown": true,
-            "disableAddNotes": true
-        },
-        "Cambodia_Existing Patient": {
-            "required": false,
-            "disableAddNotes": true
-        },
-        "Cambodia_Chief Complaint common": {
-            "dropdown": true,
-            "disableAddNotes": true
-        },
-        "Chief Complaint Data": {
-            "autocomplete":true,
-            "codedConceptName":"Chief Complaint",
-            "durationRequired": false,
-            "allowAddMore": true
-        },
         "Cambodia_Complaint Desc common": {
             "disableAddNotes": true,
             "multiSelect": true
@@ -326,7 +308,7 @@
         "Cambodia_JE": {
           "disableAddNotes": true
         },
-        "Cambodia_MR***": {
+        "Cambodia_MR0": {
           "disableAddNotes": true
         },
         "Cambodia_Tetanus1": {
@@ -344,7 +326,7 @@
         "Cambodia_Tetanus5": {
           "disableAddNotes": true
         },
-        "Cambodia_MR***": {
+        "Cambodia_MR2": {
           "disableAddNotes": true
         },
         "Cambodia_BCG": {
@@ -383,7 +365,7 @@
         "Cambodia_JE, Date Given": {
           "disableAddNotes": true
         },
-        "Cambodia_MR***, Date Given": {
+        "Cambodia_MR0, Date Given": {
           "disableAddNotes": true
         },
         "Cambodia_Tetanus1, Date Given": {
@@ -401,7 +383,7 @@
         "Cambodia_Tetanus5, Date Given": {
           "disableAddNotes": true
         },
-        "Cambodia_MR***, Date Given": {
+        "Cambodia_MR2, Date Given": {
           "disableAddNotes": true
         },
         "Cambodia_BCG, Date Given": {

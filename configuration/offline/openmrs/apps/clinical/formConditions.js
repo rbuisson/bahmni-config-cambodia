@@ -162,16 +162,16 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_MR***' : function (formName, formFieldValues, patient) {
-        var fieldValue = formFieldValues['Cambodia_MR***'];
+    'Cambodia_MR0' : function (formName, formFieldValues, patient) {
+        var fieldValue = formFieldValues['Cambodia_MR0'];
         if (fieldValue) {
             return {
-                show: ["Cambodia_MR***, Date Given"]
+                show: ["Cambodia_MR0, Date Given"]
             };
         }
         else {
             return {
-                hide: ["Cambodia_MR***, Date Given"]
+                hide: ["Cambodia_MR0, Date Given"]
             };
         }
     },
@@ -314,6 +314,19 @@ Bahmni.ConceptSet.FormConditions.rules = {
         else {
             return {
                 hide: ["Cambodia_MR1, Date Given"]
+            };
+        }
+    },
+    'Cambodia_MR2' : function (formName, formFieldValues, patient) {
+        var fieldValue = formFieldValues['Cambodia_MR2'];
+        if (fieldValue) {
+            return {
+                show: ["Cambodia_MR2, Date Given"]
+            };
+        }
+        else {
+            return {
+                hide: ["Cambodia_MR2, Date Given"]
             };
         }
     },

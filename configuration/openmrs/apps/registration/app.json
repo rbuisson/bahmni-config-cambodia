@@ -29,7 +29,8 @@
             },
             "defaults":  {
                 "impl.nationality": "Cambodia_Khmer",
-                "impl.distanceFromHealthCenter": "Cambodia_Zone A"
+                "impl.distanceFromHealthCenter": "Cambodia_Zone A",
+                "impl.patientStatus": "Cambodia_Old Patient"
             }
         },
         "addressHierarchy": {
@@ -75,10 +76,6 @@
         },
         "afterVisitSaveForwardUrl" : "./index.html#/search",
         "conceptSetUI": {
-            "Cambodia_Existing Patient": {
-                "required": false,
-                "disableAddNotes": true
-            },
             "Cambodia_Pulse Data": {
                 "hideAbnormalButton": false,
                 "disableAddNotes": true
