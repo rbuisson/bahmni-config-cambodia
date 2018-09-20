@@ -38,7 +38,7 @@
         }
     },
     "pivotNewPatient": {
-        "name": "Total New Patients (row: First visit = True)",
+        "name": "Total New Patients (row: First visit = Yes)",
         "type": "aggregation",
         "config": {
             "report":{
@@ -56,25 +56,6 @@
             "showTotalColumn":true
         }
     },
-    "pivotComplaint": {
-        "name": "Total Chief Complaints",
-        "type": "aggregation",
-        "config": {
-            "report":{
-                "type": "observations",
-                "config": {
-                    "conceptNamesToFilter":["Chief Complaint","Non-coded Chief Complaint"],
-                    "conceptNameDisplayFormat": "shortNamePreferred",
-                    "ageGroupName": "Adult Child"
-                }
-            },
-            "rowGroups": [       "Concept Name", "value"        ],
-            "columnGroups": [      "Location Name" ,       "Adult Child" , "Gender"       ],
-            "distinctGroups": [    "Obs Id"    ],
-            "showTotalRow":true,
-            "showTotalColumn":true
-        }
-    },
     "pivotDiagnosis": {
         "name": "Total Diagnoses / New Cases",
         "type": "aggregation",
@@ -84,11 +65,32 @@
                 "config": {
                     "conceptNamesToFilter":["Coded Diagnosis", "Non-coded Diagnosis", "Offline Diagnosis", "Non-coded Offline Diagnosis","Cambodia_New Case"],
                     "conceptNameDisplayFormat": "shortNamePreferred",
+                    "ignoreEmptyValues":true,
                     "ageGroupName": "Adult Child"
                 }
             },
             "rowGroups": [        "Concept Name", "value"],
             "columnGroups": [         "Location Name"      ,  "Adult Child",   "Gender"          ],
+            "distinctGroups": [    "Obs Id"  ],
+            "showTotalRow":true,
+            "showTotalColumn":true
+        }
+    },
+    "pivotDiagnosisHC1": {
+        "name": "Total Diagnoses / New Cases HC1",
+        "type": "aggregation",
+        "config": {
+            "report":{
+                "type": "observations",
+                "config": {
+                    "conceptNamesToFilter":["Coded Diagnosis", "Non-coded Diagnosis", "Offline Diagnosis", "Non-coded Offline Diagnosis" ,"Cambodia_New Case" ],
+                    "conceptNameDisplayFormat": "shortNamePreferred",
+                    "ignoreEmptyValues":true,
+                    "ageGroupName": "hc1"
+                }
+            },
+            "rowGroups": [        "Concept Name", "value"],
+            "columnGroups": [         "Location Name"      ,  "hc1",   "Gender"      ],
             "distinctGroups": [    "Obs Id"  ],
             "showTotalRow":true,
             "showTotalColumn":true
@@ -156,14 +158,13 @@
             "patientAttributes": ["familyNameLocal","givenNameLocal","impl.other","impl.phoneNumber"],
             "showVisitInfo": true,
             "showProvider": true,
-            "conceptNamesToFilter": ["Chief Complaint", "Non-coded Chief Complaint", "Coded Diagnosis", "Non-coded Diagnosis", "Diagnosis Certainty", "Offline Diagnosis", "Non-coded Offline Diagnosis","Cambodia_Offline Medication"],
+            "conceptNamesToFilter": ["Cambodia_Chief Complaint", "Cambodia_New Case", "Coded Diagnosis", "Diagnosis Certainty", "Offline Diagnosis", "Cambodia_Offline Medication"],
             "conceptValuesToFilter":[],
             "conceptClassesToFilter": [],
-            "preferredColumns": ["Visit Start Date","Location Name","Chief Complaint", "Non-coded Chief Complaint", "Coded Diagnosis", "Non-coded Diagnosis", "Diagnosis Certainty", "Offline Diagnosis", "Non-coded Offline Diagnosis","Cambodia_Offline Medication", "Age", "Gender", "familyNameLocal","givenNameLocal","Patient Name", "Provider", "Adult Child" ],
+            "preferredColumns": ["Visit Start Date","Location Name","Cambodia_Chief Complaint", "Cambodia_New Case", "Coded Diagnosis", "Diagnosis Certainty", "Offline Diagnosis", "Cambodia_Offline Medication", "Age", "Gender", "familyNameLocal","givenNameLocal","Patient Name", "Provider", "Adult Child" ],
             "sortBy" : [{"column" : "Visit Start Date", "sortOrder" : "asc"}],
             "encounterPerRow": true,
             "additionalPatientIdentifiers": ["impl.legacyId"],
-            "ignoreEmptyValues": false,
             "conceptNameDisplayFormat": "shortNamePreferred",
             "excludeColumns": ["Birthdate", "Program Name", "Program Enrollment Date", "Program End Date","Patient Created Date","Visit Stop Date","Visit Type"]
         }
@@ -175,14 +176,31 @@
             "patientAttributes": ["familyNameLocal","givenNameLocal","impl.other","impl.phoneNumber"],
             "showVisitInfo": true,
             "showProvider": true,
-            "conceptNamesToFilter": ["Chief Complaint", "Non-coded Chief Complaint", "Coded Diagnosis", "Non-coded Diagnosis", "Diagnosis Certainty", "Offline Diagnosis", "Non-coded Offline Diagnosis","Cambodia_Offline Medication"],
+            "conceptNamesToFilter": ["Cambodia_Chief Complaint", "Cambodia_New Case", "Coded Diagnosis", "Diagnosis Certainty", "Offline Diagnosis","Cambodia_Offline Medication"],
             "conceptValuesToFilter":[],
             "conceptClassesToFilter": [],
-            "preferredColumns": ["Visit Start Date","Location Name","Chief Complaint", "Non-coded Chief Complaint", "Coded Diagnosis", "Non-coded Diagnosis", "Diagnosis Certainty", "Offline Diagnosis", "Non-coded Offline Diagnosis","Cambodia_Offline Medication", "Age", "Gender", "familyNameLocal","givenNameLocal","Patient Name", "Provider", "Adult Child" ],
+            "preferredColumns": ["Visit Start Date","Location Name","Cambodia_Chief Complaint", "Cambodia_New Case", "Coded Diagnosis", "Diagnosis Certainty", "Offline Diagnosis","Cambodia_Offline Medication", "Age", "Gender", "familyNameLocal","givenNameLocal","Patient Name", "Provider", "Adult Child" ],
             "sortBy" : [{"column" : "Age", "sortOrder" : "asc"}],
             "encounterPerRow": true,
             "additionalPatientIdentifiers": ["impl.legacyId"],
-            "ignoreEmptyValues": false,
+            "conceptNameDisplayFormat": "shortNamePreferred",
+            "excludeColumns": ["Birthdate", "Program Name", "Program Enrollment Date", "Program End Date","Patient Created Date","Visit Stop Date","Visit Type"]
+        }
+    },
+    "compLoc":{
+        "name": "Complaint Diagnosis by Location",
+        "type": "observations",
+        "config": {
+            "patientAttributes": ["familyNameLocal","givenNameLocal","impl.other","impl.phoneNumber"],
+            "showVisitInfo": true,
+            "showProvider": true,
+            "conceptNamesToFilter": ["Cambodia_Chief Complaint", "Cambodia_New Case", "Coded Diagnosis", "Diagnosis Certainty", "Offline Diagnosis","Cambodia_Offline Medication"],
+            "conceptValuesToFilter":[],
+            "conceptClassesToFilter": [],
+            "preferredColumns": ["Visit Start Date","Location Name","Cambodia_Chief Complaint", "Cambodia_New Case", "Coded Diagnosis", "Diagnosis Certainty", "Offline Diagnosis","Cambodia_Offline Medication", "Age", "Gender", "familyNameLocal","givenNameLocal","Patient Name", "Provider", "Adult Child" ],
+            "sortBy" : [{"column" : "Location Name", "sortOrder" : "asc"}],
+            "encounterPerRow": true,
+            "additionalPatientIdentifiers": ["impl.legacyId"],
             "conceptNameDisplayFormat": "shortNamePreferred",
             "excludeColumns": ["Birthdate", "Program Name", "Program Enrollment Date", "Program End Date","Patient Created Date","Visit Stop Date","Visit Type"]
         }
@@ -198,7 +216,6 @@
             "sortBy" : [{"column" : "Age", "sortOrder" : "asc"}],
             "encounterPerRow": true,
             "additionalPatientIdentifiers": ["impl.legacyId"],
-            "ignoreEmptyValues": true,
             "conceptNameDisplayFormat":"shortNamePreferred",
             "excludeColumns": ["Patient Created Date","Birthdate", "Program Name", "Program Enrollment Date", "Program End Date", "Visit Stop Date", "Visit Type"]
         }
