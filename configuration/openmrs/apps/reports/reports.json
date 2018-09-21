@@ -151,6 +151,18 @@
             "excludeColumns": ["Date stopped", "Date Of Admission", "Date Of Discharge", "Visit Type"]
         }
     },
+    "visitReportLoc": {
+        "name": "Visits by Location (find Village mistakes)",
+        "type": "visits",
+        "config": {
+            "patientAddresses": ["city_village"],
+            "preferredColumns": ["city_village"],
+            "patientAttributes": ["familyNameLocal","givenNameLocal","impl.patientStatus","impl.other","impl.phoneNumber","impl.2ndPhoneNumber","impl.email","impl.nationality","impl.distanceFromHealthCenter", "impl.guardianName"],
+            "additionalPatientIdentifiers": ["impl.legacyId"],
+            "excludeColumns": ["Date stopped", "Date Of Admission", "Date Of Discharge", "Visit Type"],
+            "sortBy" : [{"column" : "city_village", "sortOrder" : "desc"}]
+        }
+    },
     "compDiagChrono":{
         "name": "Complaint Diagnosis by Time",
         "type": "observations",
