@@ -83,8 +83,8 @@
                 "translationKey":"DASHBOARD_TITLE_DIAGNOSIS_KEY",
                 "type":"diagnosis",
                 "showDetailsButton": true,
-                "showCertainty":false,
-                "showOrder":false,
+                "showCertainty":true,
+                "showOrder":true,
                 "displayOrder":10
             },
             "offlineDiagnosis":{
@@ -97,13 +97,13 @@
                     "showDetailsButton": true,
                     "showGroupDateTime": true,
                     "conceptNames": [
-                        "Cambodia_Offline Diagnosis Form"
+                        "Offline Diagnosis Entry","Non-coded Offline Diagnosis"
                     ]
                 },
                 "expandedViewConfig":{
                     "showDetailsButton": true,
                     "conceptNames":[
-                      "Cambodia_Offline Diagnosis Form"
+                      "Offline Diagnosis Entry", "Non-coded Offline Diagnosis"
                    ],
                     "pivotTable":{
                     }

@@ -605,9 +605,19 @@
           "allowFutureDates": true
         },
         "Offline Diagnosis Data": {
-            "codedConceptName":"Offline Diagnosis",
-            "autocomplete":  true,
-            "allowAddMore": true
+            "answersConceptName":"Offline Diagnosis",
+            "autocomplete":  true
+        },        
+        "Offline Diagnosis Entry": {
+            "allowAddMore":  true
+        },
+        "Offline Diagnosis order" : {
+            "required": true,
+            "disableAddNotes": true
+        },
+        "Offline Diagnosis Certainty" : {
+            "required": true,
+            "disableAddNotes": true
         },
         "defaults": {
         }
