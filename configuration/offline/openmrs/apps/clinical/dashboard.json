@@ -27,22 +27,50 @@
                     "showDetailsButton": true,
                     "scope":"latest",
                     "conceptNames":[
-                       "Cambodia_Vital Signs Basic Set",
-                       "Cambodia_Vital Signs Extended Form",
-                       "Nutritional Values",
-                       "BMI Data",
-                       "BMI Status Data"
+                        "Cambodia_Pulse Data",
+                        "Cambodia_Diastolic Blood Pressure Data",
+                        "Cambodia_Systolic Blood Pressure Data",
+                        "Cambodia_Temperature Data",
+                        "Cambodia_Respiratory Rate Data",
+                        "Cambodia_Oxygen Saturation Data",
+                        "Cambodia_Capillary Refill Time Data",
+                        "Height",
+                        "WeighT",
+                        "BMI Data",
+                        "BMI Status Data"
                    ]
                 },
                 "expandedViewConfig":{
                     "showDetailsButton": true,
                     "conceptNames":[
-                        "Cambodia_Vital Signs Basic Set",
-                        "Cambodia_Vital Signs Extended Form",
-                        "Nutritional Values",
+                       "Cambodia_Pulse Data",
+                        "Cambodia_Diastolic Blood Pressure Data",
+                        "Cambodia_Systolic Blood Pressure Data",
+                        "Cambodia_Temperature Data",
+                        "Cambodia_Respiratory Rate Data",
+                        "Cambodia_Oxygen Saturation Data",
+                        "Cambodia_Capillary Refill Time Data",
+                        "Height",
+                        "WeighT",
                         "BMI Data",
                         "BMI Status Data"
-                    ]
+                    ],
+                    "pivotTable":{
+                        "groupBy":"encounters",
+                        "obsConcepts":[
+                            "Cambodia_Pulse Data",
+                            "Cambodia_Diastolic Blood Pressure Data",
+                            "Cambodia_Systolic Blood Pressure Data",
+                            "Cambodia_Temperature Data",
+                            "Cambodia_Respiratory Rate Data",
+                            "Cambodia_Oxygen Saturation Data",
+                            "Cambodia_Capillary Refill Time Data",
+                            "Height",
+                            "WeighT",
+                            "BMI Data",
+                            "BMI Status Data"
+                        ]
+                    }
                 }
             },
             "diagnosis":{
@@ -51,29 +79,40 @@
                 "showDetailsButton": true,
                 "showCertainty":true,
                 "showOrder":true,
-                "displayOrder":10
+                "displayOrder":15
             },
             "offlineDiagnosis":{
                 "translationKey":"IMPL_OFFLINEDIAGNOSIS",
                 "type":"observation",
                 "isObservation": true,
                 "showDetailsButton": true,
-                "displayOrder":11,
+                "displayOrder":20,
                 "dashboardConfig": {
                     "showDetailsButton": true,
                     "showGroupDateTime": true,
                     "conceptNames": [
-                        "Offline Diagnosis Entry","Non-coded Offline Diagnosis"
+                        "Offline Diagnosis Entry"
                     ]
                 },
                 "expandedViewConfig":{
                     "showDetailsButton": true,
+                    "showGroupDateTime": false,
                     "conceptNames":[
-                      "Offline Diagnosis Entry","Non-coded Offline Diagnosis"
+                      "Offline Diagnosis Entry"
                    ],
                     "pivotTable":{
+                        "groupBy":"encounters",
+                        "obsConcepts":[
+                            "Offline Diagnosis Entry"
+                        ]
                     }
                 }
+            },
+            "conditions": {
+                "translationKey":"CONDITION_LIST_DISPLAY_CONTROL_TITLE",
+                "type": "conditionsList",
+                "showDetailsButton": true,
+                "displayOrder": 10
             },
             "examination":{
                 "type":"forms",
@@ -83,29 +122,28 @@
                     "showGroupDateTime":true,
                     "showDetailsButton": true,
                     "conceptNames":[
-                        "Cambodia_Consultation Form"
+                        "Cambodia_Consultation Form", "Cambodia_Consultation Form Offline"
                     ]
                 },
                 "expandedViewConfig":{
                     "showGroupDateTime":false,
                     "showDetailsButton": true,
                     "conceptNames":[
-                       "Cambodia_Consultation Form"
+                       "Cambodia_Consultation Form", "Cambodia_Consultation Form Offline"
                     ],
                     "pivotTable":{
-                        "numberOfVisits":"5",
                         "groupBy":"encounters",
                         "obsConcepts":[
-                            "Cambodia_Consultation Form"
+                            "Cambodia_Consultation Form", "Cambodia_Consultation Form Offline"
                             ]
                     }
                 },
-                "displayOrder":20,
+                "displayOrder":85,
                 "translationKey":"DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY"
             },
             "customControl": {
                 "type": "custom",
-                "displayOrder": 40,
+                "displayOrder": 13,
                 "showDetailsButton": true,
                 "config": {
                     "showDetailsButton": true,
@@ -173,7 +211,7 @@
                         "Cambodia_Allergies"
                     ]
                 },
-                "displayOrder":80,
+                "displayOrder":11,
                 "translationKey":"IMPL_ALLERGIES"
             },
             "history": {
@@ -183,14 +221,15 @@
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
                     "showDetailsButton": true,
-                    "numberOfVisits": 5,
+                    "showGroupDateTime": false,
+                    "numberOfVisits": 10,
                     "conceptNames": [
                         "Cambodia_History Form"
                     ]
                 },
                 "expandedViewConfig":{
                     "showDetailsButton": true,
-                    "showGroupDateTime":false,
+                    "showGroupDateTime":true,
                     "conceptNames":[
                         "Cambodia_History Form"
                     ],
@@ -255,128 +294,20 @@
                         "Cambodia_Offline Medication"
                     ]
                 },
-
+                "expandedViewConfig":{
+                    "showDetailsButton": true,
+                    "showGroupDateTime":false,
+                    "conceptNames":[
+                        "Cambodia_Offline Medication"
+                    ],
+                    "pivotTable":{
+                        "groupBy":"encounters",
+                        "obsConcepts":[
+                            "Cambodia_Offline Medication"
+                        ]                    
+                    }
+                },
                 "translationKey": "IMPL_OFFLINEMED"
-            },
-             "chemOrders":{
-                "translationKey":"IMPL_CHEM",
-                "type":"ordersControl",
-                "orderType":"Chemistry Order",
-                "showDetailsButton": true,
-                "displayOrder":102,
-                "dashboardConfig":{
-                    "conceptNames":[
-                        "Chemistry Order Fulfillment Form"
-                    ],
-                    "numberOfVisits": 5,
-                    "showHeader": true
-                },
-                "expandedViewConfig":{
-                    "conceptNames":[
-                        "Chemistry Order Fulfillment Form"
-                    ]
-                }
-            },
-            "labOrders":{
-                "translationKey":"IMPL_LAB",
-                "type":"ordersControl",
-                "orderType": "Lab Order",
-                "showDetailsButton": true,
-                "displayOrder":104,
-                "dashboardConfig":{
-                    "conceptNames":[
-                        "Lab Order Fulfillment Form"
-                    ],
-                    "numberOfVisits": 5,
-                    "showHeader": true
-                },
-                "expandedViewConfig":{
-                    "conceptNames":[
-                        "Lab Order Fulfillment Form"
-                    ]
-                }
-            },
-            "hemaOrders":{
-                "translationKey":"IMPL_HEMA",
-                "type":"ordersControl",
-                "orderType": "Hematology Order",
-                "showDetailsButton": true,
-                "displayOrder":112,
-                "dashboardConfig":{
-                    "conceptNames":[
-                        "Hematology Order Fulfillment Form"
-                    ],
-                    "numberOfVisits": 5,
-                    "showHeader": true
-                },
-                "expandedViewConfig":{
-                    "conceptNames":[
-                        "Hematology Order Fulfillment Form"
-                    ]
-                }
-            },
-            "microOrders":{
-                "translationKey":"IMPL_MICRO",
-                "type":"ordersControl",
-                "orderType": "Microbiology Order",
-                "showDetailsButton": true,
-                "displayOrder":115,
-                "dashboardConfig":{
-                    "conceptNames":[
-                        "Microbiology Order Fulfillment Form"
-                    ],
-                    "numberOfVisits": 5,
-                    "showHeader": true
-                },
-                "expandedViewConfig":{
-                    "conceptNames":[
-                        "Microbiology Order Fulfillment Form"
-                    ]
-                }
-            },
-            "radioOrders": {
-                "displayOrder":116,
-                "orderType": "Radiology Order",
-                "type": "ordersControl",
-                "translationKey": "DASHBOARD_TITLE_RADIOLOGY_KEY",
-                "dashboardConfig":{
-                     "conceptNames": [
-                        "Summary"
-                    ],
-                    "numberOfVisits": 5
-                },
-                "expandedViewConfig":{
-                    "showDetailsButton": true,
-                    "showGroupDateTime":false,
-                    "conceptNames":[
-                        "Summary"
-                    ],
-                    "pivotTable":{
-                    }
-                }
-            },
-            "patientDocs": {
-                "displayOrder": 85,
-                "type":"historyAndExamination",
-                "isObservation":true,
-                "displayType":"Half-Page",
-                "dashboardConfig":{
-                    "showGroupDateTime":true,
-                    "showDetailsButton": true,
-                    "conceptNames":[
-                        "Image", "Patient file"
-                    ]
-                },
-                "expandedViewConfig":{
-                    "showDetailsButton": true,
-                    "showGroupDateTime":false,
-                    "conceptNames":[
-                        "Image", "Patient file"
-                    ],
-                    "pivotTable":{
-                    }
-                },
-                "translationKey": "VISIT_TITLE_PATIENT_FILES_KEY"
             },
             "dentalExam": {
                 "type": "forms",
@@ -432,30 +363,17 @@
                 "translationKey": "DASHBOARD_TITLE_GYNAECOLOGY_KEY"
             },
             "referral": {
-                "type": "vitals",
+                "type": "forms",
                 "isObservation":true,
                 "displayOrder": 117,
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
                     "showDetailsButton": true,
-                    "conceptNames": [ "Cambodia_Referred To", "Cambodia_Referral Notes", "Cambodia_Referred From"],
+                    "conceptNames": [ "Cambodia_Referral Form"],
                     "scope":"latest"
                 },
                 "translationKey": "IMPL_REFERRALS"
-            },
-            "visits":{
-                "translationKey":"DASHBOARD_TITLE_VISITS_KEY",
-                "type":"visits",
-                "displayOrder":111,
-                "showDetailsButton": true,
-                "dashboardConfig":{
-                    "title":null,
-                    "maximumNoOfVisits":5,
-                    "groupByVisits":true
-                }
             }
-
         }
-
     }
 }

@@ -75,7 +75,7 @@
     "type": "config",
     "extensionParams": {
       "default": true,
-      "conceptName": "Cambodia_Consultation Form"
+      "conceptName": "Cambodia_Consultation Form Offline"
     },
     "requiredPrivilege": "app:clinical"
   },

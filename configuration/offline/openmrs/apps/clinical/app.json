@@ -116,18 +116,10 @@
         "Cambodia_Skin Symptoms": {
             "multiSelect": true
         },
-        "Cambodia_Skin Exam": {
-            "required": true,
-            "disableAddNotes": true
-        },
         "Cambodia_Skin Exam Abnormalities": {
             "multiSelect": true,
             "disableAddNotes": true
-        },
-        "Cambodia_Head Exam": {
-            "required": true,
-            "disableAddNotes": true
-        },        
+        },     
         "Cambodia_Head Circumference": {
             "disableAddNotes": true
         },
@@ -135,40 +127,20 @@
             "multiSelect": true,
             "disableAddNotes": true
         },
-        "Cambodia_Neck Exam": {
-            "required": true,
-            "disableAddNotes": true
-        },
         "Cambodia_Neck Exam Abnormalities": {
             "multiSelect": true,
-            "disableAddNotes": true
-        },
-        "Cambodia_Ears Exam": {
-            "required": true,
             "disableAddNotes": true
         },
         "Cambodia_Ears Exam Abnormalities": {
             "multiSelect": true,
             "disableAddNotes": true
         },
-        "Cambodia_Eyes Exam": {
-            "required": true,
-            "disableAddNotes": true
-        },
         "Cambodia_Eyes Exam Abnormalities": {
             "multiSelect": true,
             "disableAddNotes": true
         },
-        "Cambodia_Chest and Lungs Exam": {
-            "required": true,
-            "disableAddNotes": true
-        },
         "Cambodia_Chest and Lungs Exam Abnormalities": {
             "multiSelect": true,
-            "disableAddNotes": true
-        },
-        "Cambodia_Cardiovascular Exam": {
-            "required": true,
             "disableAddNotes": true
         },
         "Cambodia_Cardiovascular Exam Abnormalities": {
@@ -184,16 +156,8 @@
         "Cambodia_Heartrate": {
             "disableAddNotes": true
         },
-        "Cambodia_Abdomen Exam": {
-            "required": true,
-            "disableAddNotes": true
-        },
         "Cambodia_Abdomen Exam Abnormalities": {
             "multiSelect": true,
-            "disableAddNotes": true
-        },
-        "Cambodia_Genitourinary Exam": {
-            "required": true,
             "disableAddNotes": true
         },
         "Cambodia_Genitourinary Female Exam Abnormalities": {
@@ -204,16 +168,8 @@
             "multiSelect": true,
             "disableAddNotes": true
         },
-        "Cambodia_Flank and Back Exam": {
-            "required": true,
-            "disableAddNotes": true
-        },
         "Cambodia_Flank and Back Exam Abnormalities": {
             "multiSelect": true,
-            "disableAddNotes": true
-        },
-        "Cambodia_Musculoskeletal and Neurological Exam": {
-            "required": true,
             "disableAddNotes": true
         },
         "Cambodia_Musculoskeletal Exam Abnormalities": {
@@ -259,10 +215,6 @@
         "Cambodia_Capillary Refill Time Data": {
           "disableAddNotes": true,
           "hideAbnormalButton": false
-        },
-        "Cambodia_New Case": {
-          "required": true,
-          "disableAddNotes": true
         },
         "Cambodia_Polio1": {
           "disableAddNotes": true

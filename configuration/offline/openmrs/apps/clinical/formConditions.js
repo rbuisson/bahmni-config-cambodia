@@ -1,36 +1,6 @@
 Bahmni.ConceptSet.FormConditions.rules = {
-    'Diastolic Data' : function (formName, formFieldValues) {
-        var systolic = formFieldValues['Systolic'];
-        var diastolic = formFieldValues['Diastolic'];
-        if (systolic || diastolic) {
-            return {
-                enable: ["Posture"]
-            };
-        } else {
-            return {
-                disable: ["Posture"]
-            };
-        }
-    },
-    'Systolic Data' : function (formName, formFieldValues) {
-        var systolic = formFieldValues['Systolic'];
-        var diastolic = formFieldValues['Diastolic'];
-        if (systolic || diastolic) {
-            return {
-                enable: ["Posture"]
-            };
-        } else {
-            return {
-                disable: ["Posture"]
-            };
-        }
-    },
     'Cambodia_Head Circumference' : function (formName, formFieldValues, patient) {
         var patientAge = patient['age'];
-        var sections = {
-            "show": [],
-            "hide": []
-        };
 
         if (patientAge < 5) {
             return {
@@ -42,101 +12,20 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_Newborn Immunizations Set' : function (formName, formFieldValues, patient) {
-        var patientAge = patient['age'];
-        var patientGender = patient['gender'];
-        var sections = {
-            "show": [],
-            "hide": []
-        };
-
-        if (patientAge < 1) {
-            return {
-                show: ["Cambodia_Newborn Immunizations Set"]
-            };
-        } else if (patientAge >= 1 && patientAge < 16) {
-            return {
-                hide: ["Cambodia_Newborn Immunizations Set"]
-            };
-        } else if (patientAge >= 16 && patientGender == 'F') {
-            return {
-                hide: ["Cambodia_Newborn Immunizations Set"]
-            };
-        } else {
-            return {
-                hide: ["Cambodia_Newborn Immunizations Set"]
-            };
-        }
-    },
-    'Cambodia_Child Immunizations Set' : function (formName, formFieldValues, patient) {
-        var patientAge = patient['age'];
-        var patientGender = patient['gender'];
-        var sections = {
-            "show": [],
-            "hide": []
-        };
-
-        if (patientAge < 1) {
-            return {
-                hide: ["Cambodia_Child Immunizations Set"]
-            };
-        } else if (patientAge >= 1 && patientAge < 16) {
-            return {
-                show: ["Cambodia_Child Immunizations Set"]
-            };
-        } else if (patientAge >= 16 && patientGender == 'F') {
-            return {
-                hide: ["Cambodia_Child Immunizations Set"]
-            };
-        } else {
-            return {
-                hide: ["Cambodia_Child Immunizations Set"]
-            };
-        }
-    },
-    'Cambodia_Pregnant Women Immunizations Set' : function (formName, formFieldValues, patient) {
-        var patientAge = patient['age'];
-        var patientGender = patient['gender'];
-        var sections = {
-            "show": [],
-            "hide": []
-        };
-
-        if (patientAge < 1) {
-            return {
-                hide: ["Cambodia_Pregnant Women Immunizations Set"]
-            };
-        } else if (patientAge >= 1 && patientAge < 13) {
-            return {
-                hide: ["Cambodia_Pregnant Women Immunizations Set"]
-            };
-        } else if (patientAge >= 13 && patientGender == 'F') {
-            return {
-                show: ["Cambodia_Pregnant Women Immunizations Set"]
-            };
-        } else {
-            return {
-                hide: ["Cambodia_Pregnant Women Immunizations Set"]
-            };
-        }
-    },
     'Cambodia_Past Medical History' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_Past Medical History'];
-
         var sections = {
             "show": [],
             "hide": []
         };
-
         if (fieldValue && fieldValue.indexOf('Cambodia_Cancer') > -1) {
             sections.show.push("Cambodia_Past Cancer Details");
         } else {
             sections.hide.push("Cambodia_Past Cancer Details");
         }
-
         return sections;
     },
-    'Cambodia_BCG' : function (formName, formFieldValues, patient) {
+    'Cambodia_BCG' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_BCG'];
         if (fieldValue) {
             return {
@@ -149,7 +38,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_HepB at birth' : function (formName, formFieldValues, patient) {
+    'Cambodia_HepB at birth' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_HepB at birth'];
         if (fieldValue) {
             return {
@@ -162,7 +51,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_MR0' : function (formName, formFieldValues, patient) {
+    'Cambodia_MR0' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_MR0'];
         if (fieldValue) {
             return {
@@ -175,7 +64,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_Polio1' : function (formName, formFieldValues, patient) {
+    'Cambodia_Polio1' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_Polio1'];
         if (fieldValue) {
             return {
@@ -188,7 +77,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_Polio2' : function (formName, formFieldValues, patient) {
+    'Cambodia_Polio2' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_Polio2'];
         if (fieldValue) {
             return {
@@ -201,7 +90,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_Polio3' : function (formName, formFieldValues, patient) {
+    'Cambodia_Polio3' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_Polio3'];
         if (fieldValue) {
             return {
@@ -214,7 +103,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_IPV' : function (formName, formFieldValues, patient) {
+    'Cambodia_IPV' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_IPV'];
         if (fieldValue) {
             return {
@@ -227,7 +116,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_DTP-Hep-Hip1' : function (formName, formFieldValues, patient) {
+    'Cambodia_DTP-Hep-Hip1' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_DTP-Hep-Hip1'];
         if (fieldValue) {
             return {
@@ -239,7 +128,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
                 hide: ["Cambodia_DTP-Hep-Hip1, Date Given"]
             };
         }
-    },'Cambodia_DTP-Hep-Hip2' : function (formName, formFieldValues, patient) {
+    },'Cambodia_DTP-Hep-Hip2' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_DTP-Hep-Hip2'];
         if (fieldValue) {
             return {
@@ -252,7 +141,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_DTP-Hep-Hip3' : function (formName, formFieldValues, patient) {
+    'Cambodia_DTP-Hep-Hip3' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_DTP-Hep-Hip3'];
         if (fieldValue) {
             return {
@@ -265,7 +154,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_PCV1' : function (formName, formFieldValues, patient) {
+    'Cambodia_PCV1' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_PCV1'];
         if (fieldValue) {
             return {
@@ -278,7 +167,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_PCV2' : function (formName, formFieldValues, patient) {
+    'Cambodia_PCV2' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_PCV2'];
         if (fieldValue) {
             return {
@@ -291,7 +180,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_PCV3' : function (formName, formFieldValues, patient) {
+    'Cambodia_PCV3' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_PCV3'];
         if (fieldValue) {
             return {
@@ -304,7 +193,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_MR1' : function (formName, formFieldValues, patient) {
+    'Cambodia_MR1' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_MR1'];
         if (fieldValue) {
             return {
@@ -317,7 +206,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_MR2' : function (formName, formFieldValues, patient) {
+    'Cambodia_MR2' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_MR2'];
         if (fieldValue) {
             return {
@@ -330,7 +219,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_JE' : function (formName, formFieldValues, patient) {
+    'Cambodia_JE' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_JE'];
         if (fieldValue) {
             return {
@@ -343,7 +232,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_Tetanus1' : function (formName, formFieldValues, patient) {
+    'Cambodia_Tetanus1' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_Tetanus1'];
         if (fieldValue) {
             return {
@@ -356,7 +245,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_Tetanus2' : function (formName, formFieldValues, patient) {
+    'Cambodia_Tetanus2' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_Tetanus2'];
         if (fieldValue) {
             return {
@@ -369,7 +258,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_Tetanus3' : function (formName, formFieldValues, patient) {
+    'Cambodia_Tetanus3' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_Tetanus3'];
         if (fieldValue) {
             return {
@@ -382,7 +271,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_Tetanus4' : function (formName, formFieldValues, patient) {
+    'Cambodia_Tetanus4' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_Tetanus4'];
         if (fieldValue) {
             return {
@@ -395,7 +284,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_Tetanus5' : function (formName, formFieldValues, patient) {
+    'Cambodia_Tetanus5' : function (formName, formFieldValues) {
         var fieldValue = formFieldValues['Cambodia_Tetanus5'];
         if (fieldValue) {
             return {

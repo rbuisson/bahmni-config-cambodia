@@ -24,7 +24,7 @@
     "IMPL_OFFLINEDIAGNOSIS": "រោគវិនិច្ឆ័យក្រៅបណ្ដាញ",
     "IMPL_QUEUE_DISPENSARY": "ឱសថ",
     "IMPL_QUEUE_WAITING_ROOM": "បន្ទប់​រង់ចាំ",
-    "IMPL_QUEUE_OFFLINE": "ក្រៅបណ្ដាញ",
+    "IMPL_QUEUE_OFFLINE": "LAKE",
 
     "MODULE_LABEL_ACTIVE_KEY": "សកម្ម",
     "MODULE_LABEL_PROGRAMS_KEY": "កម្មវិធី",
@@ -41,7 +41,7 @@
     "DASHBOARD_TITLE_PROGRAMS_KEY": "កម្មវីធី",
     "DASHBOARD_TITLE_TREATMENTS_KEY": "ការព្យាបាល",
     "DASHBOARD_TITLE_DISPOSITION_KEY": "ការបញ្ជូន",
-    "DASHBOARD_TITLE_DIAGNOSIS_KEY": "រោគវិនិច្ឆ័យ (Primary:new case, Secondary:old case)",
+    "DASHBOARD_TITLE_DIAGNOSIS_KEY": "រោគវិនិច្ឆ័យ (Primary: new case/Secondary: old case)",
     "DASHBOARD_TITLE_ADMISSION_DETAILS_KEY": "ពត៍មានលម្អិត​នៃការទទូលសំរាក",
     "DASHBOARD_TITLE_NUTRITIONAL_VALUES_KEY": "តម្លៃអាហារូបត្ថម្ភ",
     "DASHBOARD_TITLE_SECOND_VITALS_KEY": "សញ្ញាអាយុជីវិតលើកទីពីរ",

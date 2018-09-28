@@ -12,12 +12,7 @@
           "BID - 2X /day",
           "TID - 3X /day",
           "QID - 4X /day",
-          "STAT - Immediately",
-          "QD - 1X /ថ្ងៃ",
-          "BID - 2X /ថ្ងៃ",
-          "TID - 3X /ថ្ងៃ",
-          "QID - 4X /ថ្ងៃ",
-          "STAT - ភ្លាម"
+          "STAT - Immediately"
         ],
         "frequencyDefaultDurationUnitsMap": [
           {

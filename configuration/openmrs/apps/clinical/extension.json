@@ -126,26 +126,6 @@
     "order": 3,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalConceptSetGroupObservationsOfflineMedForm": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.OfflineMedForm",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "default": true,
-      "conceptName": "Cambodia_Offline Medication Form"
-    },
-    "requiredPrivilege": "app:clinical"
-  },
-  "bahmniClinicalConceptSetGroupObservationsOfflineDiagnosisForm": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.OfflineDiagnosisForm",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "default": true,
-      "conceptName": "Cambodia_Offline Diagnosis Form"
-    },
-    "requiredPrivilege": "app:clinical"
-  },
   "bahmniClinicalConceptSetGroupObservationsConsultationForm": {
     "id": "bahmni.clinical.conceptSetGroup.observations.consultationForm",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
