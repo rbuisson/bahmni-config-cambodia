@@ -11,16 +11,6 @@
     "order": 1,
     "requiredPrivilege": "app:clinical:observationTab"
   },
-  "bahmniClinicalOrdersPending": {
-    "id": "bahmni.clinical.orders.pending",
-    "extensionPointId": "org.bahmni.clinical.orders",
-    "type": "link",
-    "label": "Pending Orders",
-    "url": "pendingOrders",
-    "icon": "fa-user-md",
-    "order": 5,
-    "requiredPrivilege": "app:radiologyOrders"
-  },
   "bahmniClinicalPatientsSearchAllPatients": {
     "id": "bahmni.clinical.patients.search.allPatients",
     "extensionPointId": "org.bahmni.patient.search",
@@ -31,22 +21,6 @@
     },
     "label": "All",
     "order": 5,
-    "requiredPrivilege": "app:clinical"
-  },
-  "bahmniClinicalConceptSetGroupObservationsSecondVitals": {
-    "id": "bahmni.clinical.conceptSetGroup.observations.secondVitals",
-    "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
-    "type": "config",
-    "extensionParams": {
-      "conceptName": "Second Vitals",
-      "showIf": [
-        "var visitTypes = [];",
-        "if(visitTypes.length === 0) return true;",
-        "var visitTypeName = context.visitType ? context.visitType.name : null;",
-        "return visitTypes.indexOf(visitTypeName) !== -1;"
-      ]
-    },
-    "order": 3,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalConceptSetGroupObservationsOfflineMedForm": {
