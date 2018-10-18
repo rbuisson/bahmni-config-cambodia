@@ -108,12 +108,6 @@
                     }
                 }
             },
-            "conditions": {
-                "translationKey":"CONDITION_LIST_DISPLAY_CONTROL_TITLE",
-                "type": "conditionsList",
-                "showDetailsButton": true,
-                "displayOrder": 10
-            },
             "examination":{
                 "type":"forms",
                 "isObservation":true,
@@ -211,13 +205,13 @@
                         "Cambodia_Allergies"
                     ]
                 },
-                "displayOrder":11,
+                "displayOrder":10,
                 "translationKey":"IMPL_ALLERGIES"
             },
             "history": {
                 "type": "forms",
                 "isObservation":true,
-                "displayOrder": 14,
+                "displayOrder": 11,
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
                     "showDetailsButton": true,
@@ -241,7 +235,7 @@
             "treatments":{
                 "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
                 "type":"treatment",
-                "displayOrder":95,
+                "displayOrder":14,
                 "dashboardConfig":{
                     "showDetailsButton": true,
                     "showRoute":true,
@@ -285,7 +279,7 @@
             "offlineMed": {
                 "type": "forms",
                 "isObservation":true,
-                "displayOrder": 101,
+                "displayOrder": 18,
                 "hideEmptyDisplayControl": false,
                 "dashboardConfig": {
                     "showDetailsButton": true,
@@ -385,29 +379,8 @@
                     ]
                 }
             },
-            "radioOrders": {
-                "displayOrder":154,
-                "orderType": "Radiology Order",
-                "type": "ordersControl",
-                "translationKey": "DASHBOARD_TITLE_RADIOLOGY_KEY",
-                "dashboardConfig":{
-                     "conceptNames": [
-                        "Summary"
-                    ],
-                    "numberOfVisits": 5
-                },
-                "expandedViewConfig":{
-                    "showDetailsButton": true,
-                    "showGroupDateTime":false,
-                    "conceptNames":[
-                        "Summary"
-                    ],
-                    "pivotTable":{
-                    }
-                }
-            },
             "patientDocs": {
-                "displayOrder": 18,
+                "displayOrder": 95,
                 "type":"historyAndExamination",
                 "isObservation":true,
                 "displayType":"Half-Page",
@@ -507,7 +480,7 @@
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":15
                 },
-                "displayOrder":150
+                "displayOrder":152
             },
             "weightBMI":{
                 "type":"observationGraph",
@@ -521,7 +494,7 @@
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":15
                 },
-                "displayOrder":152
+                "displayOrder":150
             },
             "growthChart":{
                 "type":"observationGraph",
@@ -534,7 +507,7 @@
                     "referenceData":"growthChartReference.csv",
                     "numberOfVisits":15
                 },
-                "displayOrder":145
+                "displayOrder":140
             },
             "testsInClinic":{
                 "type":"observationGraph",
@@ -549,7 +522,7 @@
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":15
                 },
-                "displayOrder":140
+                "displayOrder":145
             }
 
         }
